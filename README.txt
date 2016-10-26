@@ -3,7 +3,7 @@ Download the VeracrossCurl folder to work on the current development
 Download an older version to go back to something complete
 
 To use the VeracrossCurl folder
-1. Open the fodler in file explorer
+1. Open the folder in file explorer
 2. Delete the "DerivedData" folder
 3. Click Product -> Scheme -> Alamofire IOS
 4. Press build
