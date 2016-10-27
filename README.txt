@@ -1,6 +1,5 @@
-Download the VeracrossCurl folder to work on the current development
-
-Download an older version to go back to something complete
+VeracrossCurl contains the current devolopment
+OldVersions contains the older known working devolopments
 
 When beginning work
 1. git pull
