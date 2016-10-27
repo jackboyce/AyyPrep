@@ -24,7 +24,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Load the remember me data into the text boxes
         if let uname = UserDefaults.standard.string(forKey: "username") {
             username.text = uname
         }
@@ -33,35 +34,41 @@ class ViewController: UIViewController {
         }
         rememberSwitch.setOn(UserDefaults.standard.bool(forKey: "Switch"), animated: false)
         
+        //Let the keyboard be dismissed by tapping anywhere not on the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        //Load an add on the page
         loadAd()
     }
     
+    //Called when this view is being seagued
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showWebView" {
             let webViewController = segue.destination as! WebViewController
-            //webViewController.PROPERTY = VALUE
+            //Pass the username and password to the new view controller
             webViewController.username = username.text!
             webViewController.password = password.text!
         }
     }
     
+    //Called to load ads onto the bannerview
     func loadAd() {
         bannerView.adUnitID = "ca-app-pub-3661213011866300/3610294678"
         bannerView.rootViewController = self
         let request = GADRequest()
-        //request.testDevices = ["bb505274d09fc799b9245042f14bd4c5"]
+        request.testDevices = ["bb505274d09fc799b9245042f14bd4c5"]
         bannerView.adSize = kGADAdSizeBanner
         bannerView.load(request)
-        
     }
     
+    //Called to dismiss the keyboard
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
     
+    //Called to save the data from the username and password field
     func save() {
         if rememberSwitch.isOn {
             UserDefaults.standard.set(username.text!, forKey: "username")

@@ -16,9 +16,10 @@ class WebViewController: UIViewController {
 
     var username: String = ""
     var password: String = ""
-    var key: String = ""
+    //An array of courses
     var courses: [Course] = []
     
+    //Generated html that is used to display the grades after loading
     var landingPage: String = ""
     
     @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
@@ -27,23 +28,27 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
         //Starts loasing circle
         loadingCircle.startAnimating()
+        
         //Starts the Alamofire post request inside a handler
         login { (html) in
             if html != nil {
+                //Parses the html of the website
                 self.parse(string: html!)
                 //Stops the loading circle when the data has been processed and assigned to the text box
                 self.loadingCircle.stopAnimating()
-                //print(self.key)
+                //Load an add when done processing grades
                 self.loadAd()
             }
         }
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(backPressed))
+        //Add the logout button to the right of the navigation bar
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutPressed))
+        //Add the home buton to the left of the navigation bar
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: self, action: #selector(reloadPressed))
         
+        //Adds a button to the center of the navigation bar
         let center =  UIButton(type: UIButtonType.custom) as UIButton
         center.frame = CGRect(x: 0,y: 0,width: 100,height: 40) as CGRect
         //button.backgroundColor = UIColor.red
@@ -55,12 +60,14 @@ class WebViewController: UIViewController {
         
     }
     
+    //Called when the statistics button is pressed in the navigation bar
     func statisticsPressed() {
         let statisticsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Statistics") as! StatisticsViewController
         
         self.navigationController?.pushViewController(statisticsViewController, animated: true)
     }
     
+    //Called to load add into the banner view
     func loadAd() {
         bannerView.adUnitID = "ca-app-pub-3661213011866300/3610294678"
         bannerView.rootViewController = self
@@ -71,12 +78,14 @@ class WebViewController: UIViewController {
         
     }
     
-    func backPressed(sender: UIBarButtonItem) {
+    //Called when the logout buton is pressed
+    func logoutPressed(sender: UIBarButtonItem) {
         //htmlViewer.reload()
         //print(htmlViewer.canGoBack)
         navigationController?.popViewController(animated: true)
     }
     
+    //Called when the home button is pressed
     func reloadPressed(sender: UIBarButtonItem) {
         self.htmlViewer.loadHTMLString(landingPage, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
         //htmlViewer.reload()
@@ -86,8 +95,6 @@ class WebViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     
     // MARK: - Navigation
 
@@ -101,15 +108,17 @@ class WebViewController: UIViewController {
     
     
     func parse(string: String) {
+        //Original html of the website
         let original = string as NSString
+        //Html that we generate to displpay on the webview
         var genHTML = ""
-        //courses = [Course]()
         courses = generateCourses(html: original)
         
-        
+        //Loops through all of the courses
         for i in courses {
             var html: NSString = ""
             
+            //Get the html of the all assignments page of course i
             let myURLString = "https://portals.veracross.com/sjp/student/classes/\(i.number)/grade_detail/"
             guard let myURL = URL(string: myURLString) else {
                 print("Error: \(myURLString) doesn't seem to be a valid URL")
@@ -123,6 +132,7 @@ class WebViewController: UIViewController {
                 print("Error: \(error)")
             }
             
+            //Get the key to use to fetch the grade detail pdf
             let keyOpener = "<iframe id=\"grade-detail-document\" src=\"https://documents.veracross.com/sjp/grade_detail/"
             let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
             
@@ -141,8 +151,12 @@ class WebViewController: UIViewController {
                 }
                 r += 1
             }
+            
+            //Add the course to the html that we display
             genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?grading_period=1&key=\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
         }
+        
+        //Check for if the login is invalid and display error if it is
         var find = "Log In"
         var i = 0
         while i < original.length - find.characters.count {
@@ -155,33 +169,35 @@ class WebViewController: UIViewController {
         self.htmlViewer.loadHTMLString(genHTML, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
     }
     
+    //Takes in a string with a double inside it and outputs a letter grade as a string
     func stringToGrade(grade: String) -> String {
         let doubGrade = (grade as NSString).doubleValue
-        if doubGrade > 96.5 {
+        if doubGrade >= 96.5 {
             return "A+"
-        } else if doubGrade > 92.5 {
+        } else if doubGrade >= 92.5 {
             return "A"
-        } else if doubGrade > 89.5 {
+        } else if doubGrade >= 89.5 {
             return "A-"
-        } else if doubGrade > 86.5 {
+        } else if doubGrade >= 86.5 {
             return "B+"
-        } else if doubGrade > 82.5 {
+        } else if doubGrade >= 82.5 {
             return "B"
-        } else if doubGrade > 79.5 {
+        } else if doubGrade >= 79.5 {
             return "B-"
-        } else if doubGrade > 76.5 {
+        } else if doubGrade >= 76.5 {
             return "C+"
-        } else if doubGrade > 72.5 {
+        } else if doubGrade >= 72.5 {
             return "C"
-        } else if doubGrade > 70.5 {
+        } else if doubGrade >= 70.5 {
             return "C-"
-        } else if doubGrade > 69.5 {
+        } else if doubGrade >= 69.5 {
             return "D"
         } else {
             return "F"
         }
     }
     
+    //Takes in html of the webpage and outputs an array of courses
     func generateCourses(html: NSString) -> [Course] {
         
         let activeRanges:[(start:Int, end:Int)] = getActiveRanges(html: html)
@@ -266,6 +282,7 @@ class WebViewController: UIViewController {
         return courseArray
     }
     
+    //Used to get the ranges between the active html tags
     func getActiveRanges(html: NSString) -> [(start:Int, end:Int)]{
         let activeOpener = "<li data-status=\"active\">"
         let activeCloser = "</li>"
@@ -290,6 +307,7 @@ class WebViewController: UIViewController {
         return activeRanges
     }
     
+    //Logs in using the username and password
     func login(completionHandler: @escaping (String?) -> ()) -> () {
         let payload = ["username": "\(username)", "password": "\(password)", "return_to": "https://portals.veracross.com/sjp/student", "Application": "Portals", "commit": "Log In"] as [String : Any]
         

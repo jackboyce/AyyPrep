@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C9Veracross24StatisticsViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "text"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "Course"
-- "StatisticsViewController"
-- "UITextView"
 - "UIViewController"
+- "UITextView"
+- "StatisticsViewController"
 depends-member:
 - ["Ps9AnyObject", "courses"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
