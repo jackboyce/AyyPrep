@@ -40,7 +40,7 @@ class WebViewController: UIViewController {
                 //Stops the loading circle when the data has been processed and assigned to the text box
                 self.loadingCircle.stopAnimating()
                 //Load an add when done processing grades
-                self.loadAd()
+                //self.loadAd()
             }
         }
         //Add the logout button to the right of the navigation bar
@@ -54,7 +54,7 @@ class WebViewController: UIViewController {
         //button.backgroundColor = UIColor.red
         center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
         center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
-        center.setTitle("Statistics", for: UIControlState.normal)
+        center.setTitle(" ", for: UIControlState.normal)
         center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
         self.navigationItem.titleView = center
         
@@ -73,6 +73,7 @@ class WebViewController: UIViewController {
         bannerView.rootViewController = self
         let request = GADRequest()
         request.testDevices = ["bb505274d09fc799b9245042f14bd4c5"]
+        request.testDevices = ["kGADSimulatorID"]
         bannerView.adSize = kGADAdSizeBanner
         bannerView.load(request)
         
@@ -143,7 +144,7 @@ class WebViewController: UIViewController {
                     var m = r
                     while !keyClosed {
                         if html.substring(with: NSRange(location: m, length: keyCloser.characters.count)) == keyCloser {
-                            i.key = html.substring(with: NSRange(location: r + keyOpener.characters.count + 29, length: m - r - keyOpener.characters.count - 29))
+                            i.key = html.substring(with: NSRange(location: r + keyOpener.characters.count + 8, length: m - r - keyOpener.characters.count - 8))
                             keyClosed = true
                         }
                         m += 1
@@ -151,9 +152,8 @@ class WebViewController: UIViewController {
                 }
                 r += 1
             }
-            
-            //Add the course to the html that we display
-            genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?grading_period=1&key=\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
+            genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
+
         }
         
         //Check for if the login is invalid and display error if it is
