@@ -1,5 +1,5 @@
 VeracrossCurl contains the current devolopment
-OldVersions contains the older known working devolopments
+Please text me for the older versions
 
 When beginning work
 1. git pull
