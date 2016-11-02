@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import GoogleMobileAds
-import Firebase
+//import Firebase
 
 
 class WebViewController: UIViewController {
@@ -134,13 +134,8 @@ class WebViewController: UIViewController {
     
     func getKey(course: Course) -> String{
         var html: NSString = ""
-        var key: String = ""
         //Get the html of the all assignments page of course i
         let myURLString = "https://portals.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
-        //guard let myURL = URL(string: myURLString) else {
-        //    print("Error: \(myURLString) doesn't seem to be a valid URL")
-        //}
-        
         let myURL = URL(string: myURLString)
         
         do {
@@ -153,32 +148,17 @@ class WebViewController: UIViewController {
         //Get the key to use to fetch the grade detail pdf
         let keyOpener = "<iframe id=\"grade-detail-document\" src=\"https://documents.veracross.com/sjp/grade_detail/"
         let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
+        let key = getStringBetween(opener: keyOpener, closer: keyCloser, target: html, leftOffset: 8)
         
-        var keyClosed = false
-        var r = 0
-        while r < html.length - keyOpener.characters.count && !keyClosed {
-            if html.substring(with: NSRange(location: r, length: keyOpener.characters.count)) == keyOpener {
-                var m = r
-                while !keyClosed {
-                    if html.substring(with: NSRange(location: m, length: keyCloser.characters.count)) == keyCloser {
-                        key = html.substring(with: NSRange(location: r + keyOpener.characters.count + 8, length: m - r - keyOpener.characters.count - 8))
-                        keyClosed = true
-                    }
-                    m += 1
-                }
-            }
-            r += 1
-        }
         return key
     }
 
     
-    func generateHTML(courses: [Course]) -> String{
+    func generateHTML(courses: [Course]) -> String {
         var genHTML: String = ""
         
         for i in courses {
             genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
-
         }
         return genHTML
     }
@@ -220,80 +200,28 @@ class WebViewController: UIViewController {
         
         var courseArray = [Course]()
         
-        for e in activeRanges {
-            let start = e.start
-            let end = e.end
-            
-            for t in start ... end {
-                let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
-                let courseCloser = "</a>"
-                var courseName: String = ""
-                if html.substring(with: NSRange(location: t, length: courseOpener.characters.count)) == courseOpener {
-                    var courseClosed = false
-                    //print("found course opener")
-                    var j = t
-                    while !courseClosed {
-                        if html.substring(with: NSRange(location: j, length: courseCloser.characters.count)) == courseCloser {
-                            //print("found course closer")
-                            courseName = html.substring(with: NSRange(location: t + courseOpener.characters.count + 27, length: j - t - courseOpener.characters.count - 27))
-                            //print(courseName)
-                            let gradeOpener = "<span class=\"numeric-grade\">"
-                            let gradeCloser = "</span>"
-                            var grade = ""
-                            var y = j
-                            
-                            let numOpener = "href=\"/sjp/student/classes/"
-                            let numCloser = "/grade_detail\""
-                            
-                            var number: String = ""
-                            
-                            //USED TO GET THE CLASS NUMBER
-                            var numClosed = false
-                            while y < e.end - gradeOpener.characters.count && !numClosed {
-                                if html.substring(with: NSRange(location: y, length: numOpener.characters.count)) == numOpener {
-                                    var m = y
-                                    while !numClosed {
-                                        if html.substring(with: NSRange(location: m, length: numCloser.characters.count)) == numCloser {
-                                            number = html.substring(with: NSRange(location: y + numOpener.characters.count, length: m - y - numOpener.characters.count))
-                                            //print(number)
-                                            numClosed = true
-                                        }
-                                        m += 1
-                                    }
-                                }
-                                y += 1
-                            }
-                            
-                            var n = j
-                            //USED TO GET THE GRADE FOR THE CLASS
-                            var gradeClosed = false
-                            while n < e.end - gradeOpener.characters.count && !gradeClosed { //fix the end exception range
-                                if html.substring(with: NSRange(location: n, length: gradeOpener.characters.count)) == gradeOpener {
-                                    //print("found grade opener")
-                                    var m = n
-                                    while !gradeClosed {
-                                        if html.substring(with: NSRange(location: m, length: gradeCloser.characters.count)) == gradeCloser {
-                                            //print("found grade closer")
-                                            grade = html.substring(with: NSRange(location: n + gradeOpener.characters.count, length: m - n - gradeOpener.characters.count))
-                                            //print(grade)
-                                            courseArray.append(Course(name: courseName, grade: grade, number: number))
-                                            gradeClosed = true
-                                        }
-                                        m += 1
-                                    }
-                                }
-                                n += 1
-                            }
-                            
-                            courseClosed = true
-                        }
-                        j += 1
-                    }
-                }
+        for range in activeRanges {
+            let start = range.start
+            let end = range.end
+                
+            let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
+            let courseCloser = "</a>"
+            let courseName = getStringBetween(opener: courseOpener, closer: courseCloser, target: html, begin: start, end: end, leftOffset: 27)
+                
+            let numOpener = "href=\"/sjp/student/classes/"
+            let numCloser = "/grade_detail\""
+                
+            let number = getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end)
+                
+            let gradeOpener = "<span class=\"numeric-grade\">"
+            let gradeCloser = "</span>"
+                
+            let grade = getStringBetween(opener: gradeOpener, closer: gradeCloser, target: html, begin: start, end: end)
+                
+            if courseName != "" && grade != "" && number != "" {
+                courseArray.append(Course(name: courseName, grade: grade, number: number))
             }
-            
         }
-        
         return courseArray
     }
     
@@ -320,6 +248,33 @@ class WebViewController: UIViewController {
             l += 1
         }
         return activeRanges
+    }
+    
+    func getStringBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0) -> String{
+        //Need this because swift is dumb and wont let me do it in the parameters
+        var end = end
+        if end == 0 {
+            end = target.length
+        }
+        
+        var openIndex = begin
+        var ret: String = ""
+        var found = false
+        
+        while openIndex < end - opener.characters.count && !found {
+            if target.substring(with: NSRange(location: openIndex, length: opener.characters.count)) == opener {
+                var closeIndex = openIndex
+                while !found {
+                    if target.substring(with: NSRange(location: closeIndex, length: closer.characters.count)) == closer {
+                        ret = target.substring(with: NSRange(location: openIndex + opener.characters.count + leftOffset, length: closeIndex - openIndex - opener.characters.count - leftOffset))
+                        found = true
+                    }
+                    closeIndex += 1
+                }
+            }
+            openIndex += 1
+        }
+        return ret
     }
     
     //Logs in using the username and password

@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         //Load an add on the page
-        loadAd()
+        //loadAd()
     }
     
     //Called when this view is being seagued
@@ -58,6 +58,7 @@ class ViewController: UIViewController {
         bannerView.rootViewController = self
         let request = GADRequest()
         request.testDevices = ["bb505274d09fc799b9245042f14bd4c5"]
+        request.testDevices = ["kGADSimulatorID"]
         bannerView.adSize = kGADAdSizeBanner
         bannerView.load(request)
     }
