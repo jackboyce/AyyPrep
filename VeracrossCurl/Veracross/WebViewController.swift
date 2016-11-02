@@ -36,7 +36,7 @@ class WebViewController: UIViewController {
         login { (html) in
             if html != nil {
                 //Parses the html of the website
-                self.parse(string: html!)
+                self.htmlViewer.loadHTMLString(self.parse(string: (html! as NSString)), baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
                 //Stops the loading circle when the data has been processed and assigned to the text box
                 self.loadingCircle.stopAnimating()
                 //Load an add when done processing grades
@@ -54,7 +54,7 @@ class WebViewController: UIViewController {
         //button.backgroundColor = UIColor.red
         center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
         center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
-        center.setTitle(" ", for: UIControlState.normal)
+        center.setTitle("Statistics", for: UIControlState.normal)
         center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
         self.navigationItem.titleView = center
         
@@ -108,66 +108,81 @@ class WebViewController: UIViewController {
     }
     
     
-    func parse(string: String) {
+    func parse(string: NSString) -> String{
         //Original html of the website
-        let original = string as NSString
-        //Html that we generate to displpay on the webview
-        var genHTML = ""
-        courses = generateCourses(html: original)
+        let courses: [Course] = generateCourses(html: string)
         
         //Loops through all of the courses
         for i in courses {
-            var html: NSString = ""
-            
-            //Get the html of the all assignments page of course i
-            let myURLString = "https://portals.veracross.com/sjp/student/classes/\(i.number)/grade_detail/"
-            guard let myURL = URL(string: myURLString) else {
-                print("Error: \(myURLString) doesn't seem to be a valid URL")
-                return
-            }
-            
-            do {
-                let myHTMLString = try String(contentsOf: myURL, encoding: .ascii)
-                html = myHTMLString as NSString
-            } catch let error {
-                print("Error: \(error)")
-            }
-            
-            //Get the key to use to fetch the grade detail pdf
-            let keyOpener = "<iframe id=\"grade-detail-document\" src=\"https://documents.veracross.com/sjp/grade_detail/"
-            let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
-            
-            var keyClosed = false
-            var r = 0
-            while r < html.length - keyOpener.characters.count && !keyClosed {
-                if html.substring(with: NSRange(location: r, length: keyOpener.characters.count)) == keyOpener {
-                    var m = r
-                    while !keyClosed {
-                        if html.substring(with: NSRange(location: m, length: keyCloser.characters.count)) == keyCloser {
-                            i.key = html.substring(with: NSRange(location: r + keyOpener.characters.count + 8, length: m - r - keyOpener.characters.count - 8))
-                            keyClosed = true
-                        }
-                        m += 1
-                    }
-                }
-                r += 1
-            }
-            genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
-
+            i.key = getKey(course: i)
         }
         
         //Check for if the login is invalid and display error if it is
         var find = "Log In"
         var i = 0
-        while i < original.length - find.characters.count {
-            if original.substring(with: NSRange(location: i, length: find.characters.count)) == find {
-                genHTML = "<p><span style=\"font-size:400%;\">Invalid username or password</span></p>"
+        while i < string.length - find.characters.count {
+            if string.substring(with: NSRange(location: i, length: find.characters.count)) == find {
+                return "<p><span style=\"font-size:400%;\">Invalid username or password</span></p>"
             }
             i += 1
         }
-        landingPage = genHTML;
-        self.htmlViewer.loadHTMLString(genHTML, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
+        
+        landingPage = generateHTML(courses: courses)
+        
+        return landingPage
     }
+    
+    func getKey(course: Course) -> String{
+        var html: NSString = ""
+        var key: String = ""
+        //Get the html of the all assignments page of course i
+        let myURLString = "https://portals.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
+        //guard let myURL = URL(string: myURLString) else {
+        //    print("Error: \(myURLString) doesn't seem to be a valid URL")
+        //}
+        
+        let myURL = URL(string: myURLString)
+        
+        do {
+            let myHTMLString = try String(contentsOf: myURL!, encoding: .ascii)
+            html = myHTMLString as NSString
+        } catch let error {
+            print("Error: \(error)")
+        }
+        
+        //Get the key to use to fetch the grade detail pdf
+        let keyOpener = "<iframe id=\"grade-detail-document\" src=\"https://documents.veracross.com/sjp/grade_detail/"
+        let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
+        
+        var keyClosed = false
+        var r = 0
+        while r < html.length - keyOpener.characters.count && !keyClosed {
+            if html.substring(with: NSRange(location: r, length: keyOpener.characters.count)) == keyOpener {
+                var m = r
+                while !keyClosed {
+                    if html.substring(with: NSRange(location: m, length: keyCloser.characters.count)) == keyCloser {
+                        key = html.substring(with: NSRange(location: r + keyOpener.characters.count + 8, length: m - r - keyOpener.characters.count - 8))
+                        keyClosed = true
+                    }
+                    m += 1
+                }
+            }
+            r += 1
+        }
+        return key
+    }
+
+    
+    func generateHTML(courses: [Course]) -> String{
+        var genHTML: String = ""
+        
+        for i in courses {
+            genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
+
+        }
+        return genHTML
+    }
+        
     
     //Takes in a string with a double inside it and outputs a letter grade as a string
     func stringToGrade(grade: String) -> String {
