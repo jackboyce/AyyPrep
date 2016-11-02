@@ -12,3 +12,8 @@ After working
 5. git pull
 6. If there are different files do "git mergetool" and resolve the merging
 7. git push
+
+Future Features:
+1. Make the app not crash on IOS 10.1/10.2?
+2. Add GPA calculator
+3. Graphs
