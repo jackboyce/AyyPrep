@@ -18,6 +18,7 @@ class WebViewController: UIViewController {
     var password: String = ""
     var courses: [Course] = []
     var parser: Parser? = nil
+    var htmlLoaded: String = ""
     
     //Generated html that is used to display the grades after loading
     var landingPage: String = ""
@@ -27,8 +28,10 @@ class WebViewController: UIViewController {
     @IBOutlet weak var bannerView: GADBannerView!
     func bleh(html: String?) -> (){
         if(html != nil){
-            htmlViewer.loadHTMLString((parser?.parse(string: (html!) as NSString))!, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
+            htmlLoaded = (parser?.parse(string: (html!) as NSString))!
+            htmlViewer.loadHTMLString(htmlLoaded, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
             loadingCircle.stopAnimating()
+            
         }
     }
     
@@ -87,8 +90,7 @@ class WebViewController: UIViewController {
     
     //Called when the home button is pressed
     func reloadPressed(sender: UIBarButtonItem) {
-        self.htmlViewer.loadHTMLString(landingPage, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
-        //htmlViewer.reload()
+        self.htmlViewer.loadHTMLString(htmlLoaded, baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
     }
 
     override func didReceiveMemoryWarning() {
