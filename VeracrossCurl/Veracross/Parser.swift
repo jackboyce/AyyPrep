@@ -21,13 +21,12 @@ class Parser {
         self.password = password
     }
     
-    func getHTML(completionHandler: @escaping (String?) -> ()) -> NSString {
-        login(completionHandler: completionHandler)
-        
-        print("we done yet")
-        return (genHTMLhtml as NSString)
-        
-    }
+//    func getHTML(completionHandler: @escaping (String?) -> ()) -> NSString {
+//        login(completionHandler: completionHandler)
+//        
+//        return (genHTMLhtml as NSString)
+//        
+//    }
 
     func parse(string: NSString) -> String{
         //Original html of the website
@@ -128,17 +127,19 @@ class Parser {
             let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
             let courseCloser = "</a>"
             let courseName = getStringBetween(opener: courseOpener, closer: courseCloser, target: html, begin: start, end: end, leftOffset: 27)
+            //print("Course name: \(courseName)")
             
-            let numOpener = "href=\"/sjp/student/classes/"
-            let numCloser = "/grade_detail\""
+            let numOpener = "<a class=\"view-assignments\" href=\"/sjp/student/classes/"
+            let numCloser = "\">view all assignments</a>"
             
-            let number = getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end)
+            let number = getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end, rightOffset: 0)
+            //print("Course number: \(number)")
             
             let gradeOpener = "<span class=\"numeric-grade\">"
             let gradeCloser = "</span>"
             
             let grade = getStringBetween(opener: gradeOpener, closer: gradeCloser, target: html, begin: start, end: end)
-            
+            //print("Course grade: \(grade)")
             
             if courseName != "" && grade != "" && number != "" {
                 courseArray.append(Course(name: courseName, grade: grade, number: number))
@@ -172,7 +173,7 @@ class Parser {
         return activeRanges
     }
     
-    func getStringBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0) -> String{
+    func getStringBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0, rightOffset: Int = 0) -> String{
         //Need this because swift is dumb and wont let me do it in the parameters
         var end = end
         if end == 0 {
@@ -188,7 +189,8 @@ class Parser {
                 var closeIndex = openIndex
                 while !found {
                     if target.substring(with: NSRange(location: closeIndex, length: closer.characters.count)) == closer {
-                        ret = target.substring(with: NSRange(location: openIndex + opener.characters.count + leftOffset, length: closeIndex - openIndex - opener.characters.count - leftOffset))
+                        //print("\(openIndex) \(closeIndex)")
+                        ret = target.substring(with: NSRange(location: openIndex + opener.characters.count + leftOffset, length: closeIndex - openIndex - opener.characters.count - leftOffset - rightOffset))
                         found = true
                     }
                     closeIndex += 1
@@ -196,6 +198,7 @@ class Parser {
             }
             openIndex += 1
         }
+        //print(ret)
         return ret
     }
     
