@@ -31,11 +31,10 @@ class Parser {
     func parse(string: NSString) -> String{
         //Original html of the website
         courses = generateCourses(html: string)
+        //print(courses)
         
         //Loops through all of the courses
-        for i in courses {
-            i.key = getKey(course: i)
-        }
+        
         
         //Check for if the login is invalid and display error if it is
         var find = "Log In"
@@ -127,24 +126,25 @@ class Parser {
             let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
             let courseCloser = "</a>"
             let courseName = getStringBetween(opener: courseOpener, closer: courseCloser, target: html, begin: start, end: end, leftOffset: 27)
-            //print("Course name: \(courseName)")
+            print("Course name: \(courseName)")
             
             let numOpener = "<a class=\"view-assignments\" href=\"/sjp/student/classes/"
             let numCloser = "\">view all assignments</a>"
             
             let number = getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end, rightOffset: 0)
-            //print("Course number: \(number)")
+            print("Course number: \(number)")
             
             let gradeOpener = "<span class=\"numeric-grade\">"
             let gradeCloser = "</span>"
             
             let grade = getStringBetween(opener: gradeOpener, closer: gradeCloser, target: html, begin: start, end: end)
-            //print("Course grade: \(grade)")
+            print("Course grade: \(grade)")
             
             if courseName != "" && grade != "" && number != "" {
                 courseArray.append(Course(name: courseName, grade: grade, number: number))
             }
         }
+        
         return courseArray
     }
     
@@ -211,9 +211,8 @@ class Parser {
             (response) in
             
             let html = response.result.value
-            
             completionHandler(html)
-            self.genHTMLhtml = html!
+            
         }
     }
     //        let myURLString = "https://portals.veracross.com/sjp/login"

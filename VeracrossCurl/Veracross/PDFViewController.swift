@@ -1,44 +1,27 @@
 //
-//  WebViewController.swift
+//  PDFViewController.swift
 //  VeracrossCurl
 //
-//  Created by Jack Boyce on 10/15/16.
+//  Created by Christian DeSimone on 11/10/16.
 //
 //
 
 import UIKit
-import Alamofire
 import GoogleMobileAds
-//import Firebase
+import Alamofire
 
+class PDFViewController: UIViewController {
 
-class WebViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var courseTable: UITableView!
-    var username: String = ""
-    var password: String = ""
-    var courses: [Course] = []
-    var parser: Parser? = nil
-    var htmlLoaded: String = ""
-    var i = -1
-    
-    //Generated html that is used to display the grades after loading
-    var landingPage: String = ""
-    
     @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
     @IBOutlet weak var htmlViewer: UIWebView!
     @IBOutlet weak var bannerView: GADBannerView!
+    var htmlLoaded = ""
+    var courses : [Course] = []
     func bleh(html: String?) -> (){
         if(html != nil){
+            htmlViewer.loadRequest(NSURLRequest(url: (NSURL(string: htmlLoaded) as URL?)!) as URLRequest)
+            //htmlViewer.loadHTMLString(htmlLoaded , baseURL: NSURL(string: "https://portals.veracross.com/sjp/student") as URL?)
             
-            htmlLoaded = (parser?.parse(string: (html!) as NSString))!
-            courses = (parser?.generateCourses(html: html! as NSString))!
-            //print(html)
-            //print("test")
-            print(courses)
-            loadingCircle.stopAnimating()
-            courseTable.dataSource = self
-            courseTable.reloadData()
             
         }
     }
@@ -46,15 +29,7 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Starts loasing circle
-        loadingCircle.startAnimating()
-        
-        parser = Parser(username: username, password: password)
-        parser?.login(completionHandler: bleh)
-        
-        
-        
-        //Add the logout button to the right of the navigation bar
+                //Add the logout button to the right of the navigation bar
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutPressed))
         //Add the home buton to the left of the navigation bar
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: self, action: #selector(reloadPressed))
@@ -68,7 +43,6 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
         center.setTitle("Statistics", for: UIControlState.normal)
         center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
         self.navigationItem.titleView = center
-        print(courses)
         
     }
     
@@ -102,34 +76,19 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
     func reloadPressed(sender: UIBarButtonItem) {
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return courses.count
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        let stats = segue.destination as! StatisticsViewController
+        stats.courses = self.courses
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CourseCell")
-        cell?.textLabel?.text = courses[indexPath.row].name
-        cell?.detailTextLabel?.text =  (parser?.stringToGrade(grade: courses[indexPath.row].grade))! + " " + courses[indexPath.row].grade
-        return cell!
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        i = indexPath.row
-        let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDF") as! PDFViewController
-        pdfViewController.courses = self.courses
-        pdfViewController.htmlLoaded = "https://documents.veracross.com/sjp/grade_detail/\(courses[i].number).pdf?\(courses[i].key)"
-        
-        self.navigationController?.pushViewController(pdfViewController, animated: true)
-    }
-    
 }
+
