@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         //Load an add on the page
-        //loadAd()
+        loadAd()
     }
     
     //Called when this view is being seagued

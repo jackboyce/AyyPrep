@@ -71,15 +71,17 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
         courseTable.delegate = self
         courseTable.dataSource = self
         
-        //Adds a button to the center of the navigation bar
-        let center =  UIButton(type: UIButtonType.custom) as UIButton
-        center.frame = CGRect(x: 0,y: 0,width: 100,height: 40) as CGRect
-        //button.backgroundColor = UIColor.red
-        center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
-        center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
-        center.setTitle("Statistics", for: UIControlState.normal)
-        center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
-        self.navigationItem.titleView = center
+        //UNCOMMENT FOR STATISTICS VIEW
+//        //Adds a button to the center of the navigation bar
+//        let center =  UIButton(type: UIButtonType.custom) as UIButton
+//        center.frame = CGRect(x: 0,y: 0,width: 100,height: 40) as CGRect
+//        //button.backgroundColor = UIColor.red
+//        center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
+//        center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
+//        center.setTitle("Statistics", for: UIControlState.normal)
+//        center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
+//        self.navigationItem.titleView = center
+        loadAd()
     }
     
     //Called when the statistics button is pressed in the navigation bar
@@ -113,7 +115,7 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CourseCell")
         cell?.textLabel?.text = courses[indexPath.row].name
-        cell?.detailTextLabel?.text =  (parser?.stringToGrade(grade: courses[indexPath.row].grade))! + " " + courses[indexPath.row].grade
+        cell?.detailTextLabel?.text =  (courses[indexPath.row].grade == "" ? "" : parser?.stringToGrade(grade: courses[indexPath.row].grade))! + " " + courses[indexPath.row].grade
         return cell!
     }
     
