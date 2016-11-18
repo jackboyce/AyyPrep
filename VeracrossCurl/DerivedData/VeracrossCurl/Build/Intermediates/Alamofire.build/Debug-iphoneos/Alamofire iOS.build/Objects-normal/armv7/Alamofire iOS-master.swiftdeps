@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "fbe27040fc14926ebdf1b41729fa2db5"
+build_time: [532797579, 759631000]
+inputs:
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Timeline.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/SessionDelegate.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/ParameterEncoding.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Request.swift": [532018058, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/ResponseSerialization.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/AFError.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/SessionManager.swift": [530641295, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Response.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Alamofire.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/MultipartFormData.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/ServerTrustPolicy.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/DispatchQueue+Alamofire.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/NetworkReachabilityManager.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/TaskDelegate.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Validation.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Notifications.swift": [529311202, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Result.swift": [529311202, 0]

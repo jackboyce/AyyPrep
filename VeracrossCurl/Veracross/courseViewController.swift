@@ -120,6 +120,7 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if courses[indexPath.row].key != "" {
             let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDF") as! PDFViewController
             pdfViewController.course = courses[indexPath.row]
@@ -128,5 +129,4 @@ class WebViewController: UIViewController, UITableViewDataSource, UITableViewDel
             self.navigationController?.pushViewController(pdfViewController, animated: true)
         }
     }
-    
 }

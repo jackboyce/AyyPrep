@@ -6,52 +6,52 @@ provides-nominal:
 provides-member:
 - ["C9Veracross17WebViewController", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
+- "completeParser"
+- "htmlViewer"
+- "username"
+- "loadAd"
+- "bannerView"
 - "statisticsPressed"
 - "tableView"
 - "tableView"
 - "tableView"
-- "bannerView"
 - "courseTable"
-- "username"
-- "didReceiveMemoryWarning"
 - "loadingCircle"
-- "loadAd"
 - "password"
-- "htmlViewer"
-- "completeParser"
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
-- "UITableView"
-- "Parser"
-- "TernaryPrecedence"
-- "Int"
-- !private "UnicodeScalarType"
-- !private "DispatchQueue"
-- !private "PDFViewController"
-- "GADBannerView"
+- "UITableViewDelegate"
+- "WebViewController"
 - !private "!="
-- "CastingPrecedence"
-- "String"
 - "AssignmentPrecedence"
-- !private "DispatchGroup"
+- "Parser"
 - "UITableViewDataSource"
 - !private "=="
-- "UITableViewDelegate"
-- "StringLiteralType"
-- !private "Array"
-- !private "GADRequest"
-- "UIWebView"
+- "CastingPrecedence"
+- !private "UnicodeScalarType"
 - !private "StatisticsViewController"
-- !private "+"
-- "WebViewController"
-- "IndexPath"
-- !private "BooleanLiteralType"
-- !private "NSString"
-- "UITableViewCell"
+- !private "Array"
 - "Course"
+- !private "PDFViewController"
 - !private "kGADAdSizeBanner"
+- "UITableView"
+- "TernaryPrecedence"
+- !private "DispatchGroup"
 - "UIActivityIndicatorView"
+- "UIWebView"
+- !private "+"
+- !private "GADRequest"
+- "StringLiteralType"
+- "IndexPath"
+- "String"
+- "UITableViewCell"
+- !private "NSString"
+- !private "DispatchQueue"
+- "GADBannerView"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchGroup"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -68,6 +68,7 @@ depends-member:
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "deselectRow"]
 - !private ["Ps9AnyObject", "detailTextLabel"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "enter"]
@@ -173,6 +174,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "dataSource"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "deselectRow"]
 - !private ["PSo15CALayerDelegate", "detailTextLabel"]
 - !private ["PSo15CALayerDelegate", "load"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
@@ -206,6 +208,7 @@ depends-member:
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "deselectRow"]
 - !private ["Ps7CVarArg", "detailTextLabel"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "enter"]
@@ -300,6 +303,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "deselectRow"]
 - !private ["Ps28CustomDebugStringConvertible", "detailTextLabel"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "enter"]
@@ -398,6 +402,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "deselectRow"]
 - !private ["Ps23CustomStringConvertible", "detailTextLabel"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "enter"]
@@ -496,6 +501,7 @@ depends-member:
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "deselectRow"]
 - !private ["Ps9Equatable", "detailTextLabel"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "enter"]
@@ -592,6 +598,7 @@ depends-member:
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "deselectRow"]
 - !private ["Ps8Hashable", "detailTextLabel"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "enter"]
@@ -718,6 +725,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "deselectRow"]
 - !private ["PSo8NSCoding", "detailTextLabel"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "htmlViewer"]
@@ -837,6 +845,7 @@ depends-member:
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
+- !private ["CSo8NSObject", "deselectRow"]
 - !private ["CSo8NSObject", "detailTextLabel"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "enter"]
@@ -902,6 +911,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "deselectRow"]
 - !private ["PSo16NSObjectProtocol", "detailTextLabel"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "enter"]
@@ -1051,6 +1061,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "deselectRow"]
 - !private ["PSo29UIAccessibilityIdentification", "detailTextLabel"]
 - !private ["PSo29UIAccessibilityIdentification", "load"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
@@ -1066,6 +1077,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "deselectRow"]
 - !private ["PSo12UIAppearance", "detailTextLabel"]
 - !private ["PSo12UIAppearance", "load"]
 - !private ["PSo12UIAppearance", "reloadData"]
@@ -1088,6 +1100,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "deselectRow"]
 - !private ["PSo21UIAppearanceContainer", "detailTextLabel"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "htmlViewer"]
@@ -1183,6 +1196,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "deselectRow"]
 - !private ["PSo17UICoordinateSpace", "detailTextLabel"]
 - !private ["PSo17UICoordinateSpace", "load"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
@@ -1196,6 +1210,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "deselectRow"]
 - !private ["PSo13UIDynamicItem", "detailTextLabel"]
 - !private ["PSo13UIDynamicItem", "load"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
@@ -1218,6 +1233,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "deselectRow"]
 - !private ["PSo18UIFocusEnvironment", "detailTextLabel"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "htmlViewer"]
@@ -1267,6 +1283,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "dataSource"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "deselectRow"]
 - !private ["PSo11UIFocusItem", "detailTextLabel"]
 - !private ["PSo11UIFocusItem", "load"]
 - !private ["PSo11UIFocusItem", "reloadData"]
@@ -1307,6 +1324,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
+- !private ["CSo11UIResponder", "deselectRow"]
 - !private ["CSo11UIResponder", "detailTextLabel"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "htmlViewer"]
@@ -1364,6 +1382,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "dataSource"]
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "deselectRow"]
 - !private ["PSo30UIResponderStandardEditActions", "detailTextLabel"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "htmlViewer"]
@@ -1411,6 +1430,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- !private ["CSo12UIScrollView", "deselectRow"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo20UIScrollViewDelegate", "DispatchGroup"]
 - !private ["PSo20UIScrollViewDelegate", "DispatchQueue"]
@@ -1501,6 +1521,7 @@ depends-member:
 - ["CSo11UITableView", "deinit"]
 - !private ["CSo11UITableView", "delegate"]
 - !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo11UITableView", "deselectRow"]
 - !private ["CSo11UITableView", "reloadData"]
 - ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "detailTextLabel"]
@@ -1595,6 +1616,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "deselectRow"]
 - !private ["PSo18UITraitEnvironment", "detailTextLabel"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "htmlViewer"]
@@ -1644,6 +1666,7 @@ depends-member:
 - !private ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "deselectRow"]
 - !private ["CSo6UIView", "detailTextLabel"]
 - !private ["CSo6UIView", "load"]
 - !private ["CSo6UIView", "reloadData"]
@@ -1779,6 +1802,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "deselectRow"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "detailTextLabel"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "load"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
@@ -1823,6 +1847,7 @@ depends-member:
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "deselectRow"]
 - !private ["Ps9_Hashable", "detailTextLabel"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "enter"]
