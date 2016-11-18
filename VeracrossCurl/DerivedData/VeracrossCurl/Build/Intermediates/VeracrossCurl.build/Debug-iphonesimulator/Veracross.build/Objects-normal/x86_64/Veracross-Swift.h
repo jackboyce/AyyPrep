@@ -136,9 +136,34 @@ SWIFT_CLASS("_TtC9Veracross11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class UITableViewCell;
+@class UIActivityIndicatorView;
 @class UIWebView;
+@class GADBannerView;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC9Veracross20CourseViewController")
+@interface CourseViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified courseTable;
+@property (nonatomic, copy) NSString * _Nonnull username;
+@property (nonatomic, copy) NSString * _Nonnull password;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified loadingCircle;
+@property (nonatomic, weak) IBOutlet UIWebView * _Null_unspecified htmlViewer;
+@property (nonatomic, weak) IBOutlet GADBannerView * _Null_unspecified bannerView;
+- (void)completeParserWithHtml:(NSString * _Nullable)html;
+- (void)viewDidLoad;
+- (void)statisticsPressed;
+- (void)loadAd;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC9Veracross17PDFViewController")
 @interface PDFViewController : UIViewController
@@ -166,8 +191,6 @@ SWIFT_CLASS("_TtC9Veracross24StatisticsViewController")
 @class UIButton;
 @class UITextField;
 @class UISwitch;
-@class UIActivityIndicatorView;
-@class GADBannerView;
 
 SWIFT_CLASS("_TtC9Veracross14ViewController")
 @interface ViewController : UIViewController
@@ -185,29 +208,6 @@ SWIFT_CLASS("_TtC9Veracross14ViewController")
 - (void)save;
 - (void)didReceiveMemoryWarning;
 - (IBAction)loginButton:(UIButton * _Nonnull)sender;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITableView;
-@class UITableViewCell;
-
-SWIFT_CLASS("_TtC9Veracross17WebViewController")
-@interface WebViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified courseTable;
-@property (nonatomic, copy) NSString * _Nonnull username;
-@property (nonatomic, copy) NSString * _Nonnull password;
-@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified loadingCircle;
-@property (nonatomic, weak) IBOutlet UIWebView * _Null_unspecified htmlViewer;
-@property (nonatomic, weak) IBOutlet GADBannerView * _Null_unspecified bannerView;
-- (void)completeParserWithHtml:(NSString * _Nullable)html;
-- (void)viewDidLoad;
-- (void)statisticsPressed;
-- (void)loadAd;
-- (void)didReceiveMemoryWarning;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

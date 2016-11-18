@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "571fc2bcb2b3fbf1a303183b51f81e39"
-build_time: [532797612, 219993000]
+build_time: [532800097, 589023000]
 inputs:
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Timeline.swift": [9223372036854775807, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/SessionDelegate.swift": [9223372036854775807, 0]

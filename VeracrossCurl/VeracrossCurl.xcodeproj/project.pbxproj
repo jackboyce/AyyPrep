@@ -12,7 +12,7 @@
 		1A8C5F341DA9F54800D072EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C5F321DA9F54800D072EF /* Main.storyboard */; };
 		1A8C5F361DA9F54800D072EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C5F351DA9F54800D072EF /* Assets.xcassets */; };
 		1A8C5F391DA9F54800D072EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C5F371DA9F54800D072EF /* LaunchScreen.storyboard */; };
-		1A8EA9751DB292E70019351A /* courseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8EA9741DB292E70019351A /* courseViewController.swift */; };
+		1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8EA9741DB292E70019351A /* CourseViewController.swift */; };
 		1AA53C161DB64AB50076E5EF /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */; };
 		1ADB67BE1DBE9AE800EF551F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */; };
 		1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
@@ -108,7 +108,7 @@
 		1A8C5F451DA9F54800D072EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A8C5F4E1DA9F54800D072EF /* VeracrossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeracrossUITests.swift; sourceTree = "<group>"; };
 		1A8C5F501DA9F54800D072EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A8EA9741DB292E70019351A /* courseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseViewController.swift; sourceTree = "<group>"; };
+		1A8EA9741DB292E70019351A /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				A40192691DD51098008573E8 /* Parser.swift */,
 				1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */,
 				1A8C5F301DA9F54800D072EF /* ViewController.swift */,
-				1A8EA9741DB292E70019351A /* courseViewController.swift */,
+				1A8EA9741DB292E70019351A /* CourseViewController.swift */,
 				A4F4421D1DD51D020007F1EE /* PDFViewController.swift */,
 				1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */,
 				1AF5EEAE1DAD8BA900670ABD /* Course.swift */,
@@ -412,7 +412,7 @@
 				1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
 				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,
-				1A8EA9751DB292E70019351A /* courseViewController.swift in Sources */,
+				1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

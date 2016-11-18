@@ -9,15 +9,15 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "htmlViewer"
 depends-top-level:
-- "Course"
-- "CastingPrecedence"
-- !private "URL"
-- "PDFViewController"
 - "StringLiteralType"
-- !private "Data"
-- "Parser"
+- "PDFViewController"
+- !private "URL"
 - "UIWebView"
+- "Course"
 - "UIViewController"
+- "Parser"
+- "CastingPrecedence"
+- !private "Data"
 depends-member:
 - ["Ps9AnyObject", "Course"]
 - !private ["Ps9AnyObject", "URL"]

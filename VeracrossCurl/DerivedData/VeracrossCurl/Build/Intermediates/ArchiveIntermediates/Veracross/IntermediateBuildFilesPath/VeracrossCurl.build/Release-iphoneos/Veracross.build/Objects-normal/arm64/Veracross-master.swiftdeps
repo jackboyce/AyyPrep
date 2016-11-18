@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "b6e6c94361073e9ff7a39ade40be165d"
-build_time: [532797625, 62454000]
+build_time: [532800109, 425390000]
 inputs:
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/Course.swift": [9223372036854775807, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/StatisticsViewController.swift": [9223372036854775807, 0]

@@ -1,57 +1,57 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "WebViewController"
+- "CourseViewController"
 provides-nominal:
-- "C9Veracross17WebViewController"
+- "C9Veracross20CourseViewController"
 provides-member:
-- ["C9Veracross17WebViewController", ""]
+- ["C9Veracross20CourseViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "completeParser"
-- "htmlViewer"
-- "username"
 - "loadAd"
 - "bannerView"
-- "statisticsPressed"
-- "tableView"
-- "tableView"
-- "tableView"
-- "courseTable"
+- "username"
 - "loadingCircle"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
 - "password"
+- "courseTable"
+- "htmlViewer"
+- "statisticsPressed"
+- "completeParser"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "UITableViewDelegate"
-- "WebViewController"
-- !private "!="
-- "AssignmentPrecedence"
-- "Parser"
-- "UITableViewDataSource"
-- !private "=="
-- "CastingPrecedence"
-- !private "UnicodeScalarType"
+- "Int"
+- "String"
+- "TernaryPrecedence"
+- !private "DispatchQueue"
+- "CourseViewController"
 - !private "StatisticsViewController"
 - !private "Array"
-- "Course"
-- !private "PDFViewController"
-- !private "kGADAdSizeBanner"
-- "UITableView"
-- "TernaryPrecedence"
-- !private "DispatchGroup"
+- !private "UnicodeScalarType"
+- "Parser"
 - "UIActivityIndicatorView"
-- "UIWebView"
-- !private "+"
-- !private "GADRequest"
-- "StringLiteralType"
-- "IndexPath"
-- "String"
-- "UITableViewCell"
-- !private "NSString"
-- !private "DispatchQueue"
 - "GADBannerView"
-- !private "BooleanLiteralType"
+- "UIWebView"
+- !private "PDFViewController"
+- !private "!="
+- "CastingPrecedence"
+- "UITableViewDelegate"
+- "UITableViewCell"
+- "AssignmentPrecedence"
+- "UITableViewDataSource"
+- "UITableView"
+- !private "=="
 - "UIViewController"
-- "Int"
+- !private "GADRequest"
+- "Course"
+- !private "DispatchGroup"
+- !private "kGADAdSizeBanner"
+- "StringLiteralType"
+- !private "+"
+- !private "BooleanLiteralType"
+- "IndexPath"
+- !private "NSString"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchGroup"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -281,6 +281,61 @@ depends-member:
 - !private ["C9Veracross6Course", "key"]
 - !private ["C9Veracross6Course", "name"]
 - !private ["C9Veracross6Course", "pdf"]
+- ["C9Veracross20CourseViewController", "Course"]
+- !private ["C9Veracross20CourseViewController", "DispatchGroup"]
+- !private ["C9Veracross20CourseViewController", "DispatchQueue"]
+- ["C9Veracross20CourseViewController", "GADBannerView"]
+- !private ["C9Veracross20CourseViewController", "GADRequest"]
+- ["C9Veracross20CourseViewController", "IndexPath"]
+- ["C9Veracross20CourseViewController", "Int"]
+- !private ["C9Veracross20CourseViewController", "NSString"]
+- !private ["C9Veracross20CourseViewController", "PDFViewController"]
+- ["C9Veracross20CourseViewController", "Parser"]
+- !private ["C9Veracross20CourseViewController", "StatisticsViewController"]
+- ["C9Veracross20CourseViewController", "String"]
+- ["C9Veracross20CourseViewController", "UIActivityIndicatorView"]
+- ["C9Veracross20CourseViewController", "UITableView"]
+- ["C9Veracross20CourseViewController", "UITableViewCell"]
+- ["C9Veracross20CourseViewController", "UIWebView"]
+- ["C9Veracross20CourseViewController", "bannerView"]
+- ["C9Veracross20CourseViewController", "completeParser"]
+- ["C9Veracross20CourseViewController", "courseTable"]
+- ["C9Veracross20CourseViewController", "courses"]
+- ["C9Veracross20CourseViewController", "deinit"]
+- ["C9Veracross20CourseViewController", "didReceiveMemoryWarning"]
+- ["C9Veracross20CourseViewController", "htmlViewer"]
+- ["C9Veracross20CourseViewController", "indexPathForPreferredFocusedView"]
+- ["C9Veracross20CourseViewController", "indexPathForPreferredFocusedViewInTableView"]
+- ["C9Veracross20CourseViewController", "init"]
+- !private ["C9Veracross20CourseViewController", "kGADAdSizeBanner"]
+- ["C9Veracross20CourseViewController", "loadAd"]
+- ["C9Veracross20CourseViewController", "loadingCircle"]
+- !private ["C9Veracross20CourseViewController", "navigationController"]
+- ["C9Veracross20CourseViewController", "numberOfSections"]
+- ["C9Veracross20CourseViewController", "numberOfSectionsInTableView"]
+- ["C9Veracross20CourseViewController", "parser"]
+- ["C9Veracross20CourseViewController", "password"]
+- ["C9Veracross20CourseViewController", "scrollViewDidEndDecelerating"]
+- ["C9Veracross20CourseViewController", "scrollViewDidEndDragging"]
+- ["C9Veracross20CourseViewController", "scrollViewDidEndScrollingAnimation"]
+- ["C9Veracross20CourseViewController", "scrollViewDidEndZooming"]
+- ["C9Veracross20CourseViewController", "scrollViewDidScroll"]
+- ["C9Veracross20CourseViewController", "scrollViewDidScrollToTop"]
+- ["C9Veracross20CourseViewController", "scrollViewDidZoom"]
+- ["C9Veracross20CourseViewController", "scrollViewShouldScrollToTop"]
+- ["C9Veracross20CourseViewController", "scrollViewWillBeginDecelerating"]
+- ["C9Veracross20CourseViewController", "scrollViewWillBeginDragging"]
+- ["C9Veracross20CourseViewController", "scrollViewWillBeginZooming"]
+- ["C9Veracross20CourseViewController", "scrollViewWillEndDragging"]
+- ["C9Veracross20CourseViewController", "sectionIndexTitles"]
+- ["C9Veracross20CourseViewController", "sectionIndexTitlesForTableView"]
+- ["C9Veracross20CourseViewController", "statisticsPressed"]
+- !private ["C9Veracross20CourseViewController", "storyboard"]
+- ["C9Veracross20CourseViewController", "tableView"]
+- ["C9Veracross20CourseViewController", "username"]
+- ["C9Veracross20CourseViewController", "viewDidLoad"]
+- ["C9Veracross20CourseViewController", "viewForZooming"]
+- ["C9Veracross20CourseViewController", "viewForZoomingInScrollView"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchGroup"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
@@ -1734,61 +1789,6 @@ depends-member:
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
 - ["P9Alamofire14URLConvertible", "init"]
-- ["C9Veracross17WebViewController", "Course"]
-- !private ["C9Veracross17WebViewController", "DispatchGroup"]
-- !private ["C9Veracross17WebViewController", "DispatchQueue"]
-- ["C9Veracross17WebViewController", "GADBannerView"]
-- !private ["C9Veracross17WebViewController", "GADRequest"]
-- ["C9Veracross17WebViewController", "IndexPath"]
-- ["C9Veracross17WebViewController", "Int"]
-- !private ["C9Veracross17WebViewController", "NSString"]
-- !private ["C9Veracross17WebViewController", "PDFViewController"]
-- ["C9Veracross17WebViewController", "Parser"]
-- !private ["C9Veracross17WebViewController", "StatisticsViewController"]
-- ["C9Veracross17WebViewController", "String"]
-- ["C9Veracross17WebViewController", "UIActivityIndicatorView"]
-- ["C9Veracross17WebViewController", "UITableView"]
-- ["C9Veracross17WebViewController", "UITableViewCell"]
-- ["C9Veracross17WebViewController", "UIWebView"]
-- ["C9Veracross17WebViewController", "bannerView"]
-- ["C9Veracross17WebViewController", "completeParser"]
-- ["C9Veracross17WebViewController", "courseTable"]
-- ["C9Veracross17WebViewController", "courses"]
-- ["C9Veracross17WebViewController", "deinit"]
-- ["C9Veracross17WebViewController", "didReceiveMemoryWarning"]
-- ["C9Veracross17WebViewController", "htmlViewer"]
-- ["C9Veracross17WebViewController", "indexPathForPreferredFocusedView"]
-- ["C9Veracross17WebViewController", "indexPathForPreferredFocusedViewInTableView"]
-- ["C9Veracross17WebViewController", "init"]
-- !private ["C9Veracross17WebViewController", "kGADAdSizeBanner"]
-- ["C9Veracross17WebViewController", "loadAd"]
-- ["C9Veracross17WebViewController", "loadingCircle"]
-- !private ["C9Veracross17WebViewController", "navigationController"]
-- ["C9Veracross17WebViewController", "numberOfSections"]
-- ["C9Veracross17WebViewController", "numberOfSectionsInTableView"]
-- ["C9Veracross17WebViewController", "parser"]
-- ["C9Veracross17WebViewController", "password"]
-- ["C9Veracross17WebViewController", "scrollViewDidEndDecelerating"]
-- ["C9Veracross17WebViewController", "scrollViewDidEndDragging"]
-- ["C9Veracross17WebViewController", "scrollViewDidEndScrollingAnimation"]
-- ["C9Veracross17WebViewController", "scrollViewDidEndZooming"]
-- ["C9Veracross17WebViewController", "scrollViewDidScroll"]
-- ["C9Veracross17WebViewController", "scrollViewDidScrollToTop"]
-- ["C9Veracross17WebViewController", "scrollViewDidZoom"]
-- ["C9Veracross17WebViewController", "scrollViewShouldScrollToTop"]
-- ["C9Veracross17WebViewController", "scrollViewWillBeginDecelerating"]
-- ["C9Veracross17WebViewController", "scrollViewWillBeginDragging"]
-- ["C9Veracross17WebViewController", "scrollViewWillBeginZooming"]
-- ["C9Veracross17WebViewController", "scrollViewWillEndDragging"]
-- ["C9Veracross17WebViewController", "sectionIndexTitles"]
-- ["C9Veracross17WebViewController", "sectionIndexTitlesForTableView"]
-- ["C9Veracross17WebViewController", "statisticsPressed"]
-- !private ["C9Veracross17WebViewController", "storyboard"]
-- ["C9Veracross17WebViewController", "tableView"]
-- ["C9Veracross17WebViewController", "username"]
-- ["C9Veracross17WebViewController", "viewDidLoad"]
-- ["C9Veracross17WebViewController", "viewForZooming"]
-- ["C9Veracross17WebViewController", "viewForZoomingInScrollView"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
@@ -1943,6 +1943,7 @@ depends-nominal:
 - !private "Ps10Collection"
 - "Ps10Comparable"
 - !private "C9Veracross6Course"
+- "C9Veracross20CourseViewController"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -2032,7 +2033,6 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - "P9Alamofire14URLConvertible"
-- "C9Veracross17WebViewController"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
@@ -2133,4 +2133,4 @@ depends-external:
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
-interface-hash: "169d8d029eb21ac930f8ed27e1b3f909"
+interface-hash: "11681cedd6fa131879f746de2184f5ea"

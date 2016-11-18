@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Course"
 - "AssignmentPrecedence"
-- "NSObject"
 - "StringLiteralType"
 - "String"
+- "NSObject"
 depends-member:
 - !private ["Ps9AnyObject", "grade"]
 - !private ["Ps9AnyObject", "init"]

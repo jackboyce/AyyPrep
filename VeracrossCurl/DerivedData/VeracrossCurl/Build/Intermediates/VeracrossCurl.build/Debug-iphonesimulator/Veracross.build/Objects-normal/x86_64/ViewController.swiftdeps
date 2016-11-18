@@ -6,41 +6,41 @@ provides-nominal:
 provides-member:
 - ["C9Veracross14ViewController", ""]
 provides-dynamic-lookup:
-- "loadAd"
-- "rememberSwitch"
-- "didReceiveMemoryWarning"
-- "htmlViewer"
-- "viewDidLoad"
 - "password"
-- "prepare"
-- "dismissKeyboard"
+- "viewDidLoad"
+- "loadAd"
+- "bannerView"
+- "didReceiveMemoryWarning"
 - "loadingCircle"
 - "loginButton"
 - "loginButton"
-- "bannerView"
 - "save"
 - "username"
+- "rememberSwitch"
+- "prepare"
+- "dismissKeyboard"
+- "htmlViewer"
 depends-top-level:
-- !private "WebViewController"
-- "ViewController"
-- "UIWebView"
-- "UIStoryboardSegue"
-- "UIActivityIndicatorView"
 - "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "Array"
-- !private "UserDefaults"
-- "UIButton"
-- "UISwitch"
-- !private "kGADAdSizeBanner"
-- !private "GADRequest"
-- !private "BooleanLiteralType"
-- !private "UITapGestureRecognizer"
-- "UIViewController"
 - "GADBannerView"
 - "UITextField"
+- "AssignmentPrecedence"
+- !private "=="
+- "UIWebView"
+- !private "UserDefaults"
+- !private "Array"
+- !private "kGADAdSizeBanner"
+- !private "CourseViewController"
+- "ViewController"
+- "UIActivityIndicatorView"
+- "UIStoryboardSegue"
+- "UIViewController"
+- "UIButton"
 - !private "StringLiteralType"
+- !private "UITapGestureRecognizer"
+- "UISwitch"
+- !private "BooleanLiteralType"
+- !private "GADRequest"
 depends-member:
 - !private ["Ps9AnyObject", "GADRequest"]
 - !private ["Ps9AnyObject", "UITapGestureRecognizer"]
@@ -134,6 +134,9 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Element"]
 - !private ["Ps10Comparable", "init"]
+- ["C9Veracross20CourseViewController", "deinit"]
+- !private ["C9Veracross20CourseViewController", "password"]
+- !private ["C9Veracross20CourseViewController", "username"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "GADRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
@@ -372,6 +375,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "CourseViewController"]
 - ["CSo8NSObject", "GADBannerView"]
 - !private ["CSo8NSObject", "GADRequest"]
 - ["CSo8NSObject", "UIActivityIndicatorView"]
@@ -383,7 +387,6 @@ depends-member:
 - ["CSo8NSObject", "UIWebView"]
 - !private ["CSo8NSObject", "UserDefaults"]
 - !private ["CSo8NSObject", "ViewController"]
-- !private ["CSo8NSObject", "WebViewController"]
 - !private ["CSo8NSObject", "adSize"]
 - !private ["CSo8NSObject", "adUnitID"]
 - !private ["CSo8NSObject", "addGestureRecognizer"]
@@ -598,6 +601,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["CSo19UIGestureRecognizer", "init"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo11UIResponder", "CourseViewController"]
 - ["CSo11UIResponder", "GADBannerView"]
 - !private ["CSo11UIResponder", "GADRequest"]
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
@@ -609,7 +613,6 @@ depends-member:
 - ["CSo11UIResponder", "UIWebView"]
 - !private ["CSo11UIResponder", "UserDefaults"]
 - !private ["CSo11UIResponder", "ViewController"]
-- !private ["CSo11UIResponder", "WebViewController"]
 - !private ["CSo11UIResponder", "adSize"]
 - !private ["CSo11UIResponder", "adUnitID"]
 - !private ["CSo11UIResponder", "addGestureRecognizer"]
@@ -741,6 +744,7 @@ depends-member:
 - !private ["CSo6UIView", "rootViewController"]
 - !private ["CSo6UIView", "setOn"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "CourseViewController"]
 - ["CSo16UIViewController", "GADBannerView"]
 - !private ["CSo16UIViewController", "GADRequest"]
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
@@ -752,7 +756,6 @@ depends-member:
 - ["CSo16UIViewController", "UIWebView"]
 - !private ["CSo16UIViewController", "UserDefaults"]
 - !private ["CSo16UIViewController", "ViewController"]
-- !private ["CSo16UIViewController", "WebViewController"]
 - ["CSo16UIViewController", "bannerView"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
@@ -778,6 +781,7 @@ depends-member:
 - !private ["CSo12UserDefaults", "set"]
 - !private ["CSo12UserDefaults", "standard"]
 - !private ["CSo12UserDefaults", "string"]
+- !private ["C9Veracross14ViewController", "CourseViewController"]
 - ["C9Veracross14ViewController", "GADBannerView"]
 - !private ["C9Veracross14ViewController", "GADRequest"]
 - ["C9Veracross14ViewController", "UIActivityIndicatorView"]
@@ -789,7 +793,6 @@ depends-member:
 - ["C9Veracross14ViewController", "UIWebView"]
 - !private ["C9Veracross14ViewController", "UserDefaults"]
 - !private ["C9Veracross14ViewController", "ViewController"]
-- !private ["C9Veracross14ViewController", "WebViewController"]
 - ["C9Veracross14ViewController", "bannerView"]
 - ["C9Veracross14ViewController", "deinit"]
 - ["C9Veracross14ViewController", "didReceiveMemoryWarning"]
@@ -807,9 +810,6 @@ depends-member:
 - ["C9Veracross14ViewController", "username"]
 - !private ["C9Veracross14ViewController", "view"]
 - ["C9Veracross14ViewController", "viewDidLoad"]
-- ["C9Veracross17WebViewController", "deinit"]
-- !private ["C9Veracross17WebViewController", "password"]
-- !private ["C9Veracross17WebViewController", "username"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "adSize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "adUnitID"]
@@ -879,6 +879,7 @@ depends-nominal:
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
+- "C9Veracross20CourseViewController"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
@@ -954,7 +955,6 @@ depends-nominal:
 - !private "P9Alamofire14URLConvertible"
 - "CSo12UserDefaults"
 - "C9Veracross14ViewController"
-- "C9Veracross17WebViewController"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"

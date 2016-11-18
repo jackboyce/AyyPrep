@@ -45,10 +45,10 @@ class ViewController: UIViewController {
     //Called when this view is being seagued
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showWebView" {
-            let webViewController = segue.destination as! WebViewController
+            let courseViewController = segue.destination as! CourseViewController
             //Pass the username and password to the new view controller
-            webViewController.username = username.text!
-            webViewController.password = password.text!
+            courseViewController.username = username.text!
+            courseViewController.password = password.text!
         }
     }
     
