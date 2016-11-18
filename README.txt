@@ -14,6 +14,6 @@ After working
 7. git push
 
 Future Features:
-1. Make the app not crash on IOS 10.1/10.2?
-2. Add GPA calculator
-3. Graphs
+1. Add GPA calculator
+2. Graphs
+3. Alerts
