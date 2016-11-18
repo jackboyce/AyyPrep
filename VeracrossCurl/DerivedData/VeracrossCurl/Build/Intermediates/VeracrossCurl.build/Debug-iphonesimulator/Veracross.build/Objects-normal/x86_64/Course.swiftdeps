@@ -7,10 +7,11 @@ provides-member:
 - ["C9Veracross6Course", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "AssignmentPrecedence"
 - "Course"
+- "AssignmentPrecedence"
+- "NSObject"
 - "StringLiteralType"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "grade"]
 - !private ["Ps9AnyObject", "init"]
@@ -20,6 +21,7 @@ depends-member:
 - ["Ps9AnyObject", ""]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps10Comparable", "init"]
+- ["C9Veracross6Course", "NSObject"]
 - ["C9Veracross6Course", "String"]
 - ["C9Veracross6Course", "deinit"]
 - ["C9Veracross6Course", "grade"]
@@ -27,6 +29,7 @@ depends-member:
 - ["C9Veracross6Course", "key"]
 - ["C9Veracross6Course", "name"]
 - ["C9Veracross6Course", "number"]
+- ["C9Veracross6Course", "pdf"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "init"]
@@ -106,6 +109,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
@@ -176,25 +180,4 @@ depends-external:
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Firebase/Core/Sources/Firebase.h"
-interface-hash: "09f24879aeb26abe5eff5dfbffef3b27"
+interface-hash: "4205c7dff4374d1523b5632611873078"

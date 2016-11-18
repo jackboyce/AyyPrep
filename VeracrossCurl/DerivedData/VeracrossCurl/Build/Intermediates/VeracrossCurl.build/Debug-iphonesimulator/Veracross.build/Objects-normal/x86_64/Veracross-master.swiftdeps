@@ -1,9 +1,11 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "970640a1ddf2b394fe2b651b2dbcac49"
-build_time: [530890536, 221085000]
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "a09c4835af2cece386ceee7e61684416"
+build_time: [532750706, 16033000]
 inputs:
-  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/Course.swift": [529876851, 0]
-  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/StatisticsViewController.swift": [530111621, 0]
-  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/ViewController.swift": [530108342, 0]
-  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/AppDelegate.swift": [529902606, 0]
-  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/WebViewController.swift": [530647200, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/Course.swift": [532701470, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/StatisticsViewController.swift": [532750704, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/Parser.swift": [532749460, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/ViewController.swift": [532746785, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/AppDelegate.swift": [532746784, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/PDFViewController.swift": [532748728, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Veracross/courseViewController.swift": [532750694, 0]

@@ -42,64 +42,64 @@ provides-member:
 - ["OC9Alamofire13StreamRequest10Streamable", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "FileManager"
-- "CustomDebugStringConvertible"
-- "InputStream"
-- "Error"
-- "URLSessionTask"
-- "Request"
-- "Int"
-- "HTTPHeaders"
-- "RequestRetryCompletion"
-- !private "Dictionary"
-- !private "Array"
-- "String"
-- "CustomStringConvertible"
-- "Data"
-- "URLSession"
-- "URLRequest"
-- "URL"
-- !private "StringLiteralType"
-- "<<"
-- "UInt"
-- "HTTPURLResponse"
-- !private "BooleanLiteralType"
-- "OptionSet"
-- "DataTaskDelegate"
-- !private "??"
-- !private "+"
-- "TaskDelegate"
-- !private "!="
-- !private "NSURLAuthenticationMethodHTTPBasic"
-- "SessionManager"
-- !private "!"
-- "UploadTaskDelegate"
-- "DownloadRequest"
 - "TimeInterval"
-- "CastingPrecedence"
-- "RequestRetrier"
-- "AssignmentPrecedence"
-- "=="
-- !private "URLProtectionSpace"
-- !private "Notification"
-- !private "CFAbsoluteTimeGetCurrent"
-- "CFAbsoluteTime"
-- "UploadRequest"
-- "DispatchQueue"
-- "URLCredential"
-- !private "NotificationCenter"
-- "StreamRequest"
-- !private "UnicodeScalarType"
-- "RequestAdapter"
-- "NetService"
-- !private "AnyHashable"
 - "Progress"
+- "DownloadRequest"
+- "NetService"
+- !private "!="
+- "OptionSet"
+- !private "CFAbsoluteTimeGetCurrent"
+- !private "??"
+- "URLRequest"
+- "HTTPURLResponse"
+- !private "NSURLAuthenticationMethodHTTPBasic"
+- !private "+"
 - "TaskConvertible"
+- "RequestAdapter"
+- "<<"
+- "CFAbsoluteTime"
+- "FileManager"
+- "URLSessionTask"
+- "DispatchQueue"
 - "DownloadTaskDelegate"
+- !private "StringLiteralType"
+- "Error"
+- "RequestRetrier"
+- "InputStream"
+- !private "BooleanLiteralType"
+- "StreamRequest"
+- "HTTPHeaders"
+- "Data"
+- "URLCredential"
+- "CastingPrecedence"
+- "URL"
+- "=="
+- "String"
+- "RequestRetryCompletion"
+- "AssignmentPrecedence"
+- "UInt"
+- "CustomDebugStringConvertible"
 - "DataRequest"
-- "NSLock"
+- "SessionManager"
+- !private "Dictionary"
+- "DataTaskDelegate"
+- !private "!"
+- !private "AnyHashable"
+- !private "Array"
 - "Void"
+- "NSLock"
 - "Bool"
+- "CustomStringConvertible"
+- "UploadRequest"
+- !private "URLProtectionSpace"
+- !private "UnicodeScalarType"
+- !private "Notification"
+- "URLSession"
+- "UploadTaskDelegate"
+- "Int"
+- !private "NotificationCenter"
+- "TaskDelegate"
+- "Request"
 depends-member:
 - ["Vs11AnyHashable", "deinit"]
 - !private ["Vs11AnyHashable", "init"]
@@ -421,7 +421,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "resumeData"]
 - !private ["Ps28CustomDebugStringConvertible", "scheme"]
 - !private ["Ps28CustomDebugStringConvertible", "session"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "startTime"]
 - !private ["Ps28CustomDebugStringConvertible", "statusCode"]
 - ["Ps28CustomDebugStringConvertible", "stream"]
@@ -488,7 +487,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "joined"]
 - !private ["Ps17CustomReflectable", "reduce"]
 - !private ["Ps17CustomReflectable", "replacingOccurrences"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "substring"]
 - !private ["Ps17CustomReflectable", "url"]
@@ -877,7 +875,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "characters"]
 - !private ["Ps32ExpressibleByStringInterpolation", "data"]
 - !private ["Ps32ExpressibleByStringInterpolation", "endIndex"]
@@ -1274,7 +1271,6 @@ depends-member:
 - !private ["Ps9OptionSet", "userDomainMask"]
 - ["Ps9OptionSet", ""]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - ["OCSo13URLCredential11Persistence", "deinit"]
 - !private ["OCSo13URLCredential11Persistence", "forSession"]
 - !private ["Ps22RandomAccessCollection", "Element"]
@@ -1923,7 +1919,7 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
 - "C9Alamofire11DataRequest"
@@ -1946,7 +1942,6 @@ depends-nominal:
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"

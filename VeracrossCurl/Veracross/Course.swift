@@ -13,6 +13,7 @@ class Course {
     let grade: String
     let number: String
     var key: String
+    var pdf: NSObject?
     
     init(name: String, grade: String, number: String, key: String? = "") {
         self.name = name

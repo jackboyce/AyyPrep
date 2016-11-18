@@ -1,11 +1,11 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "d4ca6b46d99fa535ae9e246829c04489"
-build_time: [530760540, 772883000]
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "d1b3b0017a9582be7b60d62ec2582a19"
+build_time: [532458836, 295213000]
 inputs:
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Timeline.swift": [529311202, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/SessionDelegate.swift": [529311202, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/ParameterEncoding.swift": [529311202, 0]
-  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Request.swift": [530641295, 0]
+  "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/Request.swift": [532018058, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/ResponseSerialization.swift": [529311202, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/AFError.swift": [529311202, 0]
   "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Alamofire/Source/SessionManager.swift": [530641295, 0]

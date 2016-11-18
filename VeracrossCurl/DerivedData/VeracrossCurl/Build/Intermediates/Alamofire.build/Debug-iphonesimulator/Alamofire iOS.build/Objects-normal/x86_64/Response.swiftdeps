@@ -20,30 +20,30 @@ provides-member:
 - ["P9Alamofire8Response", "add"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!="
-- "HTTPURLResponse"
-- "URLRequest"
-- "Data"
-- "TernaryPrecedence"
-- "String"
-- "Response"
-- "Timeline"
-- !private "??"
-- "Error"
-- "DownloadResponse"
-- "AssignmentPrecedence"
-- !private "UnicodeScalarType"
-- "CastingPrecedence"
-- "URLSessionTaskMetrics"
-- "Result"
-- "AnyObject"
-- "DefaultDownloadResponse"
-- "CustomStringConvertible"
-- "DataResponse"
 - !private "StringLiteralType"
-- "URL"
+- "Timeline"
+- !private "!="
+- !private "UnicodeScalarType"
+- "DownloadResponse"
+- "URLSessionTaskMetrics"
+- !private "??"
+- "Data"
+- "Result"
+- "Error"
+- "String"
 - "DefaultDataResponse"
+- "DefaultDownloadResponse"
+- "DataResponse"
+- "TernaryPrecedence"
 - "CustomDebugStringConvertible"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "Response"
+- "URLRequest"
+- "HTTPURLResponse"
+- "CustomStringConvertible"
+- "URL"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sa", "Iterator"]
@@ -97,7 +97,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "response"]
 - !private ["Ps28CustomDebugStringConvertible", "result"]
 - !private ["Ps28CustomDebugStringConvertible", "resumeData"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "temporaryURL"]
 - !private ["Ps28CustomDebugStringConvertible", "timeline"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -112,7 +111,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "joined"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Timeline"]
@@ -229,7 +227,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "joined"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -282,7 +279,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
@@ -399,7 +395,7 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
 - "V9Alamofire12DataResponse"
@@ -411,7 +407,6 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"

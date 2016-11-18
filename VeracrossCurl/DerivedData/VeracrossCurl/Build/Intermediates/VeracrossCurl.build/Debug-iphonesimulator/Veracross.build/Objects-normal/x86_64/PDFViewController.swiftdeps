@@ -1,0 +1,401 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PDFViewController"
+provides-nominal:
+- "C9Veracross17PDFViewController"
+provides-member:
+- ["C9Veracross17PDFViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "htmlViewer"
+depends-top-level:
+- "Course"
+- "CastingPrecedence"
+- !private "URL"
+- "PDFViewController"
+- "StringLiteralType"
+- !private "Data"
+- "Parser"
+- "UIWebView"
+- "UIViewController"
+depends-member:
+- ["Ps9AnyObject", "Course"]
+- !private ["Ps9AnyObject", "URL"]
+- ["Ps9AnyObject", "course"]
+- !private ["Ps9AnyObject", "getPDF"]
+- ["Ps9AnyObject", "htmlViewer"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "load"]
+- ["Ps9AnyObject", "parser"]
+- !private ["Ps9AnyObject", "pdf"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "load"]
+- ["Ps7CVarArg", "Course"]
+- !private ["Ps7CVarArg", "URL"]
+- ["Ps7CVarArg", "course"]
+- ["Ps7CVarArg", "htmlViewer"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "load"]
+- ["Ps7CVarArg", "parser"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- ["Ps10Comparable", "init"]
+- ["C9Veracross6Course", "deinit"]
+- ["C9Veracross6Course", "init"]
+- !private ["C9Veracross6Course", "pdf"]
+- ["Ps28CustomDebugStringConvertible", "Course"]
+- !private ["Ps28CustomDebugStringConvertible", "URL"]
+- ["Ps28CustomDebugStringConvertible", "course"]
+- ["Ps28CustomDebugStringConvertible", "htmlViewer"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "load"]
+- ["Ps28CustomDebugStringConvertible", "parser"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "Course"]
+- !private ["Ps23CustomStringConvertible", "URL"]
+- ["Ps23CustomStringConvertible", "course"]
+- ["Ps23CustomStringConvertible", "htmlViewer"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "load"]
+- ["Ps23CustomStringConvertible", "parser"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["V10Foundation4Data", "deinit"]
+- ["Ps9Equatable", "Course"]
+- !private ["Ps9Equatable", "URL"]
+- ["Ps9Equatable", "course"]
+- ["Ps9Equatable", "htmlViewer"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "load"]
+- ["Ps9Equatable", "parser"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "Course"]
+- !private ["Ps8Hashable", "URL"]
+- ["Ps8Hashable", "course"]
+- ["Ps8Hashable", "htmlViewer"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "load"]
+- ["Ps8Hashable", "parser"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "Course"]
+- !private ["PSo8NSCoding", "URL"]
+- ["PSo8NSCoding", "course"]
+- ["PSo8NSCoding", "htmlViewer"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "load"]
+- ["PSo8NSCoding", "parser"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo9NSCopying", "init"]
+- ["PSo26NSExtensionRequestHandling", "Course"]
+- !private ["PSo26NSExtensionRequestHandling", "URL"]
+- ["PSo26NSExtensionRequestHandling", "course"]
+- ["PSo26NSExtensionRequestHandling", "htmlViewer"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "parser"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Course"]
+- !private ["CSo8NSObject", "Data"]
+- ["CSo8NSObject", "Parser"]
+- ["CSo8NSObject", "UIWebView"]
+- !private ["CSo8NSObject", "URL"]
+- ["CSo8NSObject", "course"]
+- ["CSo8NSObject", "htmlViewer"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "load"]
+- ["CSo8NSObject", "parser"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "Course"]
+- !private ["PSo16NSObjectProtocol", "URL"]
+- ["PSo16NSObjectProtocol", "course"]
+- ["PSo16NSObjectProtocol", "htmlViewer"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "load"]
+- ["PSo16NSObjectProtocol", "parser"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["C9Veracross17PDFViewController", "Course"]
+- !private ["C9Veracross17PDFViewController", "Data"]
+- ["C9Veracross17PDFViewController", "Parser"]
+- ["C9Veracross17PDFViewController", "UIWebView"]
+- !private ["C9Veracross17PDFViewController", "URL"]
+- ["C9Veracross17PDFViewController", "course"]
+- ["C9Veracross17PDFViewController", "deinit"]
+- ["C9Veracross17PDFViewController", "htmlViewer"]
+- ["C9Veracross17PDFViewController", "init"]
+- ["C9Veracross17PDFViewController", "parser"]
+- ["C9Veracross17PDFViewController", "viewDidLoad"]
+- !private ["C9Veracross6Parser", "getPDF"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "load"]
+- !private ["PSo12UIAppearance", "load"]
+- ["PSo21UIAppearanceContainer", "Course"]
+- !private ["PSo21UIAppearanceContainer", "URL"]
+- ["PSo21UIAppearanceContainer", "course"]
+- ["PSo21UIAppearanceContainer", "htmlViewer"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "load"]
+- ["PSo21UIAppearanceContainer", "parser"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Course"]
+- !private ["PSo18UIContentContainer", "URL"]
+- ["PSo18UIContentContainer", "course"]
+- ["PSo18UIContentContainer", "htmlViewer"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "parser"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "load"]
+- !private ["PSo13UIDynamicItem", "load"]
+- ["PSo18UIFocusEnvironment", "Course"]
+- !private ["PSo18UIFocusEnvironment", "URL"]
+- ["PSo18UIFocusEnvironment", "course"]
+- ["PSo18UIFocusEnvironment", "htmlViewer"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "load"]
+- ["PSo18UIFocusEnvironment", "parser"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "load"]
+- ["CSo11UIResponder", "Course"]
+- !private ["CSo11UIResponder", "Data"]
+- ["CSo11UIResponder", "Parser"]
+- ["CSo11UIResponder", "UIWebView"]
+- !private ["CSo11UIResponder", "URL"]
+- ["CSo11UIResponder", "course"]
+- ["CSo11UIResponder", "htmlViewer"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "load"]
+- ["CSo11UIResponder", "parser"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "Course"]
+- !private ["PSo30UIResponderStandardEditActions", "URL"]
+- ["PSo30UIResponderStandardEditActions", "course"]
+- ["PSo30UIResponderStandardEditActions", "htmlViewer"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "load"]
+- ["PSo30UIResponderStandardEditActions", "parser"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "load"]
+- ["PSo16UIStateRestoring", "Course"]
+- !private ["PSo16UIStateRestoring", "URL"]
+- ["PSo16UIStateRestoring", "course"]
+- ["PSo16UIStateRestoring", "htmlViewer"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "parser"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Course"]
+- !private ["PSo18UITraitEnvironment", "URL"]
+- ["PSo18UITraitEnvironment", "course"]
+- ["PSo18UITraitEnvironment", "htmlViewer"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "load"]
+- ["PSo18UITraitEnvironment", "parser"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "load"]
+- ["CSo16UIViewController", "Course"]
+- !private ["CSo16UIViewController", "Data"]
+- ["CSo16UIViewController", "Parser"]
+- ["CSo16UIViewController", "UIWebView"]
+- !private ["CSo16UIViewController", "URL"]
+- ["CSo16UIViewController", "course"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "htmlViewer"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "parser"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["CSo9UIWebView", "load"]
+- ["V10Foundation3URL", "deinit"]
+- !private ["V10Foundation3URL", "init"]
+- ["P9Alamofire14URLConvertible", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "load"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps34_ExpressibleByFileReferenceLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "Course"]
+- !private ["Ps9_Hashable", "URL"]
+- ["Ps9_Hashable", "course"]
+- ["Ps9_Hashable", "htmlViewer"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "load"]
+- ["Ps9_Hashable", "parser"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "C9Veracross6Course"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "V10Foundation4Data"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- "C9Veracross17PDFViewController"
+- !private "C9Veracross6Parser"
+- !private "P10Foundation20ReferenceConvertible"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "CSo9UIWebView"
+- "V10Foundation3URL"
+- "P9Alamofire14URLConvertible"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps34_ExpressibleByFileReferenceLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/module.modulemap"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+interface-hash: "c776cd2c7c673bdd456026e7039c4b81"

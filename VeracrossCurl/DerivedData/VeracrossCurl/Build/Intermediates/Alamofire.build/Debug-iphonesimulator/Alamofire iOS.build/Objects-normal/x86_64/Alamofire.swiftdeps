@@ -36,36 +36,36 @@ provides-member:
 - ["V10Foundation10URLRequest", "adapt"]
 provides-dynamic-lookup:
 depends-top-level:
-- "URLConvertible"
-- "StreamRequest"
-- "DownloadRequest"
-- "NetService"
 - "Parameters"
 - "URLRequestConvertible"
-- !private "URLEncoding"
+- "StreamRequest"
+- "NetService"
+- "DownloadRequest"
 - "InputStream"
-- "RequestAdapter"
-- "SessionManager"
-- "URLRequest"
-- "AssignmentPrecedence"
+- "stream"
+- "Int"
+- "HTTPHeaders"
+- "MultipartFormData"
 - "URL"
+- "UInt64"
+- "upload"
+- "URLRequest"
+- "DataRequest"
 - "download"
 - "Void"
-- "DataRequest"
-- "upload"
-- "request"
-- "HTTPHeaders"
-- "UInt64"
+- "AssignmentPrecedence"
+- "SessionManager"
 - "ParameterEncoding"
 - "UploadRequest"
-- "stream"
+- "RequestAdapter"
+- "request"
+- "String"
+- "URLConvertible"
+- !private "URLEncoding"
 - "URLComponents"
+- !private "AFError"
 - "HTTPMethod"
 - "Data"
-- "MultipartFormData"
-- "String"
-- !private "AFError"
-- "Int"
 depends-member:
 - ["O9Alamofire7AFError", "deinit"]
 - !private ["O9Alamofire7AFError", "invalidURL"]
@@ -94,7 +94,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "httpMethod"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "url"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "AFError"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "URL"]
@@ -109,7 +108,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "httpMethod"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "setValue"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "url"]
 - !private ["Ps23CustomStringConvertible", "AFError"]
 - ["Ps23CustomStringConvertible", "DownloadFileDestination"]
@@ -144,7 +142,6 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "AFError"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "URL"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "asURL"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "AFError"]
 - !private ["Ps32ExpressibleByStringInterpolation", "URL"]
 - ["Ps32ExpressibleByStringInterpolation", "asURL"]
@@ -183,7 +180,6 @@ depends-member:
 - ["Ps10MirrorPath", "asURL"]
 - ["CSo10NetService", "deinit"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["P9Alamofire17ParameterEncoding", "default"]
 - ["P9Alamofire17ParameterEncoding", "deinit"]
 - !private ["Ps16RawRepresentable", "get"]
@@ -314,7 +310,6 @@ depends-nominal:
 - !private "Ps5Error"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"

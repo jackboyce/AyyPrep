@@ -13,36 +13,36 @@ provides-member:
 - ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "withUnsafePointer"
-- "String"
-- !private "!"
-- "NetworkReachabilityManager"
-- !private "Unmanaged"
-- !private "SCNetworkReachabilityCreateWithName"
-- !private "SCNetworkReachabilityCreateWithAddress"
-- !private "??"
-- "Equatable"
 - !private "sockaddr_in"
-- "AssignmentPrecedence"
-- "=="
-- !private "SCNetworkReachabilitySetCallback"
 - !private "sa_family_t"
-- !private "!="
-- "Bool"
-- !private "AF_INET"
+- "String"
 - "SCNetworkReachability"
-- !private "&&"
-- !private "sockaddr"
-- !private "UInt8"
-- !private "||"
+- !private "!"
 - !private "SCNetworkReachabilityContext"
-- !private "BooleanLiteralType"
-- !private "SCNetworkReachabilityGetFlags"
-- !private "SCNetworkReachabilitySetDispatchQueue"
-- "SCNetworkReachabilityFlags"
-- "Void"
 - "DispatchQueue"
+- "Equatable"
+- "NetworkReachabilityManager"
+- !private "UInt8"
+- !private "SCNetworkReachabilityGetFlags"
+- "SCNetworkReachabilityFlags"
+- "=="
+- !private "??"
+- "AssignmentPrecedence"
 - !private "MemoryLayout"
+- !private "withUnsafePointer"
+- "Bool"
+- !private "SCNetworkReachabilityCreateWithName"
+- !private "SCNetworkReachabilitySetCallback"
+- !private "SCNetworkReachabilitySetDispatchQueue"
+- !private "SCNetworkReachabilityCreateWithAddress"
+- !private "&&"
+- !private "Unmanaged"
+- !private "||"
+- !private "BooleanLiteralType"
+- !private "!="
+- !private "sockaddr"
+- "Void"
+- !private "AF_INET"
 depends-member:
 - !private ["Ps9AnyObject", "AF_INET"]
 - ["Ps9AnyObject", "DispatchQueue"]
@@ -96,7 +96,6 @@ depends-member:
 - ["OC9Alamofire26NetworkReachabilityManager14ConnectionType", "wwan"]
 - !private ["Ps28CustomDebugStringConvertible", "async"]
 - ["Ps28CustomDebugStringConvertible", "main"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "withMemoryRebound"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
@@ -105,7 +104,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "withMemoryRebound"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "async"]
@@ -151,7 +149,6 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "async"]
@@ -233,7 +230,6 @@ depends-member:
 - !private ["Ps9OptionSet", "isWWAN"]
 - !private ["Ps9OptionSet", "reachable"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "connectionOnDemand"]
@@ -282,7 +278,6 @@ depends-member:
 - !private ["Vs9Unmanaged", "passUnretained"]
 - !private ["Vs9Unmanaged", "takeUnretainedValue"]
 - !private ["Vs9Unmanaged", "toOpaque"]
-- !private ["Sp", "deinit"]
 - ["Sv", "deinit"]
 - !private ["SP", "deinit"]
 - !private ["SP", "withMemoryRebound"]
@@ -309,6 +304,7 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps8_Pointer", "withMemoryRebound"]
 - !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps11_Strideable", "hashValue"]
@@ -328,7 +324,7 @@ depends-nominal:
 - "OC9Alamofire26NetworkReachabilityManager14ConnectionType"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "CSo14DispatchObject"
 - "CSo13DispatchQueue"
@@ -336,7 +332,6 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "Ps8Hashable"
 - "Si"
 - "Vs5Int32"
@@ -363,7 +358,6 @@ depends-nominal:
 - "SS"
 - "Vs5UInt8"
 - "Vs9Unmanaged"
-- !private "Sp"
 - "Sv"
 - !private "SP"
 - !private "Ps15UnsignedInteger"

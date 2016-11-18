@@ -23,38 +23,38 @@ provides-member:
 - ["V9Alamofire20PropertyListEncoding", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "CFGetTypeID"
-- "JSONSerialization"
-- "PropertyListEncoding"
-- "JSONEncoding"
-- !private "+"
-- "TernaryPrecedence"
-- !private "CharacterSet"
-- "Bool"
-- "HTTPMethod"
-- "URLRequestConvertible"
-- !private "~="
+- "PropertyListSerialization"
 - !private "CFBooleanGetTypeID"
-- !private "!"
+- "StringLiteralType"
+- "ParameterEncoding"
+- "Bool"
+- "NSNumber"
+- !private "UnicodeScalarType"
+- !private "CFGetTypeID"
+- "JSONEncoding"
+- !private "URLComponents"
+- !private "??"
+- !private "AFError"
+- !private "BooleanLiteralType"
+- "HTTPMethod"
+- "String"
+- "URLRequestConvertible"
+- "Array"
 - "Parameters"
 - "URLEncoding"
-- "AssignmentPrecedence"
-- "=="
-- "NSNumber"
-- "CastingPrecedence"
-- "URLRequest"
-- "Array"
-- !private "UnicodeScalarType"
-- !private "URLComponents"
-- "StringLiteralType"
-- !private "AFError"
-- !private "+="
-- !private "BooleanLiteralType"
-- !private "??"
-- "String"
-- "PropertyListSerialization"
+- "TernaryPrecedence"
 - !private "<"
-- "ParameterEncoding"
+- "JSONSerialization"
+- !private "~="
+- "=="
+- "PropertyListEncoding"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "CharacterSet"
+- "URLRequest"
+- !private "!"
+- !private "+"
+- !private "+="
 depends-member:
 - ["O9Alamofire7AFError", "deinit"]
 - !private ["O9Alamofire7AFError", "parameterEncodingFailed"]
@@ -155,7 +155,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "percentEncodedQuery"]
 - !private ["Ps28CustomDebugStringConvertible", "remove"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "url"]
 - !private ["Ps28CustomDebugStringConvertible", "urlQueryAllowed"]
@@ -184,7 +183,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "map"]
 - !private ["Ps17CustomReflectable", "percentEncodedQuery"]
 - !private ["Ps17CustomReflectable", "setValue"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "url"]
 - !private ["Ps17CustomReflectable", "value"]
@@ -311,7 +309,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "isBool"]
 - !private ["Ps23ExpressibleByNilLiteral", "map"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "addingPercentEncoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "data"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
@@ -508,7 +505,6 @@ depends-member:
 - !private ["Ps9OptionSet", "prettyPrinted"]
 - ["Sq", "deinit"]
 - !private ["Sq", "map"]
-- ["Sq", "some"]
 - !private ["P9Alamofire17ParameterEncoding", "AFError"]
 - !private ["P9Alamofire17ParameterEncoding", "CharacterSet"]
 - !private ["P9Alamofire17ParameterEncoding", "HTTPMethod"]
@@ -825,7 +821,7 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"

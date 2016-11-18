@@ -43,45 +43,45 @@ provides-member:
 - ["C9Alamofire15DownloadRequest", "responsePropertyList"]
 provides-dynamic-lookup:
 depends-top-level:
-- "DefaultDataResponse"
-- !private "AFError"
 - "DataResponse"
 - "DownloadResponseSerializer"
-- "Set"
-- "DataRequest"
-- !private ">"
-- "PropertyListSerialization"
-- "DispatchQueue"
-- !private "CFAbsoluteTimeGetCurrent"
-- "Data"
-- "Error"
-- "String"
-- "Int"
-- "Request"
-- "DefaultDownloadResponse"
-- !private "=="
-- "Void"
 - !private "??"
-- "DataResponseSerializer"
-- "URL"
-- !private "Timeline"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "CFString"
-- !private "CFStringConvertIANACharSetNameToEncoding"
-- !private "StringLiteralType"
-- "JSONSerialization"
-- "DownloadRequest"
-- "DownloadResponse"
-- "HTTPURLResponse"
-- "URLRequest"
-- !private "CFStringConvertEncodingToNSStringEncoding"
-- "DownloadResponseSerializerProtocol"
+- "Set"
+- "DefaultDataResponse"
 - !private "emptyDataStatusCodes"
-- "Result"
+- !private ">"
+- "AssignmentPrecedence"
+- "Error"
+- "Request"
+- "Int"
+- "Data"
+- !private "CFAbsoluteTimeGetCurrent"
+- !private "=="
+- "CastingPrecedence"
+- !private "AFError"
+- "Void"
+- "DefaultDownloadResponse"
+- "DataResponseSerializer"
+- !private "Timeline"
 - !private "NSNull"
+- "DataRequest"
+- "URL"
+- !private "StringLiteralType"
+- "String"
+- !private "CFString"
+- "PropertyListSerialization"
+- !private "CFStringConvertIANACharSetNameToEncoding"
+- !private "CFStringConvertEncodingToNSStringEncoding"
+- "URLRequest"
+- "HTTPURLResponse"
+- "DownloadResponse"
 - "Array"
 - "DataResponseSerializerProtocol"
+- "DownloadRequest"
+- "Result"
+- "DownloadResponseSerializerProtocol"
+- "DispatchQueue"
+- "JSONSerialization"
 depends-member:
 - ["O9Alamofire7AFError", "deinit"]
 - !private ["O9Alamofire7AFError", "responseSerializationFailed"]
@@ -238,7 +238,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "serializeResponseJSON"]
 - !private ["Ps28CustomDebugStringConvertible", "serializeResponsePropertyList"]
 - !private ["Ps28CustomDebugStringConvertible", "serializeResponseString"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "statusCode"]
 - ["Ps28CustomDebugStringConvertible", "stringResponseSerializer"]
 - !private ["Ps28CustomDebugStringConvertible", "success"]
@@ -256,7 +255,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "contains"]
 - !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps23CustomStringConvertible", "AFError"]
 - !private ["Ps23CustomStringConvertible", "CFAbsoluteTimeGetCurrent"]
 - !private ["Ps23CustomStringConvertible", "CFStringConvertEncodingToNSStringEncoding"]
@@ -485,7 +483,6 @@ depends-member:
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Encoding"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps23ExpressibleByNilLiteral", "async"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - ["Ps32ExpressibleByStringInterpolation", "Encoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "Encoding"]
@@ -619,7 +616,6 @@ depends-member:
 - !private ["Ps9OptionSet", "allowFragments"]
 - !private ["Sq", "async"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - ["CSo25PropertyListSerialization", "ReadOptions"]
 - !private ["CSo25PropertyListSerialization", "propertyList"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -803,6 +799,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "async"]
 - !private ["Ps21_ObjectiveCBridgeable", "contains"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
@@ -842,7 +839,7 @@ depends-nominal:
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps23ExpressibleByNilLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"

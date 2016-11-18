@@ -7,17 +7,17 @@ provides-member:
 - ["V9Alamofire8Timeline", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Timeline"
-- !private "Array"
-- "String"
-- "CFAbsoluteTime"
 - "AssignmentPrecedence"
-- !private "+"
-- !private "StringLiteralType"
+- "CFAbsoluteTime"
 - !private "-"
+- "CustomDebugStringConvertible"
+- "String"
+- !private "+"
+- !private "Array"
+- "Timeline"
+- !private "StringLiteralType"
 - "CustomStringConvertible"
 - "TimeInterval"
-- "CustomDebugStringConvertible"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sa", "Element"]

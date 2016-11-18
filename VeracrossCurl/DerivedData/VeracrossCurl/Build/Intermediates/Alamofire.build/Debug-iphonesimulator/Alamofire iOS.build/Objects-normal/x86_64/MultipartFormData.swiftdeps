@@ -16,44 +16,44 @@ provides-member:
 - ["CC9Alamofire17MultipartFormData8BodyPart", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!"
-- !private "OutputStream"
-- "CastingPrecedence"
-- !private "arc4random"
-- "MultipartFormData"
-- !private "&&"
-- !private "-="
-- "StringLiteralType"
-- !private "UnicodeScalarType"
-- "HTTPHeaders"
-- "ExtendedGraphemeClusterType"
-- !private "UTTypeCopyPreferredTagWithClass"
-- !private "UTTypeCreatePreferredIdentifierForTag"
-- "String"
-- !private "Dictionary"
-- "BooleanLiteralType"
-- !private "+="
-- "Data"
-- !private "CFString"
-- "Int"
-- "AFError"
-- !private "!="
-- !private "FileManager"
 - !private "TernaryPrecedence"
-- !private "+"
-- !private "ObjCBool"
-- !private "NSNumber"
-- !private "..<"
-- "InputStream"
-- "UInt64"
-- !private "kUTTagClassMIMEType"
+- "Data"
 - !private ">"
+- !private "OutputStream"
+- "BooleanLiteralType"
+- !private "!="
+- !private "-="
+- "UInt64"
+- "String"
+- "StringLiteralType"
+- !private "FileManager"
+- !private "NSNumber"
+- "AFError"
+- !private "UTTypeCopyPreferredTagWithClass"
+- "ExtendedGraphemeClusterType"
 - !private "kUTTagClassFilenameExtension"
-- !private "Array"
-- "=="
-- "URL"
-- "AssignmentPrecedence"
+- "Int"
+- "CastingPrecedence"
+- "MultipartFormData"
+- !private "+"
 - !private "UInt8"
+- !private "UTTypeCreatePreferredIdentifierForTag"
+- "=="
+- "InputStream"
+- !private "kUTTagClassMIMEType"
+- "AssignmentPrecedence"
+- !private "Array"
+- !private "arc4random"
+- !private "Dictionary"
+- !private "UnicodeScalarType"
+- !private "+="
+- !private "..<"
+- !private "!"
+- "HTTPHeaders"
+- !private "ObjCBool"
+- !private "CFString"
+- "URL"
+- !private "&&"
 depends-member:
 - !private ["O9Alamofire7AFError", "MultipartEncodingFailureReason"]
 - ["O9Alamofire7AFError", "deinit"]
@@ -292,7 +292,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "read"]
 - !private ["Ps28CustomDebugStringConvertible", "reduce"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "streamError"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "uint64Value"]
@@ -336,7 +335,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "last"]
 - !private ["Ps17CustomReflectable", "reduce"]
 - !private ["Ps17CustomReflectable", "size"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Encoding"]
@@ -490,7 +488,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "uint64Value"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "Encoding"]
 - !private ["Ps32ExpressibleByStringInterpolation", "data"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
@@ -775,7 +772,6 @@ depends-member:
 - !private ["V10ObjectiveC8ObjCBool", "boolValue"]
 - ["V10ObjectiveC8ObjCBool", "deinit"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["CSo12OutputStream", "close"]
 - ["CSo12OutputStream", "deinit"]
 - !private ["CSo12OutputStream", "hasSpaceAvailable"]
@@ -1141,7 +1137,6 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"

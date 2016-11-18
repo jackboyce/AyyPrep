@@ -12,47 +12,47 @@ provides-member:
 - ["CSo10URLSession", "serverTrustPolicyManager"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "URL"
-- !private "SecCertificateCreateWithData"
-- !private "SecTrustGetCertificateAtIndex"
-- !private "objc_setAssociatedObject"
-- "TernaryPrecedence"
-- "SecTrust"
-- !private "AnyObject"
-- !private "SecPolicyCreateBasicX509"
-- !private "SecPolicyCreateSSL"
 - "SecKey"
-- !private "SecCertificateCopyData"
-- !private "objc_getAssociatedObject"
 - !private "CFData"
-- "AssignmentPrecedence"
-- !private "SecTrustSetPolicies"
-- "CastingPrecedence"
-- !private "SecTrustSetAnchorCertificates"
-- "ServerTrustPolicyManager"
-- !private "SecTrustCopyPublicKey"
-- !private "SecTrustEvaluate"
-- !private "CFArray"
-- !private "SecTrustGetCertificateCount"
 - "Bool"
+- "TernaryPrecedence"
+- !private "SecTrustSetPolicies"
+- !private "objc_getAssociatedObject"
+- !private "CFArray"
 - "URLSession"
-- "StringLiteralType"
-- "ServerTrustPolicy"
-- !private "=="
-- !private "Set"
-- !private "Array"
-- !private "errSecSuccess"
-- !private "CFString"
-- !private "..<"
-- !private "BooleanLiteralType"
-- !private "SecTrustResultType"
-- !private "Data"
+- !private "SecTrustEvaluate"
+- !private "SecTrustSetAnchorCertificatesOnly"
 - !private "||"
+- "ServerTrustPolicyManager"
+- !private "Data"
+- !private "objc_setAssociatedObject"
+- !private "SecPolicyCreateBasicX509"
+- "Bundle"
+- !private "SecTrustGetCertificateCount"
+- "CastingPrecedence"
+- !private "SecPolicyCreateSSL"
+- "AssignmentPrecedence"
+- !private "=="
+- "SecCertificate"
+- "SecTrust"
 - !private "SecTrustCreateWithCertificates"
 - "String"
-- "Bundle"
-- !private "SecTrustSetAnchorCertificatesOnly"
-- "SecCertificate"
+- !private "URL"
+- !private "SecTrustResultType"
+- "StringLiteralType"
+- !private "errSecSuccess"
+- !private "SecCertificateCopyData"
+- !private "..<"
+- !private "SecTrustSetAnchorCertificates"
+- !private "BooleanLiteralType"
+- !private "SecCertificateCreateWithData"
+- !private "AnyObject"
+- !private "SecTrustGetCertificateAtIndex"
+- !private "CFString"
+- "ServerTrustPolicy"
+- !private "Array"
+- !private "Set"
+- !private "SecTrustCopyPublicKey"
 depends-member:
 - !private ["Ps9AnyObject", "AssociatedKeys"]
 - ["Ps9AnyObject", "deinit"]
@@ -152,7 +152,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "objc_setAssociatedObject"]
 - !private ["Ps28CustomDebugStringConvertible", "paths"]
 - ["Ps28CustomDebugStringConvertible", "serverTrustPolicyManager"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Iterator"]
@@ -173,7 +172,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "joined"]
 - !private ["Ps17CustomReflectable", "map"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "AssociatedKeys"]
 - !private ["Ps23CustomStringConvertible", "Element"]
@@ -237,7 +235,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "Iterator"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "Iterator"]
@@ -346,7 +343,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "SubSequence"]
@@ -584,7 +580,7 @@ depends-nominal:
 - !private "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Data"
 - "Vs10Dictionary"
@@ -594,7 +590,6 @@ depends-nominal:
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"

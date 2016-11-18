@@ -6,40 +6,41 @@ provides-nominal:
 provides-member:
 - ["C9Veracross14ViewController", ""]
 provides-dynamic-lookup:
-- "save"
-- "loadingCircle"
-- "loadAd"
-- "password"
-- "didReceiveMemoryWarning"
-- "bannerView"
-- "prepare"
-- "dismissKeyboard"
-- "username"
 - "htmlViewer"
-- "loginButton"
-- "loginButton"
 - "rememberSwitch"
+- "username"
+- "loadAd"
+- "loginButton"
+- "loginButton"
+- "save"
+- "prepare"
+- "password"
+- "dismissKeyboard"
+- "loadingCircle"
 - "viewDidLoad"
+- "bannerView"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "UserDefaults"
+- "UIButton"
 - !private "WebViewController"
+- "UIViewController"
 - "UITextField"
+- "UIWebView"
+- !private "UserDefaults"
 - "CastingPrecedence"
-- !private "=="
 - "AssignmentPrecedence"
-- "GADBannerView"
+- !private "=="
+- "UIStoryboardSegue"
 - "ViewController"
-- "UISwitch"
-- "UIActivityIndicatorView"
 - !private "UITapGestureRecognizer"
 - !private "GADRequest"
 - !private "StringLiteralType"
-- !private "kGADAdSizeBanner"
+- "UIActivityIndicatorView"
+- "GADBannerView"
 - !private "BooleanLiteralType"
-- "UIViewController"
-- "UIStoryboardSegue"
-- "UIWebView"
-- "UIButton"
+- "UISwitch"
+- !private "kGADAdSizeBanner"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "GADRequest"]
 - !private ["Ps9AnyObject", "UITapGestureRecognizer"]
@@ -72,11 +73,16 @@ depends-member:
 - !private ["Ps9AnyObject", "setOn"]
 - !private ["Ps9AnyObject", "standard"]
 - !private ["Ps9AnyObject", "string"]
+- !private ["Ps9AnyObject", "testDevices"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "username"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "adSize"]
@@ -88,6 +94,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "rootViewController"]
 - !private ["PSo15CALayerDelegate", "setOn"]
 - !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "GADRequest"]
 - !private ["Ps7CVarArg", "UITapGestureRecognizer"]
 - !private ["Ps7CVarArg", "UserDefaults"]
@@ -119,12 +126,15 @@ depends-member:
 - !private ["Ps7CVarArg", "setOn"]
 - !private ["Ps7CVarArg", "standard"]
 - !private ["Ps7CVarArg", "string"]
+- !private ["Ps7CVarArg", "testDevices"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "username"]
 - !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "GADRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
@@ -154,9 +164,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "save"]
 - !private ["Ps28CustomDebugStringConvertible", "set"]
 - !private ["Ps28CustomDebugStringConvertible", "setOn"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "standard"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
+- !private ["Ps28CustomDebugStringConvertible", "testDevices"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "username"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -164,9 +174,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "GADRequest"]
 - !private ["Ps23CustomStringConvertible", "UITapGestureRecognizer"]
 - !private ["Ps23CustomStringConvertible", "UserDefaults"]
@@ -199,6 +210,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setOn"]
 - !private ["Ps23CustomStringConvertible", "standard"]
 - !private ["Ps23CustomStringConvertible", "string"]
+- !private ["Ps23CustomStringConvertible", "testDevices"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "username"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -237,14 +249,15 @@ depends-member:
 - !private ["Ps9Equatable", "setOn"]
 - !private ["Ps9Equatable", "standard"]
 - !private ["Ps9Equatable", "string"]
+- !private ["Ps9Equatable", "testDevices"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "username"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -256,6 +269,7 @@ depends-member:
 - !private ["CSo13GADBannerView", "rootViewController"]
 - ["CSo10GADRequest", "deinit"]
 - !private ["CSo10GADRequest", "init"]
+- !private ["CSo10GADRequest", "testDevices"]
 - !private ["Ps8Hashable", "GADRequest"]
 - !private ["Ps8Hashable", "UITapGestureRecognizer"]
 - !private ["Ps8Hashable", "UserDefaults"]
@@ -288,16 +302,21 @@ depends-member:
 - !private ["Ps8Hashable", "setOn"]
 - !private ["Ps8Hashable", "standard"]
 - !private ["Ps8Hashable", "string"]
+- !private ["Ps8Hashable", "testDevices"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "username"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps13IndexableBase", "Element"]
 - !private ["Si", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "GADRequest"]
 - !private ["PSo8NSCoding", "UITapGestureRecognizer"]
@@ -330,6 +349,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "testDevices"]
 - !private ["PSo26NSExtensionRequestHandling", "GADRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "UITapGestureRecognizer"]
 - !private ["PSo26NSExtensionRequestHandling", "UserDefaults"]
@@ -391,6 +411,7 @@ depends-member:
 - !private ["CSo8NSObject", "setOn"]
 - !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "string"]
+- !private ["CSo8NSObject", "testDevices"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "username"]
 - !private ["CSo8NSObject", "view"]
@@ -426,6 +447,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setOn"]
 - !private ["PSo16NSObjectProtocol", "standard"]
 - !private ["PSo16NSObjectProtocol", "string"]
+- !private ["PSo16NSObjectProtocol", "testDevices"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "username"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -434,8 +456,12 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
 - ["V10ObjectiveC8Selector", "deinit"]
+- !private ["Ps8Sequence", "Element"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -639,6 +665,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "password"]
+- !private ["PSo20UIScrollViewDelegate", "username"]
 - !private ["PSo16UIStateRestoring", "GADRequest"]
 - !private ["PSo16UIStateRestoring", "UITapGestureRecognizer"]
 - !private ["PSo16UIStateRestoring", "UserDefaults"]
@@ -665,6 +693,10 @@ depends-member:
 - !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["CSo8UISwitch", "isOn"]
 - !private ["CSo8UISwitch", "setOn"]
+- !private ["PSo21UITableViewDataSource", "password"]
+- !private ["PSo21UITableViewDataSource", "username"]
+- !private ["PSo19UITableViewDelegate", "password"]
+- !private ["PSo19UITableViewDelegate", "username"]
 - ["CSo22UITapGestureRecognizer", "deinit"]
 - !private ["CSo22UITapGestureRecognizer", "init"]
 - !private ["CSo11UITextField", "text"]
@@ -778,6 +810,7 @@ depends-member:
 - ["C9Veracross17WebViewController", "deinit"]
 - !private ["C9Veracross17WebViewController", "password"]
 - !private ["C9Veracross17WebViewController", "username"]
+- !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "adSize"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "adUnitID"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
@@ -787,6 +820,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rootViewController"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setOn"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -825,29 +859,35 @@ depends-member:
 - !private ["Ps9_Hashable", "setOn"]
 - !private ["Ps9_Hashable", "standard"]
 - !private ["Ps9_Hashable", "string"]
+- !private ["Ps9_Hashable", "testDevices"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "username"]
 - !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
 - "Sb"
 - !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - !private "Sd"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -857,9 +897,13 @@ depends-nominal:
 - "CSo10GADRequest"
 - "Ps8Hashable"
 - "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
 - !private "Si"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -870,7 +914,12 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
 - "V10ObjectiveC8Selector"
+- !private "Ps8Sequence"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -888,9 +937,12 @@ depends-nominal:
 - !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
 - "CSo17UIStoryboardSegue"
 - !private "CSo8UISwitch"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
 - "CSo22UITapGestureRecognizer"
 - !private "CSo11UITextField"
 - !private "PSo11UITextInput"
@@ -903,7 +955,9 @@ depends-nominal:
 - "CSo12UserDefaults"
 - "C9Veracross14ViewController"
 - "C9Veracross17WebViewController"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
@@ -924,6 +978,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
@@ -994,25 +1049,4 @@ depends-external:
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Firebase/Core/Sources/Firebase.h"
 interface-hash: "93162eb8ce502f9d38ade511607ac2ee"

@@ -6,29 +6,23 @@ provides-nominal:
 provides-member:
 - ["C9Alamofire15SessionDelegate", ""]
 provides-dynamic-lookup:
-- "dataTaskWillCacheResponse"
-- "taskDidSendBodyData"
 - "streamTaskBetterRouteDiscovered"
-- "taskWillPerformHTTPRedirection"
-- "taskNeedNewBodyStreamWithCompletion"
-- "downloadTaskDidFinishDownloadingToURL"
-- "dataTaskDidReceiveData"
-- "streamTaskReadClosed"
-- "taskNeedNewBodyStream"
-- "streamTaskDidBecomeInputAndOutputStreams"
-- "taskWillPerformHTTPRedirectionWithCompletion"
-- "dataTaskDidReceiveResponseWithCompletion"
-- "dataTaskDidBecomeDownloadTask"
-- "downloadTaskDidWriteData"
-- "taskDidReceiveChallengeWithCompletion"
-- "dataTaskDidReceiveResponse"
-- "streamTaskWriteClosed"
-- "sessionDidBecomeInvalidWithError"
-- "dataTaskWillCacheResponseWithCompletion"
-- "downloadTaskDidResumeAtOffset"
 - "responds"
+- "taskWillPerformHTTPRedirection"
 - "urlSessionDidFinishEvents"
-- "taskDidComplete"
+- "taskNeedNewBodyStreamWithCompletion"
+- "streamTaskWriteClosed"
+- "taskDidSendBodyData"
+- "dataTaskWillCacheResponseWithCompletion"
+- "dataTaskDidReceiveData"
+- "taskWillPerformHTTPRedirectionWithCompletion"
+- "streamTaskDidBecomeInputAndOutputStreams"
+- "streamTaskReadClosed"
+- "sessionDidBecomeInvalidWithError"
+- "dataTaskDidBecomeDownloadTask"
+- "dataTaskDidReceiveResponseWithCompletion"
+- "downloadTaskDidResumeAtOffset"
+- "taskDidReceiveChallengeWithCompletion"
 - "urlSession"
 - "urlSession"
 - "urlSession"
@@ -48,58 +42,64 @@ provides-dynamic-lookup:
 - "urlSession"
 - "urlSession"
 - "urlSession"
+- "taskNeedNewBodyStream"
 - "sessionDidReceiveChallengeWithCompletion"
 - "sessionDidFinishEventsForBackgroundURLSession"
+- "dataTaskDidReceiveResponse"
+- "downloadTaskDidWriteData"
+- "taskDidComplete"
+- "downloadTaskDidFinishDownloadingToURL"
+- "dataTaskWillCacheResponse"
 depends-top-level:
-- "URLSessionDownloadDelegate"
-- "Void"
-- !private "NSURLAuthenticationMethodServerTrust"
-- "Int64"
-- "URLSession"
-- "RequestRetrier"
-- "URLSessionTaskMetrics"
-- !private "??"
-- "Data"
-- !private "||"
-- !private "DownloadTaskDelegate"
-- "InputStream"
-- "Bool"
-- "SessionDelegate"
-- "SessionManager"
-- "BooleanLiteralType"
-- "URLRequest"
-- "HTTPURLResponse"
-- "URL"
 - "URLSessionStreamDelegate"
-- "Error"
-- "URLSessionDataDelegate"
-- "NSObject"
-- "OutputStream"
-- "URLSessionTask"
-- "URLSessionStreamTask"
-- !private "!="
-- "CachedURLResponse"
-- !private "UploadTaskDelegate"
-- !private "~="
-- !private "DispatchQueue"
-- "Request"
 - "Int"
-- "URLCredential"
-- "CastingPrecedence"
-- "NSLock"
 - "URLSessionTaskDelegate"
-- !private "NotificationCenter"
+- "Request"
+- "URL"
+- !private "||"
+- !private "NSURLAuthenticationMethodServerTrust"
+- !private "DispatchQueue"
+- "Dictionary"
+- "URLSessionDownloadDelegate"
+- !private "??"
+- "OutputStream"
+- "InputStream"
+- !private "DownloadTaskDelegate"
+- "SessionManager"
+- "HTTPURLResponse"
+- "BooleanLiteralType"
+- "Bool"
+- "Void"
+- "CastingPrecedence"
 - "AssignmentPrecedence"
+- !private "=="
+- !private "~="
+- "CachedURLResponse"
+- "URLCredential"
+- "NSObject"
+- "URLSessionDataTask"
+- "URLSessionDataDelegate"
+- "URLSessionDelegate"
+- "URLResponse"
+- "RequestRetrier"
+- !private "DataTaskDelegate"
+- !private "NotificationCenter"
+- "URLSessionTaskMetrics"
+- "URLSessionTask"
+- !private "Notification"
+- "Int64"
+- "Data"
+- !private "UploadTaskDelegate"
+- "NSLock"
+- "SessionDelegate"
 - "URLAuthenticationChallenge"
 - "Selector"
-- !private "=="
+- "URLRequest"
+- "URLSessionStreamTask"
+- !private "!="
+- "Error"
+- "URLSession"
 - "URLSessionDownloadTask"
-- "URLSessionDelegate"
-- "URLSessionDataTask"
-- "Dictionary"
-- !private "DataTaskDelegate"
-- !private "Notification"
-- "URLResponse"
 depends-member:
 - ["Ps9AnyObject", "AuthChallengeDisposition"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
@@ -316,7 +316,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "sessionDidReceiveChallenge"]
 - ["Ps28CustomDebugStringConvertible", "sessionDidReceiveChallengeWithCompletion"]
 - ["Ps28CustomDebugStringConvertible", "sessionManager"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - ["Ps28CustomDebugStringConvertible", "streamTaskBetterRouteDiscovered"]
 - ["Ps28CustomDebugStringConvertible", "streamTaskDidBecomeInputAndOutputStreams"]
 - ["Ps28CustomDebugStringConvertible", "streamTaskReadClosed"]
@@ -346,7 +345,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "forEach"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - ["Ps23CustomStringConvertible", "AuthChallengeDisposition"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
@@ -519,7 +517,6 @@ depends-member:
 - ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - ["CSo15HTTPURLResponse", "deinit"]
 - ["Ps8Hashable", "AuthChallengeDisposition"]
 - !private ["Ps8Hashable", "DispatchQueue"]
@@ -808,7 +805,6 @@ depends-member:
 - !private ["CSo9OS_object", "after"]
 - !private ["CSo9OS_object", "utility"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - ["CSo12OutputStream", "deinit"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
@@ -1317,7 +1313,6 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps30ExpressibleByDictionaryLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "CSo15HTTPURLResponse"
 - "Ps8Hashable"
 - "Ps9Indexable"

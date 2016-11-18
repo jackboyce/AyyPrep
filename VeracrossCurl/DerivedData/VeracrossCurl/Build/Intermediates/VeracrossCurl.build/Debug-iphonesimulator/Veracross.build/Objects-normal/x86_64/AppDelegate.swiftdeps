@@ -7,27 +7,25 @@ provides-member:
 - ["C9Veracross11AppDelegate", ""]
 provides-dynamic-lookup:
 - "applicationDidEnterBackground"
-- "window"
-- "applicationWillResignActive"
-- "applicationDidBecomeActive"
-- "application"
 - "applicationWillEnterForeground"
+- "application"
+- "applicationDidBecomeActive"
+- "applicationWillResignActive"
+- "window"
 - "applicationWillTerminate"
 depends-top-level:
 - "UIWindow"
-- "UIApplicationDelegate"
-- "UIResponder"
 - "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- !private "FIRApp"
-- !private "BooleanLiteralType"
 - "UIApplication"
-- !private "UserDefaults"
-- "Bool"
 - !private "GADMobileAds"
+- "UIApplicationLaunchOptionsKey"
+- "UIResponder"
+- !private "UserDefaults"
 - !private "StringLiteralType"
+- !private "BooleanLiteralType"
+- "Bool"
+- "UIApplicationDelegate"
 depends-member:
-- !private ["Ps9AnyObject", "FIRApp"]
 - !private ["Ps9AnyObject", "GADMobileAds"]
 - !private ["Ps9AnyObject", "UserDefaults"]
 - ["Ps9AnyObject", "application"]
@@ -49,7 +47,6 @@ depends-member:
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
 - ["C9Veracross11AppDelegate", "Bool"]
-- !private ["C9Veracross11AppDelegate", "FIRApp"]
 - !private ["C9Veracross11AppDelegate", "GADMobileAds"]
 - ["C9Veracross11AppDelegate", "UIApplication"]
 - ["C9Veracross11AppDelegate", "UIApplicationLaunchOptionsKey"]
@@ -71,7 +68,6 @@ depends-member:
 - ["C9Veracross11AppDelegate", "init"]
 - ["C9Veracross11AppDelegate", "window"]
 - ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "FIRApp"]
 - !private ["Ps7CVarArg", "GADMobileAds"]
 - !private ["Ps7CVarArg", "UserDefaults"]
 - ["Ps7CVarArg", "application"]
@@ -93,7 +89,6 @@ depends-member:
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
 - !private ["Ps28CustomDebugStringConvertible", "GADMobileAds"]
 - !private ["Ps28CustomDebugStringConvertible", "UserDefaults"]
 - ["Ps28CustomDebugStringConvertible", "application"]
@@ -116,7 +111,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "FIRApp"]
 - !private ["Ps23CustomStringConvertible", "GADMobileAds"]
 - !private ["Ps23CustomStringConvertible", "UserDefaults"]
 - ["Ps23CustomStringConvertible", "application"]
@@ -137,7 +131,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "synchronize"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "FIRApp"]
 - !private ["Ps9Equatable", "GADMobileAds"]
 - !private ["Ps9Equatable", "UserDefaults"]
 - ["Ps9Equatable", "application"]
@@ -162,9 +155,7 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["CSo6FIRApp", "configure"]
 - !private ["CSo12GADMobileAds", "configure"]
-- !private ["Ps8Hashable", "FIRApp"]
 - !private ["Ps8Hashable", "GADMobileAds"]
 - !private ["Ps8Hashable", "UserDefaults"]
 - ["Ps8Hashable", "application"]
@@ -192,7 +183,6 @@ depends-member:
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "FIRApp"]
 - !private ["CSo8NSObject", "GADMobileAds"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
@@ -215,7 +205,6 @@ depends-member:
 - !private ["CSo8NSObject", "standard"]
 - !private ["CSo8NSObject", "synchronize"]
 - ["CSo8NSObject", "window"]
-- !private ["PSo16NSObjectProtocol", "FIRApp"]
 - !private ["PSo16NSObjectProtocol", "GADMobileAds"]
 - !private ["PSo16NSObjectProtocol", "UserDefaults"]
 - ["PSo16NSObjectProtocol", "application"]
@@ -243,7 +232,6 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["PSo21UIApplicationDelegate", "FIRApp"]
 - !private ["PSo21UIApplicationDelegate", "GADMobileAds"]
 - !private ["PSo21UIApplicationDelegate", "UserDefaults"]
 - ["PSo21UIApplicationDelegate", "application"]
@@ -261,7 +249,6 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "FIRApp"]
 - !private ["CSo11UIResponder", "GADMobileAds"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
@@ -283,7 +270,6 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
-- !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
 - !private ["PSo30UIResponderStandardEditActions", "GADMobileAds"]
 - !private ["PSo30UIResponderStandardEditActions", "UserDefaults"]
 - ["PSo30UIResponderStandardEditActions", "application"]
@@ -310,7 +296,6 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "FIRApp"]
 - !private ["Ps9_Hashable", "GADMobileAds"]
 - !private ["Ps9_Hashable", "UserDefaults"]
 - ["Ps9_Hashable", "application"]
@@ -347,7 +332,6 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "CSo6FIRApp"
 - !private "CSo12GADMobileAds"
 - "Ps8Hashable"
 - !private "SQ"
@@ -387,6 +371,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Alamofire.framework/Headers/Alamofire-Swift.h"
@@ -457,25 +442,4 @@ depends-external:
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
 - "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Google-Mobile-Ads-SDK/Frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
-- "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Firebase/Core/Sources/Firebase.h"
-interface-hash: "cd27e0169ed4d3a003dccb9bef7e1a05"
+interface-hash: "0881b1dadd0fc98dec067860addcaf8f"

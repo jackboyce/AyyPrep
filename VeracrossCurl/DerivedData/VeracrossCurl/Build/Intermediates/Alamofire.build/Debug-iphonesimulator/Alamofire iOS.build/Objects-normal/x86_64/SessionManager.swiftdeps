@@ -9,65 +9,65 @@ provides-member:
 - ["OC9Alamofire14SessionManager31MultipartFormDataEncodingResult", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Request"
-- "InputStream"
-- "Int"
-- "+"
-- "StringLiteralType"
-- "Locale"
-- "URLRequestConvertible"
-- "MultipartFormData"
+- !private "FileManager"
 - "kCFBundleExecutableKey"
-- "URLConvertible"
-- "Error"
-- "URL"
-- !private "!"
-- "URLSessionConfiguration"
-- "BooleanLiteralType"
-- "RequestAdapter"
+- "MultipartFormData"
+- "Locale"
+- "Dictionary"
 - !private "&&"
 - "DispatchQueue"
-- !private "FileManager"
-- "HTTPHeaders"
+- "URLSessionConfiguration"
+- "Request"
+- "Int"
+- "String"
 - "HTTPMethod"
-- "??"
-- "DownloadRequest"
-- "Data"
-- "StreamRequest"
-- "*"
-- "UploadRequest"
-- "Bundle"
-- !private "!="
-- "ProcessInfo"
-- !private "<"
-- "DataRequest"
-- !private "URLEncoding"
-- "kCFBundleIdentifierKey"
-- !private "CFAbsoluteTimeGetCurrent"
-- "-"
-- "RequestRetrier"
-- "UUID"
-- "Parameters"
-- "Bool"
-- "UnicodeScalarType"
-- "Double"
-- "SessionDelegate"
 - "NetService"
 - "kCFBundleVersionKey"
-- !private "+="
-- !private "URLRequest"
-- "Void"
-- "SessionManager"
-- "Dictionary"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "==="
+- "Parameters"
+- "StringLiteralType"
+- "UnicodeScalarType"
 - "ServerTrustPolicyManager"
-- "String"
-- "ParameterEncoding"
-- "UInt64"
-- "URLSession"
+- !private "URLEncoding"
+- !private "<"
 - !private "NSTemporaryDirectory"
+- !private "CFAbsoluteTimeGetCurrent"
+- "BooleanLiteralType"
+- !private "!="
+- "UInt64"
+- !private "==="
+- "Void"
+- "DataRequest"
+- "kCFBundleIdentifierKey"
+- "Bool"
+- "ParameterEncoding"
+- "UploadRequest"
+- "UUID"
+- "URLConvertible"
+- "Error"
+- "URLSession"
+- "Double"
+- "-"
+- "RequestRetrier"
+- "CastingPrecedence"
+- "??"
+- "Data"
+- "AssignmentPrecedence"
+- "StreamRequest"
+- "DownloadRequest"
+- "URLRequestConvertible"
+- "*"
+- "RequestAdapter"
+- "InputStream"
+- "HTTPHeaders"
+- "SessionDelegate"
+- "SessionManager"
+- "Bundle"
+- "ProcessInfo"
+- !private "URLRequest"
+- "URL"
+- !private "+="
+- "+"
+- !private "!"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Vs11AnyIterator", "Element"]
@@ -267,7 +267,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "sessionDidFinishEventsForBackgroundURLSession"]
 - !private ["Ps28CustomDebugStringConvertible", "sessionManager"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "startTime"]
 - ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "sync"]
@@ -290,7 +289,6 @@ depends-member:
 - ["Ps17CustomReflectable", "preferredLanguages"]
 - ["Ps17CustomReflectable", "prefix"]
 - !private ["Ps17CustomReflectable", "setValue"]
-- ["Ps17CustomReflectable", "some"]
 - ["Ps17CustomReflectable", "subscript"]
 - ["Ps17CustomReflectable", "uuidString"]
 - ["Ps23CustomStringConvertible", "DownloadFileDestination"]
@@ -433,7 +431,6 @@ depends-member:
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps25ExpressibleByFloatLiteral", "init"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -606,7 +603,6 @@ depends-member:
 - ["VSC22OperatingSystemVersion", "minorVersion"]
 - ["VSC22OperatingSystemVersion", "patchVersion"]
 - ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["P9Alamofire17ParameterEncoding", "default"]
 - ["P9Alamofire17ParameterEncoding", "deinit"]
 - !private ["P9Alamofire17ParameterEncoding", "encode"]
@@ -970,7 +966,6 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps25ExpressibleByFloatLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"

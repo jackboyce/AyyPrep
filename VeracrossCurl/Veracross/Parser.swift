@@ -12,43 +12,11 @@ import Alamofire
 class Parser {
     var username: String = ""
     var password: String = ""
-    var genHTMLhtml: String = ""
-    var generatedHTML: String = ""
     var courses: [Course] = []
     
     init(username: String, password: String) {
         self.username = username
         self.password = password
-    }
-    
-//    func getHTML(completionHandler: @escaping (String?) -> ()) -> NSString {
-//        login(completionHandler: completionHandler)
-//        
-//        return (genHTMLhtml as NSString)
-//        
-//    }
-
-    func parse(string: NSString) -> String{
-        //Original html of the website
-        courses = generateCourses(html: string)
-        //print(courses)
-        
-        //Loops through all of the courses
-        
-        
-        //Check for if the login is invalid and display error if it is
-        var find = "Log In"
-        var i = 0
-        while i < string.length - find.characters.count {
-            if string.substring(with: NSRange(location: i, length: find.characters.count)) == find {
-                return "<p><span style=\"font-size:400%;\">Invalid username or password</span></p>"
-            }
-            i += 1
-        }
-        
-        generatedHTML = generateHTML(courses: courses)
-        
-        return generatedHTML
     }
     
     func getKey(course: Course) -> String{
@@ -72,20 +40,20 @@ class Parser {
         return key
     }
     
-    
-    func generateHTML(courses: [Course]) -> String {
-        var genHTML: String = ""
-        
-        for i in courses {
-            genHTML += "<p><a href=\"https://documents.veracross.com/sjp/grade_detail/\(i.number).pdf?\(i.key)\"><span style=\"font-size:400%;\">\(i.name): <span style=\"float:right;\">\(stringToGrade(grade: i.grade)) \(i.grade)</span></span><a/></p><br>"
+    func getPDF(course: Course) {
+        let yourURL = NSURL(string: "https://documents.veracross.com/sjp/grade_detail/\(course.number).pdf?\(course.key)")
+        let urlRequest = NSURLRequest(url: yourURL! as URL)
+        do {
+            try course.pdf = NSURLConnection.sendSynchronousRequest(urlRequest as URLRequest, returning: nil) as NSObject
+        } catch let error as NSError {
+            
         }
-        return genHTML
     }
-    
     
     //Takes in a string with a double inside it and outputs a letter grade as a string
     func stringToGrade(grade: String) -> String {
         let doubGrade = (grade as NSString).doubleValue
+        
         if doubGrade >= 96.5 {
             return "A+"
         } else if doubGrade >= 92.5 {
@@ -115,34 +83,66 @@ class Parser {
     func generateCourses(html: NSString) -> [Course] {
         
         let activeRanges:[(start:Int, end:Int)] = getActiveRanges(html: html)
-        //print(activeRanges)
         
         var courseArray = [Course]()
         
+        let dispatchGroup = DispatchGroup()
+        let rangeGroup = DispatchGroup()
+        let parseQueue = DispatchQueue.global()
+        let rangeQueue = DispatchQueue.global()
+        
+        
         for range in activeRanges {
-            let start = range.start
-            let end = range.end
-            
-            let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
-            let courseCloser = "</a>"
-            let courseName = getStringBetween(opener: courseOpener, closer: courseCloser, target: html, begin: start, end: end, leftOffset: 27)
-            print("Course name: \(courseName)")
-            
-            let numOpener = "<a class=\"view-assignments\" href=\"/sjp/student/classes/"
-            let numCloser = "\">view all assignments</a>"
-            
-            let number = getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end, rightOffset: 0)
-            print("Course number: \(number)")
-            
-            let gradeOpener = "<span class=\"numeric-grade\">"
-            let gradeCloser = "</span>"
-            
-            let grade = getStringBetween(opener: gradeOpener, closer: gradeCloser, target: html, begin: start, end: end)
-            print("Course grade: \(grade)")
-            
-            if courseName != "" && grade != "" && number != "" {
-                courseArray.append(Course(name: courseName, grade: grade, number: number))
-            }
+            rangeQueue.async(group: rangeGroup, execute: {
+                rangeGroup.enter()
+                let start = range.start
+                let end = range.end
+                var courseName = ""
+                var number = ""
+                var grade = ""
+                
+                parseQueue.async(group: dispatchGroup, execute: {
+                    dispatchGroup.enter()
+                    let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
+                    let courseCloser = "</a>"
+                    courseName = self.getStringBetween(opener: courseOpener, closer: courseCloser, target: html, begin: start, end: end, leftOffset: 27)
+                    print("Course name: \(courseName)")
+                    dispatchGroup.leave()
+                })
+                
+                parseQueue.async(group: dispatchGroup, execute: {
+                    dispatchGroup.enter()
+                    let numOpener = "<a class=\"view-assignments\" href=\"/sjp/student/classes/"
+                    let numCloser = "\">view all assignments</a>"
+                    
+                    number = self.getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end, rightOffset: 0)
+                    print("Course number: \(number)")
+                    dispatchGroup.leave()
+                })
+                
+                parseQueue.async(group: dispatchGroup, execute: {
+                    dispatchGroup.enter()
+                    let gradeOpener = "<span class=\"numeric-grade\">"
+                    let gradeCloser = "</span>"
+                    
+                    grade = self.getStringBetween(opener: gradeOpener, closer: gradeCloser, target: html, begin: start, end: end)
+                    print("Course grade: \(grade)")
+                    dispatchGroup.leave()
+                })
+                
+                dispatchGroup.notify(queue: parseQueue, execute: {
+                    if courseName != "" && grade != "" && number != "" {
+                        courseArray.append(Course(name: courseName, grade: grade, number: number))
+                    }
+                })
+                dispatchGroup.wait()
+                rangeGroup.leave()
+            })
+            rangeGroup.wait()
+        }
+        
+        if html.contains("Log In"){
+            courseArray.append(Course(name: "Wrong username or password", grade: "", number: ""))
         }
         
         return courseArray
@@ -198,7 +198,6 @@ class Parser {
             }
             openIndex += 1
         }
-        //print(ret)
         return ret
     }
     
@@ -215,15 +214,25 @@ class Parser {
             
         }
     }
-    //        let myURLString = "https://portals.veracross.com/sjp/login"
-    //        let myURL = URL(string: myURLString)
-    //
-    //        do {
-    //            let myHTMLString = try String(contentsOf: myURL!, encoding: .ascii)
-    //            html = myHTMLString as NSString
-    //        } catch let error {
-    //            print("Error: \(error)")
-    //        }
-
-
+        /*
+         var request = URLRequest(url: URL(string: "https://portals.veracross.com/sjp/login")!)
+         request.httpMethod = "POST"
+         var postString = "username=\(username)&password=\(password)&return_to=https://portals.veracross.com/sjp/student&Application=Portals&commit=Log In"
+         request.httpBody = postString.data(using: .utf8)
+         var task = URLSession.shared.dataTask(with: request) { data, response, error in
+         guard let data = data, error == nil else {                                                 // check for fundamental networking error
+         print("error=\(error)")
+         return
+         }
+         
+         if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+         print("statusCode should be 200, but is \(httpStatus.statusCode)")
+         print("response = \(response)")
+         }
+         
+         let responseString = String(data: data, encoding: .utf8)
+         print("responseString = \(responseString)")
+         }
+         task.resume()
+        */
 }
