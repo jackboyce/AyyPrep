@@ -54,7 +54,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                 }
                 group.leave()
             }
-            
             loadingCircle.stopAnimating()
         }
     }

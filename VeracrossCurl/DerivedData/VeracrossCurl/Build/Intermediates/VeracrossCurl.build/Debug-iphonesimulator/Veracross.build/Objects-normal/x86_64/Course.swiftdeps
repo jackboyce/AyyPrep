@@ -7,11 +7,11 @@ provides-member:
 - ["C9Veracross6Course", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Course"
-- "AssignmentPrecedence"
-- "StringLiteralType"
 - "String"
+- "AssignmentPrecedence"
 - "NSObject"
+- "StringLiteralType"
+- "Course"
 depends-member:
 - !private ["Ps9AnyObject", "grade"]
 - !private ["Ps9AnyObject", "init"]

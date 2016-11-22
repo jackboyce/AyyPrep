@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C9Veracross17PDFViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "htmlViewer"
+- "viewDidLoad"
 depends-top-level:
-- "StringLiteralType"
 - "PDFViewController"
-- !private "URL"
 - "UIWebView"
-- "Course"
-- "UIViewController"
-- "Parser"
-- "CastingPrecedence"
 - !private "Data"
+- "UIViewController"
+- "CastingPrecedence"
+- !private "URL"
+- "Parser"
+- "StringLiteralType"
+- "Course"
 depends-member:
 - ["Ps9AnyObject", "Course"]
 - !private ["Ps9AnyObject", "URL"]

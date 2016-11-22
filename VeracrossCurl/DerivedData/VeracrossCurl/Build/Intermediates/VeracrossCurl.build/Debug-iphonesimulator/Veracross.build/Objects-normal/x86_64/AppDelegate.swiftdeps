@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C9Veracross11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidBecomeActive"
 - "application"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
-- "applicationWillTerminate"
+- "applicationDidBecomeActive"
 - "applicationWillResignActive"
+- "applicationWillTerminate"
 - "window"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "Bool"
 - !private "StringLiteralType"
-- !private "BooleanLiteralType"
-- "UIWindow"
-- "UIApplication"
-- "AppDelegate"
-- !private "GADMobileAds"
-- "UIApplicationLaunchOptionsKey"
 - "UIResponder"
-- "UIApplicationDelegate"
+- !private "GADMobileAds"
+- "AppDelegate"
+- "Bool"
+- !private "BooleanLiteralType"
 - !private "UserDefaults"
+- "UIApplicationLaunchOptionsKey"
+- "UIApplication"
+- "UIWindow"
+- "UIApplicationDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "GADMobileAds"]
 - !private ["Ps9AnyObject", "UserDefaults"]
