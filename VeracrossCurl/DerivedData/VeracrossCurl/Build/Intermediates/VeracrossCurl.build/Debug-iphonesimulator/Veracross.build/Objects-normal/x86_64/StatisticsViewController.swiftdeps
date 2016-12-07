@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C9Veracross24StatisticsViewController", ""]
 provides-dynamic-lookup:
+- "quarterUnweighted"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
-- "quarterUnweighted"
 - "stringToGrade"
-- "stringToGPA"
 - "text"
+- "stringToGPA"
 depends-top-level:
+- "StatisticsViewController"
 - !private "print"
 - !private "NSString"
-- !private ">="
-- "CastingPrecedence"
-- !private "UnicodeScalarType"
-- "StatisticsViewController"
 - "AssignmentPrecedence"
-- "UITextView"
 - !private "=="
-- !private "StringLiteralType"
 - "String"
-- !private "+="
+- "CastingPrecedence"
 - "Double"
-- "Course"
-- !private "/="
 - "UIViewController"
+- !private "/="
+- !private "StringLiteralType"
+- !private ">="
+- !private "UnicodeScalarType"
+- "UITextView"
+- "Course"
+- !private "+="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]
