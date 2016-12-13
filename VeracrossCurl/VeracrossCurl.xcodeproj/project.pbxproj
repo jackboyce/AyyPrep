@@ -15,8 +15,8 @@
 		1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8EA9741DB292E70019351A /* CourseViewController.swift */; };
 		1AA53C161DB64AB50076E5EF /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */; };
 		1ADB67BE1DBE9AE800EF551F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */; };
-		1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
-		1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AF5EEA41DAA211400670ABD /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
+		1AF5EEA51DAA211400670ABD /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF5EEAF1DAD8BA900670ABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5EEAE1DAD8BA900670ABD /* Course.swift */; };
 		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
@@ -89,7 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */,
+				1AF5EEA51DAA211400670ABD /* ReferenceProxy in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
+				1AF5EEA41DAA211400670ABD /* ReferenceProxy in Frameworks */,
 				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

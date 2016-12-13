@@ -7,48 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FCFC8169A79028324C6C1C1997183C7 /* Pods-Veracross-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E44D703943425F17DC8601831A877E2 /* Pods-Veracross-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9610327458FCA28A2854B141DDB0EA99 /* Pods-Veracross-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0111A0557B2EE32080BA424CD55BE50 /* Pods-Veracross-dummy.m */; };
-		EA6FB85AA5DCA41C901B2E03D27F5B1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		08700CBB713B443AFA394EFD6B74E402 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C94B10CF3FAACEE514CB942C3A69160 /* libxmlHTMLNode.swift */; };
+		322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 204990BE2C276EADE76BE10F24412B02 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DB400D8B8AADDF43E1439E3441E814B /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E6F45687AF6853AC6776E8BF3F8314 /* Kanna-dummy.m */; };
+		403A56ED8092BC41B0630E678265944B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		42533C55DE4971F6734FABD0F7A14D7A /* Pods-Veracross-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0111A0557B2EE32080BA424CD55BE50 /* Pods-Veracross-dummy.m */; };
+		436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = 80BEB80F77B81183F1171BD62F045C51 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		634F01C0D06986FD15F647234ADA7CBC /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F09DD2D5CF04CA354B12E32D44CD09 /* Kanna.swift */; };
+		781A4D12CC4A83EA4705C6029254B012 /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2A67A58A146FF48D152C1D61825EDD /* libxmlHTMLDocument.swift */; };
+		AF863C36D259D89189A0BDF54912C76E /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC260ABD48445831DC014D355CC5474 /* CSS.swift */; };
+		B99800502CDAFA9755F7532F38572728 /* Pods-Veracross-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E44D703943425F17DC8601831A877E2 /* Pods-Veracross-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4338F9FC89233E7F3CDBA907569F78F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FD87F8764674EFAAF3AABCA2552E5127 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BF214F0C63A7FC03697D33B79F51C4 /* libxmlParserOption.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D3F72F1682E6A6545B089275A76E4D3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D10E4FF5A483B852B47CCA0B994E340;
+			remoteInfo = Kanna;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0A34BE0126B95899CCB539B18D000283 /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veracross.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E44D703943425F17DC8601831A877E2 /* Pods-Veracross-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Veracross-umbrella.h"; sourceTree = "<group>"; };
-		121949731ABFFF9EB3988D786D6E11F2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		1D3CC148A98354A91A4887B327B39436 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		204990BE2C276EADE76BE10F24412B02 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
 		26B56D7ECAF88051685ECDA9EB1C1DE3 /* Pods-Veracross-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Veracross-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3902DB50170FC80715C7011953174C96 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		392860EB6E36ABA79E99E6174CEE5902 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		2EDD1811991B7BE4A7D683747C596008 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		3C94B10CF3FAACEE514CB942C3A69160 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Sources/Kanna/libxmlHTMLNode.swift; sourceTree = "<group>"; };
 		45415B060C358E72B6A2E19432CE3381 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465D1D3B5ED4C72EFFEEDD38B7DAE911 /* Pods-Veracross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Veracross.release.xcconfig"; sourceTree = "<group>"; };
-		489E561A7F3F2CF71F56A5C4F0A53CC0 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
 		5614E22EA876A2FAEADCC5F22018FDA8 /* Pods-Veracross-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Veracross-acknowledgements.plist"; sourceTree = "<group>"; };
-		57A94EC1469FAAD37A678C560D15ABAF /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		5FCE1C40675C680206DC25A235B77F7B /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		5B6C22BDDDB349B84393D32B2D03259D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		5F2A67A58A146FF48D152C1D61825EDD /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Sources/Kanna/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
 		5FFBE7E6ECC03AAA9EADCF6616C51F4E /* Pods-Veracross-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Veracross-frameworks.sh"; sourceTree = "<group>"; };
-		6ABD2F62FF321340F13F1ACE2A8E0714 /* Pods-Veracross.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Veracross.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2997E4115F731CDE3CF8400DF06CC71 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		63AA28A307E0B796F5F187B4080309B5 /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kanna.framework; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68B91CB49F3A21C8980E7F7EC4F4A633 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		6ABD2F62FF321340F13F1ACE2A8E0714 /* Pods-Veracross.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Veracross.modulemap"; sourceTree = "<group>"; };
+		6F48AFC59C7466BD49A987B5FC539F79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CCC18A9B7201B5E0398C54FDD8AD08B /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		7DC260ABD48445831DC014D355CC5474 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Sources/Kanna/CSS.swift; sourceTree = "<group>"; };
+		80BEB80F77B81183F1171BD62F045C51 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Sources/Kanna/Kanna.h; sourceTree = "<group>"; };
+		86E6F45687AF6853AC6776E8BF3F8314 /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		8E4E15A41715313D4206EB58D652C8EB /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Veracross.framework; path = "Pods-Veracross.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9376A85E8FA9A70A9B5713C871C8C1AF /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C509E48C6447FFDE3676E94672886EB /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		9F0E05D3C9AAEDB3E2490FB8AD2C6196 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		A44201F0A045B77B56F66227352CB0D9 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kanna.modulemap; sourceTree = "<group>"; };
 		A683969EAC8DCAF5004C0BAD69D3D747 /* Pods-Veracross-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Veracross-resources.sh"; sourceTree = "<group>"; };
-		AE02BCEFF657481CF3791D23CA47211D /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		B5B58B66FDFDA4C34127F00D7E4E168B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		B7BF214F0C63A7FC03697D33B79F51C4 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Sources/Kanna/libxmlParserOption.swift; sourceTree = "<group>"; };
 		BFDD07B7591AAD828946D9207312F4E9 /* Pods-Veracross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Veracross.debug.xcconfig"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DAD65CAFE5F43CE68F273A7614E7630C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		C60AFBEBC42190CD22EFAAC143BDA526 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF751C3BE3DB9B04FA4F6C77CBD49CCF /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		E0111A0557B2EE32080BA424CD55BE50 /* Pods-Veracross-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Veracross-dummy.m"; sourceTree = "<group>"; };
+		E0F09DD2D5CF04CA354B12E32D44CD09 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Sources/Kanna/Kanna.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C4BA899385BCB1F75EF0D6ECA64A2CB /* Frameworks */ = {
+		7D61FB1EE1CC8CC73C1026438456B4FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6FB85AA5DCA41C901B2E03D27F5B1D /* Foundation.framework in Frameworks */,
+				C4338F9FC89233E7F3CDBA907569F78F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26FEF1A0E7E734EE57A74A7D845B0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				403A56ED8092BC41B0630E678265944B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		017BF6E455F6B01050BD9945E11870A0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7D3D15B51AC46CBA3FF3D31DF18D11A4 /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		0193D7D0BC01754883D22DEF699D678E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,84 +124,86 @@
 			path = "Target Support Files/Pods-Veracross";
 			sourceTree = "<group>";
 		};
-		0B9176D8F8FF4A50313A4AAB92795BC8 /* GoogleSymbolUtilities */ = {
+		171771DE6AE22C394C306706D7109289 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				14D0DA3BAC784BC24B829EACA4ED2B99 /* Frameworks */,
+				FB7FC2EFD9ACDEA77348B45F9EB04973 /* Frameworks */,
 			);
-			path = GoogleSymbolUtilities;
+			name = GoogleInterchangeUtilities;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		14D0DA3BAC784BC24B829EACA4ED2B99 /* Frameworks */ = {
+		279A110E08563F8FE2800D8A99A3DE68 /* Kanna */ = {
 			isa = PBXGroup;
 			children = (
-				AE02BCEFF657481CF3791D23CA47211D /* GoogleSymbolUtilities.framework */,
+				7DC260ABD48445831DC014D355CC5474 /* CSS.swift */,
+				80BEB80F77B81183F1171BD62F045C51 /* Kanna.h */,
+				E0F09DD2D5CF04CA354B12E32D44CD09 /* Kanna.swift */,
+				5F2A67A58A146FF48D152C1D61825EDD /* libxmlHTMLDocument.swift */,
+				3C94B10CF3FAACEE514CB942C3A69160 /* libxmlHTMLNode.swift */,
+				B7BF214F0C63A7FC03697D33B79F51C4 /* libxmlParserOption.swift */,
+				CF7768BDE63283B7638F9959583928F7 /* Support Files */,
 			);
-			name = Frameworks;
+			name = Kanna;
+			path = Kanna;
 			sourceTree = "<group>";
 		};
-		24A7BEF5A7F1EB9EC280B938781B2569 /* Frameworks */ = {
+		2D4EE31275585FA49E94FDCE3D2EBA33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				392860EB6E36ABA79E99E6174CEE5902 /* GoogleUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		37642F2CAEF0F78E8EC9D888A1F6DD3E /* Google-Mobile-Ads-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				FB57368071E90464BB4CD0EECB06EAEB /* Frameworks */,
-			);
-			path = "Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		3B976B3DC8C97531E10D73DDCEB468F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3902DB50170FC80715C7011953174C96 /* GoogleInterchangeUtilities.framework */,
+				68B91CB49F3A21C8980E7F7EC4F4A633 /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		3A7ED7E7A9DF848613DA7811334BF11F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		52C11D4CE40B641F1CCC6184D9CBD9C8 /* GoogleUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				24A7BEF5A7F1EB9EC280B938781B2569 /* Frameworks */,
-			);
-			path = GoogleUtilities;
-			sourceTree = "<group>";
-		};
-		5B70EBA7F1BE49E4F93693CF39FEA830 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A34BE0126B95899CCB539B18D000283 /* Pods_Veracross.framework */,
+				63AA28A307E0B796F5F187B4080309B5 /* Kanna.framework */,
+				8E4E15A41715313D4206EB58D652C8EB /* Pods_Veracross.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B701948D42463BA8542D1AE5E88B280 /* Frameworks */ = {
+		3E6F95AB502F0AA9636A56675A44AB2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				57A94EC1469FAAD37A678C560D15ABAF /* FirebaseInstanceID.framework */,
+				2EDD1811991B7BE4A7D683747C596008 /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6BC1E2DFACF0093C42AA20142867DD06 /* GoogleInterchangeUtilities */ = {
+		461CA76BCE89EF5973B219D7132F761D /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				3B976B3DC8C97531E10D73DDCEB468F5 /* Frameworks */,
+				69E13FA7820CE34FE152CBB723BEE0C6 /* Frameworks */,
 			);
-			path = GoogleInterchangeUtilities;
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		69E13FA7820CE34FE152CBB723BEE0C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C60AFBEBC42190CD22EFAAC143BDA526 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7D3D15B51AC46CBA3FF3D31DF18D11A4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B5B58B66FDFDA4C34127F00D7E4E168B /* Firebase.h */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -160,129 +211,184 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AA535FE3140D0E2CD347365543C97096 /* Pods */,
-				5B70EBA7F1BE49E4F93693CF39FEA830 /* Products */,
+				D154FD5530A1658B1F1DB3D7D56712D8 /* Pods */,
+				3A7ED7E7A9DF848613DA7811334BF11F /* Products */,
 				0193D7D0BC01754883D22DEF699D678E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		894F28FB4862BD461C519D35F4BCFC7F /* FirebaseInstanceID */ = {
+		940981CF12B99CB75A91AE305C9DE577 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				5FCE1C40675C680206DC25A235B77F7B /* FIRInstanceID.h */,
-				6B701948D42463BA8542D1AE5E88B280 /* Frameworks */,
+				A0FFA4DFE1B450F80AC65BECE9954B23 /* Frameworks */,
 			);
-			path = FirebaseInstanceID;
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		9596002AA7AB54FA2462459045EA7AAF /* Frameworks */ = {
+		A0FFA4DFE1B450F80AC65BECE9954B23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAD65CAFE5F43CE68F273A7614E7630C /* FirebaseAnalytics.framework */,
+				7CCC18A9B7201B5E0398C54FDD8AD08B /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		97C87CC65B334F783ED2D198F9875D67 /* FirebaseAnalytics */ = {
+		A94F573062FFEE9F089E9A13F1C0ECF1 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				9596002AA7AB54FA2462459045EA7AAF /* Frameworks */,
+				F5F95862B19526FFDD85BCF1B9AF42A6 /* Frameworks */,
 			);
-			path = FirebaseAnalytics;
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		AA535FE3140D0E2CD347365543C97096 /* Pods */ = {
+		ADD246439879549E0CAEA5B3174845D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FABC0F57BEFF25E3F3763C9304532A1A /* Firebase */,
-				97C87CC65B334F783ED2D198F9875D67 /* FirebaseAnalytics */,
-				BF73A17757FA7DE7A2C85CD3708C00AF /* FirebaseCore */,
-				894F28FB4862BD461C519D35F4BCFC7F /* FirebaseInstanceID */,
-				37642F2CAEF0F78E8EC9D888A1F6DD3E /* Google-Mobile-Ads-SDK */,
-				6BC1E2DFACF0093C42AA20142867DD06 /* GoogleInterchangeUtilities */,
-				0B9176D8F8FF4A50313A4AAB92795BC8 /* GoogleSymbolUtilities */,
-				52C11D4CE40B641F1CCC6184D9CBD9C8 /* GoogleUtilities */,
+				CF751C3BE3DB9B04FA4F6C77CBD49CCF /* GoogleUtilities.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF73A17757FA7DE7A2C85CD3708C00AF /* FirebaseCore */ = {
+		C4202B861A9B2D7F3F9F7EB2D53A8263 /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				F94828C458CDFCB2D49F8BBD62461B88 /* Frameworks */,
+				ADD246439879549E0CAEA5B3174845D9 /* Frameworks */,
 			);
-			path = FirebaseCore;
+			name = GoogleUtilities;
+			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
-		E4EA4916CD8C135C2196CFB2B9F2210B /* Core */ = {
+		CF7768BDE63283B7638F9959583928F7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				489E561A7F3F2CF71F56A5C4F0A53CC0 /* Firebase.h */,
+				6F48AFC59C7466BD49A987B5FC539F79 /* Info.plist */,
+				A44201F0A045B77B56F66227352CB0D9 /* Kanna.modulemap */,
+				9F0E05D3C9AAEDB3E2490FB8AD2C6196 /* Kanna.xcconfig */,
+				86E6F45687AF6853AC6776E8BF3F8314 /* Kanna-dummy.m */,
+				1D3CC148A98354A91A4887B327B39436 /* Kanna-prefix.pch */,
+				204990BE2C276EADE76BE10F24412B02 /* Kanna-umbrella.h */,
 			);
-			name = Core;
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
 			sourceTree = "<group>";
 		};
-		F94828C458CDFCB2D49F8BBD62461B88 /* Frameworks */ = {
+		D154FD5530A1658B1F1DB3D7D56712D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A2997E4115F731CDE3CF8400DF06CC71 /* FirebaseCore.framework */,
+				017BF6E455F6B01050BD9945E11870A0 /* Firebase */,
+				940981CF12B99CB75A91AE305C9DE577 /* FirebaseAnalytics */,
+				461CA76BCE89EF5973B219D7132F761D /* FirebaseCore */,
+				F975F101BE4459DBEE58E0BC2C900819 /* FirebaseInstanceID */,
+				A94F573062FFEE9F089E9A13F1C0ECF1 /* Google-Mobile-Ads-SDK */,
+				171771DE6AE22C394C306706D7109289 /* GoogleInterchangeUtilities */,
+				FC016D4604BCB58FAC001604C1B7756C /* GoogleSymbolUtilities */,
+				C4202B861A9B2D7F3F9F7EB2D53A8263 /* GoogleUtilities */,
+				279A110E08563F8FE2800D8A99A3DE68 /* Kanna */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5F95862B19526FFDD85BCF1B9AF42A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B6C22BDDDB349B84393D32B2D03259D /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FABC0F57BEFF25E3F3763C9304532A1A /* Firebase */ = {
+		F975F101BE4459DBEE58E0BC2C900819 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				E4EA4916CD8C135C2196CFB2B9F2210B /* Core */,
+				9C509E48C6447FFDE3676E94672886EB /* FIRInstanceID.h */,
+				2D4EE31275585FA49E94FDCE3D2EBA33 /* Frameworks */,
 			);
-			path = Firebase;
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		FB57368071E90464BB4CD0EECB06EAEB /* Frameworks */ = {
+		FB7FC2EFD9ACDEA77348B45F9EB04973 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				121949731ABFFF9EB3988D786D6E11F2 /* GoogleMobileAds.framework */,
+				9376A85E8FA9A70A9B5713C871C8C1AF /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC016D4604BCB58FAC001604C1B7756C /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				3E6F95AB502F0AA9636A56675A44AB2C /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C1EC4F6C73E1C3CF3C274AF465EDB80C /* Headers */ = {
+		62589400195B424F1F0FE848E7D0820E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FCFC8169A79028324C6C1C1997183C7 /* Pods-Veracross-umbrella.h in Headers */,
+				B99800502CDAFA9755F7532F38572728 /* Pods-Veracross-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CA17BFDDB0A81444254ACD04D49309 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322F32F75AC8A04064F70A089800AF88 /* Kanna-umbrella.h in Headers */,
+				436871564BF1C99AA86206B69CDB40DD /* Kanna.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		05011239C0062A128290A68098B3A67C /* Pods-Veracross */ = {
+		4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B68C78CBA12E65F64AFF0F1B05014FA /* Build configuration list for PBXNativeTarget "Pods-Veracross" */;
+			buildConfigurationList = 032FE6A4FF03E43B2C60899A35389C7F /* Build configuration list for PBXNativeTarget "Kanna" */;
 			buildPhases = (
-				487E6EF8B4B838C7CC519083159AAA49 /* Sources */,
-				9C4BA899385BCB1F75EF0D6ECA64A2CB /* Frameworks */,
-				C1EC4F6C73E1C3CF3C274AF465EDB80C /* Headers */,
+				252B13ABC5AE0EA65897098097C1703E /* Sources */,
+				B26FEF1A0E7E734EE57A74A7D845B0F9 /* Frameworks */,
+				A3CA17BFDDB0A81444254ACD04D49309 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Kanna;
+			productName = Kanna;
+			productReference = 63AA28A307E0B796F5F187B4080309B5 /* Kanna.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEACA1E99400B42FADDC9C21496705EF /* Pods-Veracross */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41BE0E6CEF3DB774E1DD4D4DA1B732A1 /* Build configuration list for PBXNativeTarget "Pods-Veracross" */;
+			buildPhases = (
+				E16636851A30E910D66B271C4779287F /* Sources */,
+				7D61FB1EE1CC8CC73C1026438456B4FA /* Frameworks */,
+				62589400195B424F1F0FE848E7D0820E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A694FDB2142EE1A1C966AAE5609DEE /* PBXTargetDependency */,
+			);
 			name = "Pods-Veracross";
 			productName = "Pods-Veracross";
-			productReference = 0A34BE0126B95899CCB539B18D000283 /* Pods_Veracross.framework */;
+			productReference = 8E4E15A41715313D4206EB58D652C8EB /* Pods_Veracross.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -302,28 +408,51 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5B70EBA7F1BE49E4F93693CF39FEA830 /* Products */;
+			productRefGroup = 3A7ED7E7A9DF848613DA7811334BF11F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05011239C0062A128290A68098B3A67C /* Pods-Veracross */,
+				4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */,
+				AEACA1E99400B42FADDC9C21496705EF /* Pods-Veracross */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		487E6EF8B4B838C7CC519083159AAA49 /* Sources */ = {
+		252B13ABC5AE0EA65897098097C1703E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9610327458FCA28A2854B141DDB0EA99 /* Pods-Veracross-dummy.m in Sources */,
+				AF863C36D259D89189A0BDF54912C76E /* CSS.swift in Sources */,
+				3DB400D8B8AADDF43E1439E3441E814B /* Kanna-dummy.m in Sources */,
+				634F01C0D06986FD15F647234ADA7CBC /* Kanna.swift in Sources */,
+				781A4D12CC4A83EA4705C6029254B012 /* libxmlHTMLDocument.swift in Sources */,
+				08700CBB713B443AFA394EFD6B74E402 /* libxmlHTMLNode.swift in Sources */,
+				FD87F8764674EFAAF3AABCA2552E5127 /* libxmlParserOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16636851A30E910D66B271C4779287F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42533C55DE4971F6734FABD0F7A14D7A /* Pods-Veracross-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D0A694FDB2142EE1A1C966AAE5609DEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kanna;
+			target = 4D10E4FF5A483B852B47CCA0B994E340 /* Kanna */;
+			targetProxy = D3F72F1682E6A6545B089275A76E4D3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -341,13 +470,18 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -355,17 +489,121 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		533B55E882C3478765F7941137A4E7FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDD07B7591AAD828946D9207312F4E9 /* Pods-Veracross.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Veracross/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Veracross/Pods-Veracross.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Veracross;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		777A43B0C044C871B75AF34337C8CC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0E05D3C9AAEDB3E2490FB8AD2C6196 /* Kanna.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		A78918C008ABD56E8270C115870E28AD /* Release */ = {
+		C23674C6CE471576EFC789E13F46B7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0E05D3C9AAEDB3E2490FB8AD2C6196 /* Kanna.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9CF3C7F2DE925DFD1B71DE38F3B0F55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 465D1D3B5ED4C72EFFEEDD38B7DAE911 /* Pods-Veracross.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -394,7 +632,7 @@
 			};
 			name = Release;
 		};
-		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,17 +650,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
+					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -430,62 +665,39 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
-		};
-		EED241D571EBBCF047808E91B22BD92A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFDD07B7591AAD828946D9207312F4E9 /* Pods-Veracross.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Veracross/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Veracross/Pods-Veracross.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Veracross;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		032FE6A4FF03E43B2C60899A35389C7F /* Build configuration list for PBXNativeTarget "Kanna" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE9439C22469D35336242DD983DB5C5F /* Debug */,
-				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+				C23674C6CE471576EFC789E13F46B7E8 /* Debug */,
+				777A43B0C044C871B75AF34337C8CC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B68C78CBA12E65F64AFF0F1B05014FA /* Build configuration list for PBXNativeTarget "Pods-Veracross" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EED241D571EBBCF047808E91B22BD92A /* Debug */,
-				A78918C008ABD56E8270C115870E28AD /* Release */,
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41BE0E6CEF3DB774E1DD4D4DA1B732A1 /* Build configuration list for PBXNativeTarget "Pods-Veracross" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533B55E882C3478765F7941137A4E7FF /* Debug */,
+				D9CF3C7F2DE925DFD1B71DE38F3B0F55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

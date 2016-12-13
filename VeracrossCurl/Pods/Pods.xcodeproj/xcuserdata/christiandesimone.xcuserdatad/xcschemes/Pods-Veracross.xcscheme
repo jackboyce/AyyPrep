@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "05011239C0062A128290A68098B3A67C"
+               BlueprintIdentifier = "AEACA1E99400B42FADDC9C21496705EF"
                BuildableName = "Pods_Veracross.framework"
                BlueprintName = "Pods-Veracross"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "05011239C0062A128290A68098B3A67C"
+            BlueprintIdentifier = "AEACA1E99400B42FADDC9C21496705EF"
             BuildableName = "Pods_Veracross.framework"
             BlueprintName = "Pods-Veracross"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "05011239C0062A128290A68098B3A67C"
-            BuildableName = "Pods_Veracross.framework"
-            BlueprintName = "Pods-Veracross"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

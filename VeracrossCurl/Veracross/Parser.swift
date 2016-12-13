@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import Kanna
 
 class Parser {
     var username: String = ""
@@ -37,8 +38,21 @@ class Parser {
         let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
         let key = getStringBetween(opener: keyOpener, closer: keyCloser, target: html, leftOffset: 8)
         
+        //Get the html table to use for grophs
+        let tableOpener = "<iframe id=\"grade-detail-document\" src=\""
+        let tableCloser = "\" data-scroll=\"scroll\">"
+        let tableURLString = getStringBetween(opener: tableOpener, closer: tableCloser, target: html)
+        
+        let tableURL = URL(string: tableURLString)
+        var table: NSString = ""
+        do {
+            let tableHTMLString = try String(contentsOf: tableURL!, encoding: .ascii)
+            
+        }
+        
         return key
     }
+    
     
     func getPDF(course: Course) {
         let yourURL = NSURL(string: "https://documents.veracross.com/sjp/grade_detail/\(course.number).pdf?\(course.key)")
