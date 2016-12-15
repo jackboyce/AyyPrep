@@ -6,4 +6,3 @@ Please text me for the older versions
 Future Features:
 1. Add GPA calculator
 2. Graphs
-3. Alerts
