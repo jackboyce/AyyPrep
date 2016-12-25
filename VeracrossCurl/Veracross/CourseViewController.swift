@@ -45,13 +45,21 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                     }
                     keyQueue.async {
                         keyGroup.enter()
+                        i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
+                        i.assignments.sort()
+                        for k in i.assignments{
+                            print(k.dueDate)
+                        }
                         if i.pdf == nil {
                             self.parser?.getPDF(course: i)
+                            
+                            
                         }
                         keyGroup.leave()
                     }
                     keyGroup.wait()
                 }
+                
                 group.leave()
             }
             loadingCircle.stopAnimating()

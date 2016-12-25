@@ -14,6 +14,7 @@ class Parser {
     var username: String = ""
     var password: String = ""
     var courses: [Course] = []
+   // var table: [NSString] = [""]
     
     init(username: String, password: String) {
         self.username = username
@@ -38,6 +39,29 @@ class Parser {
         let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
         let key = getStringBetween(opener: keyOpener, closer: keyCloser, target: html, leftOffset: 8)
         
+        
+               return key
+    }
+    
+    func getArrayOfAssignments(course: Course) -> [Assignment]{
+        var wTable: [String: Double] = [:]
+        var toReturn: [Assignment] = [Assignment.init(dueDate:"", name:"",score:"")]
+        toReturn.removeAll()
+        
+        var html: NSString = ""
+        //Get the html of the all assignments page of course i
+        let myURLString = "https://portals.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
+        let myURL = URL(string: myURLString)
+        
+        do {
+            let myHTMLString = try String(contentsOf: myURL!, encoding: .ascii)
+            html = myHTMLString as NSString
+        } catch let error {
+            print("Error: \(error)")
+        }
+        
+        
+        
         //Get the html table to use for grophs
         let tableOpener = "<iframe id=\"grade-detail-document\" src=\""
         let tableCloser = "\" data-scroll=\"scroll\">"
@@ -47,10 +71,67 @@ class Parser {
         var table: NSString = ""
         do {
             let tableHTMLString = try String(contentsOf: tableURL!, encoding: .ascii)
+            table = (tableHTMLString as NSString)
+        } catch let error {
+            print("Error: \(error)")
+        }
+
+       // print(table)
+        var tableOfGroups = 🐍(opener: "<tbody class=", closer:"</tbody>", target: table)
+        // print(tableOfGroups[0...3])
+        var strs = 🐍(opener: "weight number", closer: "graph", target: table)
+        var categoryName: [String] = [""];
+        categoryName.remove(at: 0)
+        for i in tableOfGroups{
+            categoryName.append(getStringBetween(opener: "\'", closer: "\'>", target: i as NSString) as String)
+            
+            
+            if(strs.isEmpty){
+                wTable[categoryName[tableOfGroups.index(of: i)!]] = 1
+            
+            }
+            else{
+                wTable[categoryName[tableOfGroups.index(of: i)!]] =  Double(self.getStringBetween(opener: "label\">", closer: "%", target: strs[tableOfGroups.index(of: i)!] as NSString))
+            }
+            
             
         }
+        //print(tableOfGroups)
+        var assignments: [[String]] = [[""]];
+        assignments.removeAll()
+        var counter = 0;
+        var 🚦: [[String]] = [[""]]
+        🚦.removeAll()
         
-        return key
+        while counter < categoryName.count{
+            assignments.append(🐍(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroups[counter] as NSString))
+            var 🚗 = 🐍(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroups[counter] as NSString)
+            var 🏹 = 0
+            while 🏹 < 🚗.count{
+                🚗[🏹] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: 🚗[🏹] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: 🚗[🏹] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: 🚗[🏹] as NSString) + "EndScore>"
+                //print(🚗[🏹])
+                
+                toReturn.append(Assignment.init(stringRepresentation: 🚗[🏹], weight: wTable[categoryName[counter]]!))
+                print(toReturn[toReturn.endIndex-1].weight)
+                
+                🏹+=1
+            }
+            assignments[counter].insert(categoryName[counter], at: 0)
+            
+            
+            counter += 1
+            
+        }
+       // print("Assignments")
+        //print(assignments[1])
+        
+        
+        //print(categoryName)
+        
+        
+       // print(toReturn)
+        
+       return toReturn
     }
     
     
@@ -185,6 +266,55 @@ class Parser {
             l += 1
         }
         return activeRanges
+    }
+    
+    func 🐍(opener: String, closer: String, target: NSString) -> [String]{
+        var ret: [String] = []
+        var begin = 0
+        var str: String
+        var bleh = getStringAndIndexBetween(opener: opener, closer: closer, target: target, begin: begin)
+        str = bleh.str
+        begin = bleh.index
+        while str != "" {
+            ret.append(str)
+            bleh = getStringAndIndexBetween(opener: opener, closer: closer, target: target, begin: begin)
+            str = bleh.str
+            begin = bleh.index
+            
+        }
+        
+        return ret
+    }
+    
+    func getStringAndIndexBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0, rightOffset: Int = 0) -> (str: String, index: Int){
+            //Need this because swift is dumb and wont let me do it in the parameters
+            var end = end
+            if end == 0 {
+                end = target.length
+            }
+            
+            var openIndex = begin
+            var ret: String = ""
+            var found = false
+            var retIndex = 0
+        
+            while openIndex < end - opener.characters.count && !found {
+                if target.substring(with: NSRange(location: openIndex, length: opener.characters.count)) == opener {
+                    var closeIndex = openIndex
+                    while !found {
+                        if target.substring(with: NSRange(location: closeIndex, length: closer.characters.count)) == closer {
+                            //print("\(openIndex) \(closeIndex)")
+                            ret = target.substring(with: NSRange(location: openIndex + opener.characters.count + leftOffset, length: closeIndex - openIndex - opener.characters.count - leftOffset - rightOffset))
+                            found = true
+                            retIndex = (openIndex + opener.characters.count + leftOffset) + (closeIndex - openIndex - opener.characters.count - leftOffset - rightOffset) + closer.characters.count
+                        }
+                        closeIndex += 1
+                    }
+                }
+                openIndex += 1
+            }
+            return (ret, retIndex)
+
     }
     
     func getStringBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0, rightOffset: Int = 0) -> String{

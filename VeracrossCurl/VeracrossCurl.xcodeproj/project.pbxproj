@@ -15,12 +15,13 @@
 		1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8EA9741DB292E70019351A /* CourseViewController.swift */; };
 		1AA53C161DB64AB50076E5EF /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */; };
 		1ADB67BE1DBE9AE800EF551F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */; };
-		1AF5EEA41DAA211400670ABD /* ReferenceProxy in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
-		1AF5EEA51DAA211400670ABD /* ReferenceProxy in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
+		1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF5EEAF1DAD8BA900670ABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5EEAE1DAD8BA900670ABD /* Course.swift */; };
 		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
 		A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4421D1DD51D020007F1EE /* PDFViewController.swift */; };
+		A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F681C91E0F057500DAAF61 /* Assignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +90,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1AF5EEA51DAA211400670ABD /* ReferenceProxy in Embed Frameworks */,
+				1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +116,7 @@
 		1AF5EEAE1DAD8BA900670ABD /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		A40192691DD51098008573E8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		A4F4421D1DD51D020007F1EE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		A4F681C91E0F057500DAAF61 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veracross.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72A2D6B68EEB79CD6B32636 /* Pods-Veracross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veracross.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Veracross/Pods-Veracross.debug.xcconfig"; sourceTree = "<group>"; };
 		F8A5F04E8FC885F466942323 /* Pods-Veracross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veracross.release.xcconfig"; path = "Pods/Target Support Files/Pods-Veracross/Pods-Veracross.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF5EEA41DAA211400670ABD /* ReferenceProxy in Frameworks */,
+				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
 				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +165,7 @@
 				1A8EA9741DB292E70019351A /* CourseViewController.swift */,
 				A4F4421D1DD51D020007F1EE /* PDFViewController.swift */,
 				1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */,
+				A4F681C91E0F057500DAAF61 /* Assignment.swift */,
 				1AF5EEAE1DAD8BA900670ABD /* Course.swift */,
 				1A8C5F321DA9F54800D072EF /* Main.storyboard */,
 				1A8C5F351DA9F54800D072EF /* Assets.xcassets */,
@@ -410,6 +413,7 @@
 				1AA53C161DB64AB50076E5EF /* StatisticsViewController.swift in Sources */,
 				A401926A1DD51098008573E8 /* Parser.swift in Sources */,
 				1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */,
+				A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
 				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,
 				1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */,
