@@ -19,7 +19,10 @@
 		1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF5EEAF1DAD8BA900670ABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5EEAE1DAD8BA900670ABD /* Course.swift */; };
 		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
+		A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40056331E0F950C00278966 /* GraphsViewController.swift */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
+		A463BD4C1E0F98CE00F5D012 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A463BD4B1E0F98CE00F5D012 /* Charts.framework */; };
+		A463BD4D1E0F98CE00F5D012 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A463BD4B1E0F98CE00F5D012 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4421D1DD51D020007F1EE /* PDFViewController.swift */; };
 		A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F681C91E0F057500DAAF61 /* Assignment.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +84,27 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
+		A463BD451E0F98A300F5D012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A463BD381E0F98A300F5D012 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		A463BD471E0F98A300F5D012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A463BD381E0F98A300F5D012 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		A463BD491E0F98A300F5D012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A463BD381E0F98A300F5D012 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +115,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */,
+				A463BD4D1E0F98CE00F5D012 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,7 +139,10 @@
 		1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		1AF5EEAE1DAD8BA900670ABD /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		A40056331E0F950C00278966 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 		A40192691DD51098008573E8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A463BD381E0F98A300F5D012 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-3.0.1/Charts.xcodeproj"; sourceTree = "<group>"; };
+		A463BD4B1E0F98CE00F5D012 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F4421D1DD51D020007F1EE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		A4F681C91E0F057500DAAF61 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veracross.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A463BD4C1E0F98CE00F5D012 /* Charts.framework in Frameworks */,
 				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
 				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);
@@ -138,6 +167,8 @@
 		1A6735441DA45BF000F5D3F3 = {
 			isa = PBXGroup;
 			children = (
+				A463BD4B1E0F98CE00F5D012 /* Charts.framework */,
+				A463BD381E0F98A300F5D012 /* Charts.xcodeproj */,
 				1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */,
 				1A8C5F2D1DA9F54800D072EF /* Veracross */,
 				1A8C5F421DA9F54800D072EF /* VeracrossTests */,
@@ -164,6 +195,7 @@
 				1A8C5F301DA9F54800D072EF /* ViewController.swift */,
 				1A8EA9741DB292E70019351A /* CourseViewController.swift */,
 				A4F4421D1DD51D020007F1EE /* PDFViewController.swift */,
+				A40056331E0F950C00278966 /* GraphsViewController.swift */,
 				1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */,
 				A4F681C91E0F057500DAAF61 /* Assignment.swift */,
 				1AF5EEAE1DAD8BA900670ABD /* Course.swift */,
@@ -225,6 +257,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A463BD391E0F98A300F5D012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A463BD461E0F98A300F5D012 /* Charts.framework */,
+				A463BD481E0F98A300F5D012 /* ChartsRealm.framework */,
+				A463BD4A1E0F98A300F5D012 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -282,6 +324,10 @@
 					ProductGroup = 1AF5EE8C1DAA20F400670ABD /* Products */;
 					ProjectRef = 1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */;
 				},
+				{
+					ProductGroup = A463BD391E0F98A300F5D012 /* Products */;
+					ProjectRef = A463BD381E0F98A300F5D012 /* Charts.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -338,6 +384,27 @@
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
 			remoteRef = 1AF5EEA21DAA20F400670ABD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A463BD461E0F98A300F5D012 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A463BD451E0F98A300F5D012 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A463BD481E0F98A300F5D012 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = A463BD471E0F98A300F5D012 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A463BD4A1E0F98A300F5D012 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = A463BD491E0F98A300F5D012 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -416,6 +483,7 @@
 				A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
 				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,
+				A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */,
 				1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

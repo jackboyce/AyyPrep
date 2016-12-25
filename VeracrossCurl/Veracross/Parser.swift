@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-import Kanna
+//import Kanna
 
 class Parser {
     var username: String = ""

@@ -83,12 +83,27 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
 //        let center =  UIButton(type: UIButtonType.custom) as UIButton
 //        center.frame = CGRect(x: 0,y: 0,width: 100,height: 40) as CGRect
 //        //button.backgroundColor = UIColor.red
-//        center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
+     //   center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
 //        center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
 //        center.setTitle("Statistics", for: UIControlState.normal)
 //        center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
 //        self.navigationItem.titleView = center
+        //Adds a button to navigationBar
+        let right = UIButton(type: UIButtonType.custom) as UIButton
+        right.frame = CGRect(x:0, y:0, width: 100, height: 40) as CGRect
+        right.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
+        right.setTitleColor(UIColor.white, for: UIControlState.highlighted)
+        right.setTitle("Graphs", for: UIControlState.normal)
+        right.addTarget(self, action: #selector(graphsPressed), for: UIControlEvents.touchUpInside)
+        self.navigationItem.titleView = right
+        
         loadAd()
+    }
+    
+    func graphsPressed(){
+        let graphsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Graphs") as! GraphsViewController
+        graphsViewController.courses = courses
+        self.navigationController?.pushViewController(graphsViewController, animated: true)
     }
     
     //Called when the statistics button is pressed in the navigation bar

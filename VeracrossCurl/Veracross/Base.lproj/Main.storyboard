@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xFh-JX-2Oz">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xFh-JX-2Oz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -160,18 +160,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PXS-lz-dm9" id="g5A-P3-bRE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s3V-rn-iiS">
-                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="11" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDA-cE-KcD">
-                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <rect key="frame" x="316" y="11" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -211,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKd-c2-SJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2063" y="265"/>
+            <point key="canvasLocation" x="2001" y="208"/>
         </scene>
         <!--Statistics View Controller-->
         <scene sceneID="SdO-8F-Qfg">
@@ -280,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bc-p2-eK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.8000000000002" y="939.58020989505258"/>
+            <point key="canvasLocation" x="3057" y="1029"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8V0-4k-66h">
@@ -299,6 +299,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V57-75-o9S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="324" y="266.71664167916043"/>
+        </scene>
+        <!--Graphs View Controller-->
+        <scene sceneID="4hP-7Z-sFd">
+            <objects>
+                <viewController storyboardIdentifier="Graphs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0ZF-eu-dSE" customClass="GraphsViewController" customModule="Veracross" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4z2-Ca-VtL"/>
+                        <viewControllerLayoutGuide type="bottom" id="PRh-wD-pzh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6yX-Xa-vPV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HQ-uL-LA2" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7HQ-uL-LA2" firstAttribute="leading" secondItem="6yX-Xa-vPV" secondAttribute="leading" id="2Vy-RE-zKa"/>
+                            <constraint firstAttribute="bottom" secondItem="7HQ-uL-LA2" secondAttribute="bottom" id="Olh-3H-3yg"/>
+                            <constraint firstAttribute="trailing" secondItem="7HQ-uL-LA2" secondAttribute="trailing" id="RjZ-j2-hot"/>
+                            <constraint firstItem="7HQ-uL-LA2" firstAttribute="top" secondItem="4z2-Ca-VtL" secondAttribute="bottom" id="f7L-xG-SfJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="7HQ-uL-LA2" id="iVm-fP-CzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VfL-Ao-P6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2376.8000000000002" y="-617.54122938530736"/>
         </scene>
     </scenes>
 </document>

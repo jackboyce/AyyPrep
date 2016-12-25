@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
   - Firebase/AdMob (3.7.0):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (= 7.12.1)
@@ -24,11 +27,13 @@ PODS:
   - Kanna (2.1.1)
 
 DEPENDENCIES:
+  - Charts
   - Firebase/AdMob
   - Firebase/Core
   - Kanna (~> 2.1.0)
 
 SPEC CHECKSUMS:
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
   Firebase: 3875e140d77c7572c6d4852faf94144ffcdb0704
   FirebaseAnalytics: 02d0aed8c6246a9c8683ac3e9825c67ceb657bde
   FirebaseCore: 5a885548bbc5f0c410b04f8e9ac9d73ff1221907
@@ -39,6 +44,6 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
 
-PODFILE CHECKSUM: 575f78d51aaf96be9f0752eed7fd7f9cb6c32e57
+PODFILE CHECKSUM: 2e377b7f7baf59eb738399cc9a86c763f56a3abf
 
 COCOAPODS: 1.2.0.beta.1
