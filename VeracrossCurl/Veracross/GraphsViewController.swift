@@ -20,6 +20,8 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         
         self.lineChartView.delegate = self
         
+        self.lineChartView.descriptionText = "Tap nodes for more info"
+        
         self.lineChartView.backgroundColor = UIColor.darkGray
         for i in courses{
             data.append(getNumbers(course: i))
@@ -60,6 +62,7 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         
         
         self.lineChartView.data = chartData
+        
     }
         override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
