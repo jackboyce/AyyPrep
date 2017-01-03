@@ -21,6 +21,26 @@ class Parser {
         self.password = password
     }
     
+    init() {
+        username = ""
+        password = ""
+    }
+    
+    func getGradeUpToAndIncluding(assignment: Assignment, array: [Assignment] ) -> Double{
+        var numerator = 0.0;
+        var denominator = 0.0;
+        for i in array{
+            if(i <= assignment){
+                numerator += i.weightedNumerator
+                denominator += i.weightedDenominator
+            }
+            else{
+                break;
+            }
+        }
+        return numerator / denominator
+    }
+    
     func getKey(course: Course) -> String{
         var html: NSString = ""
         //Get the html of the all assignments page of course i

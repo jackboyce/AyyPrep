@@ -15,6 +15,8 @@ class Assignment : Comparable{
     var weight: Double = 1
     var numerator: Double;
     var denominator: Double;
+    var weightedNumerator: Double;
+    var weightedDenominator: Double;
     var weightedScore: String;
     var intDueDate = 0;
     
@@ -34,8 +36,9 @@ class Assignment : Comparable{
             denominator = 0
         }
         
-        
-        weightedScore = String(Double(numerator) * weight) + " / " + String(Double(denominator) * weight)
+        weightedDenominator = denominator * weight
+        weightedNumerator = numerator * weight
+        weightedScore = String(weightedNumerator) + " / " + String(weightedDenominator)
         
     }
     init(stringRepresentation: String, weight: Double){
@@ -68,8 +71,11 @@ class Assignment : Comparable{
         //print(denomStr)
         denominator = Double(denomStr)!
         numerator = Double(numerStr)!
+        
+        weightedDenominator = denominator * weight
+        weightedNumerator = numerator * weight
 
-        weightedScore = String(Double(numerator) * weight) + " / " + String(Double(denominator) * weight)
+        weightedScore = String(weightedNumerator) + " / " + String(weightedDenominator)
         
         //print(weightedScore)
         //print(score)
@@ -88,37 +94,37 @@ class Assignment : Comparable{
             intDueDate = Int(strl)!
         }
         else if(dueDate.contains("Aug")){
-            intDueDate = 100 + Int(strl)!
+            intDueDate = 31 + Int(strl)!
         }
         else if(dueDate.contains("Sep")){
-            intDueDate = 200 + Int(strl)!
+            intDueDate = 61 + Int(strl)!
         }
         else if(dueDate.contains("Oct")){
-            intDueDate = 300 + Int(strl)!
+            intDueDate = 92 + Int(strl)!
         }
         else if(dueDate.contains("Nov")){
-            intDueDate = 400 + Int(strl)!
+            intDueDate = 122 + Int(strl)!
         }
         else if(dueDate.contains("Dec")){
-            intDueDate = 500 + Int(strl)!
+            intDueDate = 153 + Int(strl)!
         }
         else if(dueDate.contains("Jan")){
-            intDueDate = 600 + Int(strl)!
+            intDueDate = 184 + Int(strl)!
         }
         else if(dueDate.contains("Feb")){
-            intDueDate = 700 + Int(strl)!
+            intDueDate =  213 + Int(strl)!
         }
         else if(dueDate.contains("Mar")){
-            intDueDate = 800 + Int(strl)!
+            intDueDate = 244 + Int(strl)!
         }
         else if(dueDate.contains("Apr")){
-            intDueDate = 900 + Int(strl)!
+            intDueDate = 274 + Int(strl)!
         }
         else if(dueDate.contains("May")){
-            intDueDate = 1000 + Int(strl)!
+            intDueDate = 305 + Int(strl)!
         }
         else if(dueDate.contains("Jun")){
-            intDueDate = 1100 + Int(strl)!
+            intDueDate = 335 + Int(strl)!
         }
         
         
