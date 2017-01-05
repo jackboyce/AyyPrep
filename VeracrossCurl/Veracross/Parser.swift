@@ -27,18 +27,51 @@ class Parser {
     }
     
     func getGradeUpToAndIncluding(assignment: Assignment, array: [Assignment] ) -> Double{
-        var numerator = 0.0;
-        var denominator = 0.0;
+        var finalGrade = 0.0
+        var weightings :[Double] = []
+        var willPrint = false
         for i in array{
-            if(i <= assignment){
-                numerator += i.weightedNumerator
-                denominator += i.weightedDenominator
-            }
-            else{
-                break;
+            if !weightings.contains(i.weight){
+                weightings.append(i.weight)
             }
         }
-        return numerator / denominator
+        if weightings.contains(0.25){
+            willPrint = true
+        }
+        var assignments = array
+        for k in assignments{
+            if k > assignment{
+                assignments.remove(at: assignments.index(of: k)!)
+            }
+        }
+        
+        for i in weightings{
+            var numer = 0.0
+            var denom = 0.0
+            
+            
+            
+            
+            for k in assignments{
+                
+                if(k.weight == i){
+                   
+                    numer += k.numerator
+                    denom += k.denominator
+                }
+            }
+            if willPrint{
+                
+            }
+            if(numer == 0 && denom == 0){
+                finalGrade += i
+            }
+            else{
+                finalGrade +=  numer / denom * i
+            }
+            
+        }
+        return finalGrade
     }
     
     func getKey(course: Course) -> String{
@@ -96,22 +129,43 @@ class Parser {
             print("Error: \(error)")
         }
 
-       // print(table)
-        var tableOfGroups = 🐍(opener: "<tbody class=", closer:"</tbody>", target: table)
+        print(table)
+        //var tableOfGroups = getArrayOfStringsBetween(opener: "<tbody class=", closer:"</tbody>", target: table)
         // print(tableOfGroups[0...3])
-        var strs = 🐍(opener: "weight number", closer: "graph", target: table)
+        var tableOfGroups = getArrayOfStringsBetween(opener: "<td class='description text' ><strong>", closer: "</strong>", target: table)
+        var m = 0;
+        while m < tableOfGroups.count {
+            tableOfGroups[m] = tableOfGroups[m].lowercased()
+            tableOfGroups[m] = tableOfGroups[m].replacingOccurrences(of: " ", with: "_")
+            m += 1
+        }
+        var tableOfGroupsNew = getArrayOfStringsBetween(opener: "<tbody class=", closer:"</tbody>", target: table)
+        
+        var tableOfGroupsOld: [String] = [""]
+        tableOfGroupsOld.removeAll()
+        
+        for p in tableOfGroups{
+            for o in tableOfGroupsNew{
+                if o.contains(p){
+                    tableOfGroupsOld.append(o)
+                }
+            }
+        }
+        
+        var strs = getArrayOfStringsBetween(opener: "weight number", closer: "graph", target: table)
         var categoryName: [String] = [""];
         categoryName.remove(at: 0)
         for i in tableOfGroups{
-            categoryName.append(getStringBetween(opener: "\'", closer: "\'>", target: i as NSString) as String)
+            categoryName.append(i)
             
             
             if(strs.isEmpty){
-                wTable[categoryName[tableOfGroups.index(of: i)!]] = 1
+                wTable[i] = 100
             
             }
             else{
-                wTable[categoryName[tableOfGroups.index(of: i)!]] =  Double(self.getStringBetween(opener: "label\">", closer: "%", target: strs[tableOfGroups.index(of: i)!] as NSString))
+                
+                wTable[i] =  Double(self.getStringBetween(opener: "label\">", closer: "%", target: strs[tableOfGroups.index(of: i)!] as NSString))
             }
             
             
@@ -120,21 +174,20 @@ class Parser {
         var assignments: [[String]] = [[""]];
         assignments.removeAll()
         var counter = 0;
-        var 🚦: [[String]] = [[""]]
-        🚦.removeAll()
+        
         
         while counter < categoryName.count{
-            assignments.append(🐍(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroups[counter] as NSString))
-            var 🚗 = 🐍(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroups[counter] as NSString)
-            var 🏹 = 0
-            while 🏹 < 🚗.count{
-                🚗[🏹] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: 🚗[🏹] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: 🚗[🏹] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: 🚗[🏹] as NSString) + "EndScore>"
-                //print(🚗[🏹])
+            assignments.append(getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString))
+            var strsBetween = getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString)
+            var strsBetweenIndex = 0
+            while strsBetweenIndex < strsBetween.count{
+                strsBetween[strsBetweenIndex] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: strsBetween[strsBetweenIndex] as NSString) + "EndScore>"
+                //print(strsBetween[strsBetweenIndex])
                 
-                toReturn.append(Assignment.init(stringRepresentation: 🚗[🏹], weight: wTable[categoryName[counter]]!))
+                toReturn.append(Assignment.init(stringRepresentation: strsBetween[strsBetweenIndex], weight: wTable[categoryName[counter]]!))
                 print(toReturn[toReturn.endIndex-1].weight)
                 
-                🏹+=1
+                strsBetweenIndex+=1
             }
             assignments[counter].insert(categoryName[counter], at: 0)
             
@@ -288,7 +341,7 @@ class Parser {
         return activeRanges
     }
     
-    func 🐍(opener: String, closer: String, target: NSString) -> [String]{
+    func getArrayOfStringsBetween(opener: String, closer: String, target: NSString) -> [String]{
         var ret: [String] = []
         var begin = 0
         var str: String

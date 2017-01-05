@@ -19,6 +19,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     var password: String = ""
     var courses: [Course] = []
     var parser: Parser? = nil
+    var progressOnAssignments: Int = 0
     
     @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
     @IBOutlet weak var htmlViewer: UIWebView!
@@ -47,9 +48,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                         keyGroup.enter()
                         i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
                         i.assignments.sort()
-                        for k in i.assignments{
-                            print(k.dueDate)
-                        }
+                        self.progressOnAssignments += 1
                         if i.pdf == nil {
                             self.parser?.getPDF(course: i)
                             
@@ -58,6 +57,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                         keyGroup.leave()
                     }
                     keyGroup.wait()
+                    
                 }
                 
                 group.leave()
@@ -101,9 +101,12 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func graphsPressed(){
+        if(progressOnAssignments == courses.count && progressOnAssignments != 0){
         let graphsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Graphs") as! GraphsViewController
         graphsViewController.courses = courses
         self.navigationController?.pushViewController(graphsViewController, animated: true)
+        }
+    
     }
     
     //Called when the statistics button is pressed in the navigation bar

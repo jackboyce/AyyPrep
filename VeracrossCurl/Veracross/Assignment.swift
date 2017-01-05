@@ -12,7 +12,7 @@ class Assignment : Comparable{
     let dueDate: String;
     let name: String;
     let score: String;
-    var weight: Double = 1
+    var weight: Double = 100
     var numerator: Double;
     var denominator: Double;
     var weightedNumerator: Double;
@@ -46,7 +46,7 @@ class Assignment : Comparable{
         dueDate = p.getStringBetween(opener: "<Date:", closer: "EndDate>", target: stringRepresentation as NSString)
         name = p.getStringBetween(opener: "<Assignment:", closer: "EndAssignment", target: stringRepresentation as NSString)
         score = p.getStringBetween(opener: "<Score:", closer: "EndScore>", target: stringRepresentation as NSString)
-        self.weight = weight
+        self.weight = weight / 100.0
         let needle: Character = "/"
         var pos: Int = 0
         if let idx = score.characters.index(of: needle){
