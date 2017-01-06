@@ -21,8 +21,6 @@
 		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
 		A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40056331E0F950C00278966 /* GraphsViewController.swift */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
-		A463BD4C1E0F98CE00F5D012 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A463BD4B1E0F98CE00F5D012 /* Charts.framework */; };
-		A463BD4D1E0F98CE00F5D012 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A463BD4B1E0F98CE00F5D012 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4421D1DD51D020007F1EE /* PDFViewController.swift */; };
 		A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F681C91E0F057500DAAF61 /* Assignment.swift */; };
 /* End PBXBuildFile section */
@@ -115,7 +113,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */,
-				A463BD4D1E0F98CE00F5D012 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +152,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A463BD4C1E0F98CE00F5D012 /* Charts.framework in Frameworks */,
 				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
 				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);

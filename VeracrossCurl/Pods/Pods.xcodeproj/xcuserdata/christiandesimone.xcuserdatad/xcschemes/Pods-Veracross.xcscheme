@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF720039C5D61A5F9D9C315EE646459D"
+               BlueprintIdentifier = "B86E8C4DD5E4202E15FDD6C35EC6DBB1"
                BuildableName = "Pods_Veracross.framework"
                BlueprintName = "Pods-Veracross"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FF720039C5D61A5F9D9C315EE646459D"
+            BlueprintIdentifier = "B86E8C4DD5E4202E15FDD6C35EC6DBB1"
             BuildableName = "Pods_Veracross.framework"
             BlueprintName = "Pods-Veracross"
             ReferencedContainer = "container:Pods.xcodeproj">
