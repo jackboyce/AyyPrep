@@ -4,6 +4,33 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Charts-Swift.h",
+          'external-contents': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Charts-umbrella.h",
+          'external-contents': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Target Support Files/Charts/Charts-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Intermediates/Pods.build/Debug-iphonesimulator/Charts.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Products/Debug-iphonesimulator/Pods_Veracross.framework/Headers",
       'contents': [
         {
