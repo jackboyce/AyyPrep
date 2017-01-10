@@ -1,6 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+<<<<<<< HEAD
 ## Charts
 
 Apache License
@@ -207,6 +208,8 @@ Apache License
 
 
 
+=======
+>>>>>>> refs/remotes/origin/master
 ## Firebase
 
 Copyright 2016 Google

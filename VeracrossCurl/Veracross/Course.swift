@@ -14,7 +14,10 @@ class Course {
     let number: String
     var key: String
     var pdf: NSObject?
+<<<<<<< HEAD
     var assignments: [Assignment] = [Assignment]()
+=======
+>>>>>>> refs/remotes/origin/master
     
     init(name: String, grade: String, number: String, key: String? = "") {
         self.name = name

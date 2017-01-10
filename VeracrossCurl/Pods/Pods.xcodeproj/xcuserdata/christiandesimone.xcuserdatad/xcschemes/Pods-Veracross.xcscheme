@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
+<<<<<<< HEAD
    LastUpgradeVersion = "0700"
+=======
+   LastUpgradeVersion = "0810"
+>>>>>>> refs/remotes/origin/master
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +18,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "B86E8C4DD5E4202E15FDD6C35EC6DBB1"
+=======
+               BlueprintIdentifier = "05011239C0062A128290A68098B3A67C"
+>>>>>>> refs/remotes/origin/master
                BuildableName = "Pods_Veracross.framework"
                BlueprintName = "Pods-Veracross"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +53,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "B86E8C4DD5E4202E15FDD6C35EC6DBB1"
+=======
+            BlueprintIdentifier = "05011239C0062A128290A68098B3A67C"
+>>>>>>> refs/remotes/origin/master
             BuildableName = "Pods_Veracross.framework"
             BlueprintName = "Pods-Veracross"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,6 +72,18 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+<<<<<<< HEAD
+=======
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "05011239C0062A128290A68098B3A67C"
+            BuildableName = "Pods_Veracross.framework"
+            BlueprintName = "Pods-Veracross"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+>>>>>>> refs/remotes/origin/master
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

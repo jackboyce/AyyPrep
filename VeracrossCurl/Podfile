@@ -5,6 +5,9 @@ use_frameworks!
 target 'Veracross' do
     pod 'Firebase/Core'
     pod 'Firebase/AdMob'
+<<<<<<< HEAD
     pod 'Charts'
     
+=======
+>>>>>>> refs/remotes/origin/master
 end

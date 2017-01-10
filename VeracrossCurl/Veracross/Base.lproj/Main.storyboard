@@ -205,12 +205,56 @@
                         <outlet property="bannerView" destination="1OF-7h-PtM" id="Wod-jE-2ok"/>
                         <outlet property="courseTable" destination="wYe-cM-079" id="rhB-yg-eZs"/>
                         <outlet property="loadingCircle" destination="MAm-bJ-qWx" id="AV3-sD-kAs"/>
+<<<<<<< HEAD
+=======
+                        <segue destination="dWr-Ua-Psy" kind="show" id="VvZ-jT-XpU"/>
+>>>>>>> refs/remotes/origin/master
                         <segue destination="Nce-RS-raj" kind="show" id="Dna-nv-6qc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cKd-c2-SJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2017" y="219"/>
+=======
+            <point key="canvasLocation" x="2063" y="265"/>
+        </scene>
+        <!--Statistics View Controller-->
+        <scene sceneID="SdO-8F-Qfg">
+            <objects>
+                <viewController storyboardIdentifier="Statistics" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dWr-Ua-Psy" customClass="StatisticsViewController" customModule="Veracross" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Xh-fI-iFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ivb-X5-Zng"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4c-cj-8eQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tCM-bL-Uza">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tCM-bL-Uza" firstAttribute="leading" secondItem="p4c-cj-8eQ" secondAttribute="leadingMargin" id="JRR-ob-ScL"/>
+                            <constraint firstItem="Ivb-X5-Zng" firstAttribute="top" secondItem="tCM-bL-Uza" secondAttribute="bottom" id="kAe-oY-b8H"/>
+                            <constraint firstItem="tCM-bL-Uza" firstAttribute="top" secondItem="9Xh-fI-iFh" secondAttribute="bottom" id="mhz-Xb-49G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tCM-bL-Uza" secondAttribute="trailing" id="vG0-js-Cjh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="text" destination="tCM-bL-Uza" id="QKl-DH-lAM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEy-dx-nrO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2950" y="58"/>
+>>>>>>> refs/remotes/origin/master
         </scene>
         <!--View Controller-->
         <scene sceneID="dFb-Jn-zBt">
@@ -243,7 +287,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bc-p2-eK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="3057" y="1029"/>
+=======
+            <point key="canvasLocation" x="3024.8000000000002" y="939.58020989505258"/>
+>>>>>>> refs/remotes/origin/master
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8V0-4k-66h">
@@ -263,6 +311,7 @@
             </objects>
             <point key="canvasLocation" x="324" y="266.71664167916043"/>
         </scene>
+<<<<<<< HEAD
         <!--Graphs View Controller-->
         <scene sceneID="4hP-7Z-sFd">
             <objects>
@@ -425,5 +474,7 @@
             </objects>
             <point key="canvasLocation" x="3057" y="218"/>
         </scene>
+=======
+>>>>>>> refs/remotes/origin/master
     </scenes>
 </document>

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		1A6BEF1B1E25216B0037BF61 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6BEF161E25209D0037BF61 /* Charts.framework */; };
 		1A6BEF1C1E25216B0037BF61 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6BEF161E25209D0037BF61 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6BEF381E2527740037BF61 /* TableViewCell.swift */; };
 		1A6BEF3B1E2527D40037BF61 /* GPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */; };
+=======
+>>>>>>> refs/remotes/origin/master
 		1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */; };
 		1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C5F301DA9F54800D072EF /* ViewController.swift */; };
 		1A8C5F341DA9F54800D072EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C5F321DA9F54800D072EF /* Main.storyboard */; };
@@ -23,6 +26,7 @@
 		1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF5EEAF1DAD8BA900670ABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5EEAE1DAD8BA900670ABD /* Course.swift */; };
 		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
+<<<<<<< HEAD
 		A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40056331E0F950C00278966 /* GraphsViewController.swift */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
 		A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4421D1DD51D020007F1EE /* PDFViewController.swift */; };
@@ -58,6 +62,13 @@
 			remoteGlobalIDString = 06165F231D8110E600722320;
 			remoteInfo = Charts;
 		};
+=======
+		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
+		A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4421D1DD51D020007F1EE /* PDFViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+>>>>>>> refs/remotes/origin/master
 		1AF5EE961DAA20F400670ABD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */;
@@ -124,7 +135,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */,
+<<<<<<< HEAD
 				1A6BEF1C1E25216B0037BF61 /* Charts.framework in Embed Frameworks */,
+=======
+>>>>>>> refs/remotes/origin/master
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,9 +146,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		1A6BEF081E25209D0037BF61 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-3.0.1/Charts.xcodeproj"; sourceTree = "<group>"; };
 		1A6BEF381E2527740037BF61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAViewController.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> refs/remotes/origin/master
 		1A8C5F2C1DA9F54800D072EF /* Veracross.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veracross.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A8C5F301DA9F54800D072EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,10 +168,15 @@
 		1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		1AF5EEAE1DAD8BA900670ABD /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		A40056331E0F950C00278966 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 		A40192691DD51098008573E8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		A4F4421D1DD51D020007F1EE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		A4F681C91E0F057500DAAF61 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+=======
+		A40192691DD51098008573E8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A4F4421D1DD51D020007F1EE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+>>>>>>> refs/remotes/origin/master
 		C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veracross.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72A2D6B68EEB79CD6B32636 /* Pods-Veracross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veracross.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Veracross/Pods-Veracross.debug.xcconfig"; sourceTree = "<group>"; };
 		F8A5F04E8FC885F466942323 /* Pods-Veracross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veracross.release.xcconfig"; path = "Pods/Target Support Files/Pods-Veracross/Pods-Veracross.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +187,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				1A6BEF1B1E25216B0037BF61 /* Charts.framework in Frameworks */,
+=======
+>>>>>>> refs/remotes/origin/master
 				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
 				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);
@@ -177,7 +202,10 @@
 		1A6735441DA45BF000F5D3F3 = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				1A6BEF081E25209D0037BF61 /* Charts.xcodeproj */,
+=======
+>>>>>>> refs/remotes/origin/master
 				1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */,
 				1A8C5F2D1DA9F54800D072EF /* Veracross */,
 				1A8C5F421DA9F54800D072EF /* VeracrossTests */,
@@ -196,6 +224,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		1A6BEF091E25209D0037BF61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,12 +235,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> refs/remotes/origin/master
 		1A8C5F2D1DA9F54800D072EF /* Veracross */ = {
 			isa = PBXGroup;
 			children = (
 				A40192691DD51098008573E8 /* Parser.swift */,
 				1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */,
 				1A8C5F301DA9F54800D072EF /* ViewController.swift */,
+<<<<<<< HEAD
 				1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */,
 				1A8EA9741DB292E70019351A /* CourseViewController.swift */,
 				A4F4421D1DD51D020007F1EE /* PDFViewController.swift */,
@@ -220,6 +252,12 @@
 				A4F681C91E0F057500DAAF61 /* Assignment.swift */,
 				1AF5EEAE1DAD8BA900670ABD /* Course.swift */,
 				1A6BEF381E2527740037BF61 /* TableViewCell.swift */,
+=======
+				1A8EA9741DB292E70019351A /* CourseViewController.swift */,
+				A4F4421D1DD51D020007F1EE /* PDFViewController.swift */,
+				1AA53C151DB64AB50076E5EF /* StatisticsViewController.swift */,
+				1AF5EEAE1DAD8BA900670ABD /* Course.swift */,
+>>>>>>> refs/remotes/origin/master
 				1A8C5F321DA9F54800D072EF /* Main.storyboard */,
 				1A8C5F351DA9F54800D072EF /* Assets.xcassets */,
 				1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */,
@@ -297,7 +335,10 @@
 			);
 			dependencies = (
 				1AF5EEA71DAA211400670ABD /* PBXTargetDependency */,
+<<<<<<< HEAD
 				1A6BEF1E1E25216B0037BF61 /* PBXTargetDependency */,
+=======
+>>>>>>> refs/remotes/origin/master
 			);
 			name = Veracross;
 			productName = Veracross;
@@ -336,10 +377,13 @@
 					ProductGroup = 1AF5EE8C1DAA20F400670ABD /* Products */;
 					ProjectRef = 1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */;
 				},
+<<<<<<< HEAD
 				{
 					ProductGroup = 1A6BEF091E25209D0037BF61 /* Products */;
 					ProjectRef = 1A6BEF081E25209D0037BF61 /* Charts.xcodeproj */;
 				},
+=======
+>>>>>>> refs/remotes/origin/master
 			);
 			projectRoot = "";
 			targets = (
@@ -349,6 +393,7 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+<<<<<<< HEAD
 		1A6BEF161E25209D0037BF61 /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -370,6 +415,8 @@
 			remoteRef = 1A6BEF191E25209D0037BF61 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+=======
+>>>>>>> refs/remotes/origin/master
 		1AF5EE971DAA20F400670ABD /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -438,7 +485,11 @@
 /* Begin PBXShellScriptBuildPhase section */
 		45C480D05BCC7579C59A18FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
+<<<<<<< HEAD
 			buildActionMask = 8;
+=======
+			buildActionMask = 2147483647;
+>>>>>>> refs/remotes/origin/master
 			files = (
 			);
 			inputPaths = (
@@ -446,14 +497,22 @@
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
+<<<<<<< HEAD
 			runOnlyForDeploymentPostprocessing = 1;
+=======
+			runOnlyForDeploymentPostprocessing = 0;
+>>>>>>> refs/remotes/origin/master
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Veracross/Pods-Veracross-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6005FF94BF2EAF6CBCF95176 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
+<<<<<<< HEAD
 			buildActionMask = 8;
+=======
+			buildActionMask = 2147483647;
+>>>>>>> refs/remotes/origin/master
 			files = (
 			);
 			inputPaths = (
@@ -461,14 +520,22 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
+<<<<<<< HEAD
 			runOnlyForDeploymentPostprocessing = 1;
+=======
+			runOnlyForDeploymentPostprocessing = 0;
+>>>>>>> refs/remotes/origin/master
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Veracross/Pods-Veracross-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AFA9674DC44EAAE273AC2F4B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
+<<<<<<< HEAD
 			buildActionMask = 8;
+=======
+			buildActionMask = 2147483647;
+>>>>>>> refs/remotes/origin/master
 			files = (
 			);
 			inputPaths = (
@@ -476,9 +543,15 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
+<<<<<<< HEAD
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+=======
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+>>>>>>> refs/remotes/origin/master
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -492,6 +565,7 @@
 				1AA53C161DB64AB50076E5EF /* StatisticsViewController.swift in Sources */,
 				A401926A1DD51098008573E8 /* Parser.swift in Sources */,
 				1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */,
+<<<<<<< HEAD
 				A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */,
 				1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
@@ -499,17 +573,25 @@
 				A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */,
 				1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */,
 				1A6BEF3B1E2527D40037BF61 /* GPAViewController.swift in Sources */,
+=======
+				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
+				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,
+				1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */,
+>>>>>>> refs/remotes/origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+<<<<<<< HEAD
 		1A6BEF1E1E25216B0037BF61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
 			targetProxy = 1A6BEF1D1E25216B0037BF61 /* PBXContainerItemProxy */;
 		};
+=======
+>>>>>>> refs/remotes/origin/master
 		1AF5EEA71DAA211400670ABD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
