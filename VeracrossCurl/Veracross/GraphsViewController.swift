@@ -22,7 +22,7 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         
         self.lineChartView.descriptionText = "Tap nodes for more info"
         
-        self.lineChartView.backgroundColor = UIColor.darkGray
+        self.lineChartView.backgroundColor = UIColor.lightGray
         for i in courses{
             data.append(getNumbers(course: i))
         }
