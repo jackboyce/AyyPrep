@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Intermediates/ArchiveIntermediates/Veracross/BuildProductsPath/Release-iphoneos/Pods_Veracross.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Veracross-umbrella.h",
+          'external-contents': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/Pods/Target Support Files/Pods-Veracross/Pods-Veracross-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Veracross-Swift.h",
+          'external-contents': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Intermediates/ArchiveIntermediates/Veracross/BuildProductsPath/Release-iphoneos/Pods_Veracross.framework/Headers/Pods_Veracross-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Intermediates/ArchiveIntermediates/Veracross/BuildProductsPath/Release-iphoneos/Pods_Veracross.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jackboyce/Dropbox/AyyPrepGit/VeracrossCurl/DerivedData/VeracrossCurl/Build/Intermediates/ArchiveIntermediates/Veracross/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods-Veracross.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
