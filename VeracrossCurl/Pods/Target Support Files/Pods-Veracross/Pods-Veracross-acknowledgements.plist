@@ -14,7 +14,6 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-<<<<<<< HEAD
 			<string>Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -230,9 +229,6 @@
 			<string>Copyright 2016 Google</string>
 			<key>License</key>
 			<string>Copyright</string>
-=======
-			<string>Copyright 2016 Google</string>
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>Firebase</string>
 			<key>Type</key>
@@ -241,11 +237,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2016 Google</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>FirebaseAnalytics</string>
 			<key>Type</key>
@@ -254,11 +247,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2016 Google</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>FirebaseCore</string>
 			<key>Type</key>
@@ -267,11 +257,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2016 Google</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>FirebaseInstanceID</string>
 			<key>Type</key>
@@ -280,11 +267,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2011 Google Inc. All Rights Reserved.</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>Google-Mobile-Ads-SDK</string>
 			<key>Type</key>
@@ -293,11 +277,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2016 Google</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>GoogleInterchangeUtilities</string>
 			<key>Type</key>
@@ -306,11 +287,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2016 Google</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>GoogleSymbolUtilities</string>
 			<key>Type</key>
@@ -319,11 +297,8 @@
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2016 Google</string>
-<<<<<<< HEAD
 			<key>License</key>
 			<string>Copyright</string>
-=======
->>>>>>> refs/remotes/origin/master
 			<key>Title</key>
 			<string>GoogleUtilities</string>
 			<key>Type</key>

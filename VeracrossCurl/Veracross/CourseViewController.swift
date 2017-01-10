@@ -19,10 +19,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     var password: String = ""
     var courses: [Course] = []
     var parser: Parser? = nil
-<<<<<<< HEAD
     var progressOnAssignments: Int = 0
-=======
->>>>>>> refs/remotes/origin/master
     
     @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
     @IBOutlet weak var htmlViewer: UIWebView!
@@ -49,7 +46,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                     }
                     keyQueue.async {
                         keyGroup.enter()
-<<<<<<< HEAD
                         i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
                         i.assignments.sort()
                         self.progressOnAssignments += 1
@@ -57,21 +53,13 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                             self.parser?.getPDF(course: i)
                             
                             
-=======
-                        if i.pdf == nil {
-                            self.parser?.getPDF(course: i)
->>>>>>> refs/remotes/origin/master
                         }
                         keyGroup.leave()
                     }
                     keyGroup.wait()
-<<<<<<< HEAD
                     
                 }
                 
-=======
-                }
->>>>>>> refs/remotes/origin/master
                 group.leave()
             }
             loadingCircle.stopAnimating()
@@ -95,16 +83,11 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
 //        let center =  UIButton(type: UIButtonType.custom) as UIButton
 //        center.frame = CGRect(x: 0,y: 0,width: 100,height: 40) as CGRect
 //        //button.backgroundColor = UIColor.red
-<<<<<<< HEAD
      //   center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
-=======
-//        center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
->>>>>>> refs/remotes/origin/master
 //        center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
 //        center.setTitle("Statistics", for: UIControlState.normal)
 //        center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
 //        self.navigationItem.titleView = center
-<<<<<<< HEAD
         //Adds a button to navigationBar
         let center = UIButton(type: UIButtonType.custom) as UIButton
         center.frame = CGRect(x:0, y:0, width: 100, height: 40) as CGRect
@@ -141,15 +124,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     //Called when the statistics button is pressed in the navigation bar
     func statisticsPressed() {
         let statisticsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Statistics") as! GPAViewController
-=======
-        loadAd()
-    }
-    
-    //Called when the statistics button is pressed in the navigation bar
-    func statisticsPressed() {
-        let statisticsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Statistics") as! StatisticsViewController
-        statisticsViewController.courses = courses
->>>>>>> refs/remotes/origin/master
         self.navigationController?.pushViewController(statisticsViewController, animated: true)
     }
     

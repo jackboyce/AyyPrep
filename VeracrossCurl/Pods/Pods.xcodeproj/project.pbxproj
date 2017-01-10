@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		017EF095D67EE8F854EDAD4A2B2790D2 /* YAxisRendererHorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F9A9F28E0966B8B7FFF21D4EDF782 /* YAxisRendererHorizontalBarChart.swift */; };
 		0308D89A9F819E4AF4545F72A609D272 /* ChartColorTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684DE131FC854D18496AAA19FE22568 /* ChartColorTemplates.swift */; };
 		05869F3C3509AAA9A31C7A4F982E45B5 /* IValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A984E9B1032D478F63D7CD7CC408847 /* IValueFormatter.swift */; };
@@ -340,44 +339,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CA1C1703826B8F5E3B425FA4736244 /* Foundation.framework in Frameworks */,
-=======
-		6FCFC8169A79028324C6C1C1997183C7 /* Pods-Veracross-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E44D703943425F17DC8601831A877E2 /* Pods-Veracross-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9610327458FCA28A2854B141DDB0EA99 /* Pods-Veracross-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0111A0557B2EE32080BA424CD55BE50 /* Pods-Veracross-dummy.m */; };
-		EA6FB85AA5DCA41C901B2E03D27F5B1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		0A34BE0126B95899CCB539B18D000283 /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veracross.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E44D703943425F17DC8601831A877E2 /* Pods-Veracross-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Veracross-umbrella.h"; sourceTree = "<group>"; };
-		121949731ABFFF9EB3988D786D6E11F2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		26B56D7ECAF88051685ECDA9EB1C1DE3 /* Pods-Veracross-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Veracross-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3902DB50170FC80715C7011953174C96 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		392860EB6E36ABA79E99E6174CEE5902 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		45415B060C358E72B6A2E19432CE3381 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		465D1D3B5ED4C72EFFEEDD38B7DAE911 /* Pods-Veracross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Veracross.release.xcconfig"; sourceTree = "<group>"; };
-		489E561A7F3F2CF71F56A5C4F0A53CC0 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		5614E22EA876A2FAEADCC5F22018FDA8 /* Pods-Veracross-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Veracross-acknowledgements.plist"; sourceTree = "<group>"; };
-		57A94EC1469FAAD37A678C560D15ABAF /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		5FCE1C40675C680206DC25A235B77F7B /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
-		5FFBE7E6ECC03AAA9EADCF6616C51F4E /* Pods-Veracross-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Veracross-frameworks.sh"; sourceTree = "<group>"; };
-		6ABD2F62FF321340F13F1ACE2A8E0714 /* Pods-Veracross.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Veracross.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2997E4115F731CDE3CF8400DF06CC71 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		A683969EAC8DCAF5004C0BAD69D3D747 /* Pods-Veracross-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Veracross-resources.sh"; sourceTree = "<group>"; };
-		AE02BCEFF657481CF3791D23CA47211D /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		BFDD07B7591AAD828946D9207312F4E9 /* Pods-Veracross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Veracross.debug.xcconfig"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DAD65CAFE5F43CE68F273A7614E7630C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		E0111A0557B2EE32080BA424CD55BE50 /* Pods-Veracross-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Veracross-dummy.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		9C4BA899385BCB1F75EF0D6ECA64A2CB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA6FB85AA5DCA41C901B2E03D27F5B1D /* Foundation.framework in Frameworks */,
->>>>>>> refs/remotes/origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +371,6 @@
 			path = "Target Support Files/Pods-Veracross";
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		1DCB32D79F0BA81BBB95E26D3EDDC4FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,40 +392,18 @@
 			isa = PBXGroup;
 			children = (
 				1BA3E51DAAA7601EA5A2354FC42596A7 /* GoogleUtilities.framework */,
-=======
-		0B9176D8F8FF4A50313A4AAB92795BC8 /* GoogleSymbolUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				14D0DA3BAC784BC24B829EACA4ED2B99 /* Frameworks */,
-			);
-			path = GoogleSymbolUtilities;
-			sourceTree = "<group>";
-		};
-		14D0DA3BAC784BC24B829EACA4ED2B99 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE02BCEFF657481CF3791D23CA47211D /* GoogleSymbolUtilities.framework */,
->>>>>>> refs/remotes/origin/master
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		299CEF05D49723142466F2F2175EF38A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				A013007676239735E48C5CD96A8F6147 /* GoogleSymbolUtilities.framework */,
-=======
-		24A7BEF5A7F1EB9EC280B938781B2569 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				392860EB6E36ABA79E99E6174CEE5902 /* GoogleUtilities.framework */,
->>>>>>> refs/remotes/origin/master
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		41EE475B96F79D63BFD89810AD3EA4CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,25 +417,10 @@
 			isa = PBXGroup;
 			children = (
 				241A5FF12416BBEA7D6F76010EFCBB4F /* FirebaseInstanceID.framework */,
-=======
-		37642F2CAEF0F78E8EC9D888A1F6DD3E /* Google-Mobile-Ads-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				FB57368071E90464BB4CD0EECB06EAEB /* Frameworks */,
-			);
-			path = "Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		3B976B3DC8C97531E10D73DDCEB468F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3902DB50170FC80715C7011953174C96 /* GoogleInterchangeUtilities.framework */,
->>>>>>> refs/remotes/origin/master
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		70C20E4FAF47ABABEDA111B71FD231EE /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,17 +434,10 @@
 			isa = PBXGroup;
 			children = (
 				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-=======
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
->>>>>>> refs/remotes/origin/master
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -590,69 +506,10 @@
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-=======
-		52C11D4CE40B641F1CCC6184D9CBD9C8 /* GoogleUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				24A7BEF5A7F1EB9EC280B938781B2569 /* Frameworks */,
-			);
-			path = GoogleUtilities;
-			sourceTree = "<group>";
-		};
-		5B70EBA7F1BE49E4F93693CF39FEA830 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A34BE0126B95899CCB539B18D000283 /* Pods_Veracross.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6B701948D42463BA8542D1AE5E88B280 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				57A94EC1469FAAD37A678C560D15ABAF /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6BC1E2DFACF0093C42AA20142867DD06 /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				3B976B3DC8C97531E10D73DDCEB468F5 /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AA535FE3140D0E2CD347365543C97096 /* Pods */,
-				5B70EBA7F1BE49E4F93693CF39FEA830 /* Products */,
-				0193D7D0BC01754883D22DEF699D678E /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		894F28FB4862BD461C519D35F4BCFC7F /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				5FCE1C40675C680206DC25A235B77F7B /* FIRInstanceID.h */,
-				6B701948D42463BA8542D1AE5E88B280 /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		9596002AA7AB54FA2462459045EA7AAF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DAD65CAFE5F43CE68F273A7614E7630C /* FirebaseAnalytics.framework */,
->>>>>>> refs/remotes/origin/master
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-<<<<<<< HEAD
 		C0EF7D44098AB454912CE3E52E670D01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -830,56 +687,10 @@
 			isa = PBXGroup;
 			children = (
 				506264FA7FAF254C9ECF13BB96A0D859 /* Firebase.h */,
-=======
-		97C87CC65B334F783ED2D198F9875D67 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				9596002AA7AB54FA2462459045EA7AAF /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		AA535FE3140D0E2CD347365543C97096 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FABC0F57BEFF25E3F3763C9304532A1A /* Firebase */,
-				97C87CC65B334F783ED2D198F9875D67 /* FirebaseAnalytics */,
-				BF73A17757FA7DE7A2C85CD3708C00AF /* FirebaseCore */,
-				894F28FB4862BD461C519D35F4BCFC7F /* FirebaseInstanceID */,
-				37642F2CAEF0F78E8EC9D888A1F6DD3E /* Google-Mobile-Ads-SDK */,
-				6BC1E2DFACF0093C42AA20142867DD06 /* GoogleInterchangeUtilities */,
-				0B9176D8F8FF4A50313A4AAB92795BC8 /* GoogleSymbolUtilities */,
-				52C11D4CE40B641F1CCC6184D9CBD9C8 /* GoogleUtilities */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF73A17757FA7DE7A2C85CD3708C00AF /* FirebaseCore */ = {
-			isa = PBXGroup;
-			children = (
-				F94828C458CDFCB2D49F8BBD62461B88 /* Frameworks */,
-			);
-			path = FirebaseCore;
-			sourceTree = "<group>";
-		};
-		E4EA4916CD8C135C2196CFB2B9F2210B /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				489E561A7F3F2CF71F56A5C4F0A53CC0 /* Firebase.h */,
->>>>>>> refs/remotes/origin/master
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		DCC349E556B11059E3726CF9BD63B7BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -892,17 +703,10 @@
 			isa = PBXGroup;
 			children = (
 				4788E38E310444C3F8B3E6336C0A9F1F /* GoogleMobileAds.framework */,
-=======
-		F94828C458CDFCB2D49F8BBD62461B88 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A2997E4115F731CDE3CF8400DF06CC71 /* FirebaseCore.framework */,
->>>>>>> refs/remotes/origin/master
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		F572B788F8B6A186E8D43C1756F3926D /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -919,28 +723,11 @@
 			);
 			name = FirebaseCore;
 			path = FirebaseCore;
-=======
-		FABC0F57BEFF25E3F3763C9304532A1A /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				E4EA4916CD8C135C2196CFB2B9F2210B /* Core */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		FB57368071E90464BB4CD0EECB06EAEB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				121949731ABFFF9EB3988D786D6E11F2 /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
->>>>>>> refs/remotes/origin/master
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-<<<<<<< HEAD
 		A8B9811701E5FDA6364A909F8C496FF1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -954,20 +741,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				93CBFD940BD0B22071BCD795A8A6D2BC /* Charts-umbrella.h in Headers */,
-=======
-		C1EC4F6C73E1C3CF3C274AF465EDB80C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FCFC8169A79028324C6C1C1997183C7 /* Pods-Veracross-umbrella.h in Headers */,
->>>>>>> refs/remotes/origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-<<<<<<< HEAD
 		B86E8C4DD5E4202E15FDD6C35EC6DBB1 /* Pods-Veracross */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D67DF1A6E6E47D7FFEF0D9CB917E6035 /* Build configuration list for PBXNativeTarget "Pods-Veracross" */;
@@ -975,20 +754,10 @@
 				31783EE3210E34196E056396F28B2D21 /* Sources */,
 				CE4D1AA64A6CD6B73D6B6213EC64081F /* Frameworks */,
 				A8B9811701E5FDA6364A909F8C496FF1 /* Headers */,
-=======
-		05011239C0062A128290A68098B3A67C /* Pods-Veracross */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B68C78CBA12E65F64AFF0F1B05014FA /* Build configuration list for PBXNativeTarget "Pods-Veracross" */;
-			buildPhases = (
-				487E6EF8B4B838C7CC519083159AAA49 /* Sources */,
-				9C4BA899385BCB1F75EF0D6ECA64A2CB /* Frameworks */,
-				C1EC4F6C73E1C3CF3C274AF465EDB80C /* Headers */,
->>>>>>> refs/remotes/origin/master
 			);
 			buildRules = (
 			);
 			dependencies = (
-<<<<<<< HEAD
 				8DBAD515578EAFD7FFADA7E025A1DB56 /* PBXTargetDependency */,
 			);
 			name = "Pods-Veracross";
@@ -1011,12 +780,6 @@
 			name = Charts;
 			productName = Charts;
 			productReference = 72395368FA879102624AA76ABEE257AA /* Charts.framework */;
-=======
-			);
-			name = "Pods-Veracross";
-			productName = "Pods-Veracross";
-			productReference = 0A34BE0126B95899CCB539B18D000283 /* Pods_Veracross.framework */;
->>>>>>> refs/remotes/origin/master
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1036,26 +799,17 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-<<<<<<< HEAD
 			productRefGroup = 41EE475B96F79D63BFD89810AD3EA4CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F307B842FF76B2DE6C55DB67C0885325 /* Charts */,
 				B86E8C4DD5E4202E15FDD6C35EC6DBB1 /* Pods-Veracross */,
-=======
-			productRefGroup = 5B70EBA7F1BE49E4F93693CF39FEA830 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				05011239C0062A128290A68098B3A67C /* Pods-Veracross */,
->>>>>>> refs/remotes/origin/master
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-<<<<<<< HEAD
 		31783EE3210E34196E056396F28B2D21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1203,19 +957,11 @@
 				017EF095D67EE8F854EDAD4A2B2790D2 /* YAxisRendererHorizontalBarChart.swift in Sources */,
 				9BE579BC1329AB24C5A0BA3C958DD8AE /* YAxisRendererRadarChart.swift in Sources */,
 				AB0B62B987A9E7917662AAEA29068B97 /* ZoomViewJob.swift in Sources */,
-=======
-		487E6EF8B4B838C7CC519083159AAA49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9610327458FCA28A2854B141DDB0EA99 /* Pods-Veracross-dummy.m in Sources */,
->>>>>>> refs/remotes/origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-<<<<<<< HEAD
 /* Begin PBXTargetDependency section */
 		8DBAD515578EAFD7FFADA7E025A1DB56 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1262,10 +1008,6 @@
 			name = Release;
 		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
-=======
-/* Begin XCBuildConfiguration section */
-		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
->>>>>>> refs/remotes/origin/master
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1283,7 +1025,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-<<<<<<< HEAD
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
@@ -1296,15 +1037,6 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-=======
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
->>>>>>> refs/remotes/origin/master
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1312,7 +1044,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-<<<<<<< HEAD
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1329,21 +1060,6 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-=======
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A78918C008ABD56E8270C115870E28AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 465D1D3B5ED4C72EFFEEDD38B7DAE911 /* Pods-Veracross.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
->>>>>>> refs/remotes/origin/master
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1356,11 +1072,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Veracross/Pods-Veracross.modulemap";
-<<<<<<< HEAD
 				MTL_ENABLE_DEBUG_INFO = YES;
-=======
-				MTL_ENABLE_DEBUG_INFO = NO;
->>>>>>> refs/remotes/origin/master
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1368,7 +1080,6 @@
 				PRODUCT_NAME = Pods_Veracross;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-<<<<<<< HEAD
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1403,21 +1114,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-=======
->>>>>>> refs/remotes/origin/master
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-<<<<<<< HEAD
 			name = Debug;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
-=======
-			name = Release;
-		};
-		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
->>>>>>> refs/remotes/origin/master
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1435,7 +1138,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-<<<<<<< HEAD
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1444,19 +1146,6 @@
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
-=======
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
->>>>>>> refs/remotes/origin/master
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1464,7 +1153,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-<<<<<<< HEAD
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -1481,28 +1169,12 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-=======
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		EED241D571EBBCF047808E91B22BD92A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFDD07B7591AAD828946D9207312F4E9 /* Pods-Veracross.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
->>>>>>> refs/remotes/origin/master
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/Charts/Charts-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Charts/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1514,31 +1186,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
-=======
-				INFOPLIST_FILE = "Target Support Files/Pods-Veracross/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Veracross/Pods-Veracross.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Veracross;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
->>>>>>> refs/remotes/origin/master
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-<<<<<<< HEAD
 			name = Release;
-=======
-			name = Debug;
->>>>>>> refs/remotes/origin/master
 		};
 /* End XCBuildConfiguration section */
 
@@ -1546,7 +1198,6 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-<<<<<<< HEAD
 				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
 				E72E7977875C2D251FC62736BBDDC389 /* Release */,
 			);
@@ -1558,27 +1209,15 @@
 			buildConfigurations = (
 				E33A795DB32AE5F47B1139F407A2AB3E /* Debug */,
 				FA704F789A0DAD0ECCAAE41A21318CC6 /* Release */,
-=======
-				AE9439C22469D35336242DD983DB5C5F /* Debug */,
-				42287DDF97330524BA3EF220F0276DA6 /* Release */,
->>>>>>> refs/remotes/origin/master
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-<<<<<<< HEAD
 		D67DF1A6E6E47D7FFEF0D9CB917E6035 /* Build configuration list for PBXNativeTarget "Pods-Veracross" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EC1989B64787D1E8AD553F08ABC19FD /* Debug */,
 				0597DFD3C1451CCAF845612E5D5125DA /* Release */,
-=======
-		3B68C78CBA12E65F64AFF0F1B05014FA /* Build configuration list for PBXNativeTarget "Pods-Veracross" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EED241D571EBBCF047808E91B22BD92A /* Debug */,
-				A78918C008ABD56E8270C115870E28AD /* Release */,
->>>>>>> refs/remotes/origin/master
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

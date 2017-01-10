@@ -1,10 +1,7 @@
 PODS:
-<<<<<<< HEAD
   - Charts (3.0.1):
     - Charts/Core (= 3.0.1)
   - Charts/Core (3.0.1)
-=======
->>>>>>> refs/remotes/origin/master
   - Firebase/AdMob (3.7.0):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (= 7.12.1)
@@ -29,18 +26,12 @@ PODS:
     - GoogleSymbolUtilities (~> 1.1)
 
 DEPENDENCIES:
-<<<<<<< HEAD
   - Charts
-=======
->>>>>>> refs/remotes/origin/master
   - Firebase/AdMob
   - Firebase/Core
 
 SPEC CHECKSUMS:
-<<<<<<< HEAD
   Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
-=======
->>>>>>> refs/remotes/origin/master
   Firebase: 3875e140d77c7572c6d4852faf94144ffcdb0704
   FirebaseAnalytics: 02d0aed8c6246a9c8683ac3e9825c67ceb657bde
   FirebaseCore: 5a885548bbc5f0c410b04f8e9ac9d73ff1221907
@@ -50,12 +41,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
 
-<<<<<<< HEAD
 PODFILE CHECKSUM: 6e283e1d78479da40ca5b832f285cd5df79d11b3
 
 COCOAPODS: 1.2.0.beta.1
-=======
-PODFILE CHECKSUM: 07aa854ada8e70308ec365870fcfac453cf0f07e
-
-COCOAPODS: 1.0.1
->>>>>>> refs/remotes/origin/master

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #else
@@ -10,9 +9,6 @@
 #endif
 #endif
 #endif
-=======
-#import <UIKit/UIKit.h>
->>>>>>> refs/remotes/origin/master
 
 
 FOUNDATION_EXPORT double Pods_VeracrossVersionNumber;

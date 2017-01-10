@@ -8,26 +8,19 @@
 
 import Foundation
 import Alamofire
-<<<<<<< HEAD
 //import Kanna
-=======
->>>>>>> refs/remotes/origin/master
 
 class Parser {
     var username: String = ""
     var password: String = ""
     var courses: [Course] = []
-<<<<<<< HEAD
    // var table: [NSString] = [""]
-=======
->>>>>>> refs/remotes/origin/master
     
     init(username: String, password: String) {
         self.username = username
         self.password = password
     }
     
-<<<<<<< HEAD
     init() {
         username = ""
         password = ""
@@ -81,8 +74,6 @@ class Parser {
         return finalGrade
     }
     
-=======
->>>>>>> refs/remotes/origin/master
     func getKey(course: Course) -> String{
         var html: NSString = ""
         //Get the html of the all assignments page of course i
@@ -101,7 +92,6 @@ class Parser {
         let keyCloser = "\" data-scroll=\"scroll\"></iframe>"
         let key = getStringBetween(opener: keyOpener, closer: keyCloser, target: html, leftOffset: 8)
         
-<<<<<<< HEAD
         
                return key
     }
@@ -218,11 +208,6 @@ class Parser {
     }
     
     
-=======
-        return key
-    }
-    
->>>>>>> refs/remotes/origin/master
     func getPDF(course: Course) {
         let yourURL = NSURL(string: "https://documents.veracross.com/sjp/grade_detail/\(course.number).pdf?\(course.key)")
         let urlRequest = NSURLRequest(url: yourURL! as URL)
@@ -356,7 +341,6 @@ class Parser {
         return activeRanges
     }
     
-<<<<<<< HEAD
     func getArrayOfStringsBetween(opener: String, closer: String, target: NSString) -> [String]{
         var ret: [String] = []
         var begin = 0
@@ -406,8 +390,6 @@ class Parser {
 
     }
     
-=======
->>>>>>> refs/remotes/origin/master
     func getStringBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0, rightOffset: Int = 0) -> String{
         //Need this because swift is dumb and wont let me do it in the parameters
         var end = end
