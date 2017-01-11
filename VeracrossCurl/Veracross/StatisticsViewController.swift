@@ -21,7 +21,6 @@ class StatisticsViewController: UIViewController {
     func quarterUnweighted() {
         var total = 0.0
         for course in courses {
-            print(course.grade)
             total += stringToGPA(letter: stringToGrade(grade: course.grade))
         }
         total /= Double(courses.count)

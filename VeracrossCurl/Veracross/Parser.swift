@@ -129,7 +129,6 @@ class Parser {
             print("Error: \(error)")
         }
 
-        print(table)
         //var tableOfGroups = getArrayOfStringsBetween(opener: "<tbody class=", closer:"</tbody>", target: table)
         // print(tableOfGroups[0...3])
         var tableOfGroups = getArrayOfStringsBetween(opener: "<td class='description text' ><strong>", closer: "</strong>", target: table)
@@ -185,7 +184,6 @@ class Parser {
                 //print(strsBetween[strsBetweenIndex])
                 
                 toReturn.append(Assignment.init(stringRepresentation: strsBetween[strsBetweenIndex], weight: wTable[categoryName[counter]]!))
-                print(toReturn[toReturn.endIndex-1].weight)
                 
                 strsBetweenIndex+=1
             }
@@ -274,7 +272,6 @@ class Parser {
                     let courseOpener = "<a title=\"view class website\" class=\"class-name\" href=\""
                     let courseCloser = "</a>"
                     courseName = self.getStringBetween(opener: courseOpener, closer: courseCloser, target: html, begin: start, end: end, leftOffset: 27)
-                    print("Course name: \(courseName)")
                     dispatchGroup.leave()
                 })
                 
@@ -284,7 +281,6 @@ class Parser {
                     let numCloser = "\">view all assignments</a>"
                     
                     number = self.getStringBetween(opener: numOpener, closer: numCloser, target: html, begin: start, end: end, rightOffset: 0)
-                    print("Course number: \(number)")
                     dispatchGroup.leave()
                 })
                 
@@ -294,7 +290,6 @@ class Parser {
                     let gradeCloser = "</span>"
                     
                     grade = self.getStringBetween(opener: gradeOpener, closer: gradeCloser, target: html, begin: start, end: end)
-                    print("Course grade: \(grade)")
                     dispatchGroup.leave()
                 })
                 
@@ -376,7 +371,6 @@ class Parser {
                     var closeIndex = openIndex
                     while !found {
                         if target.substring(with: NSRange(location: closeIndex, length: closer.characters.count)) == closer {
-                            //print("\(openIndex) \(closeIndex)")
                             ret = target.substring(with: NSRange(location: openIndex + opener.characters.count + leftOffset, length: closeIndex - openIndex - opener.characters.count - leftOffset - rightOffset))
                             found = true
                             retIndex = (openIndex + opener.characters.count + leftOffset) + (closeIndex - openIndex - opener.characters.count - leftOffset - rightOffset) + closer.characters.count
@@ -431,25 +425,4 @@ class Parser {
             
         }
     }
-        /*
-         var request = URLRequest(url: URL(string: "https://portals.veracross.com/sjp/login")!)
-         request.httpMethod = "POST"
-         var postString = "username=\(username)&password=\(password)&return_to=https://portals.veracross.com/sjp/student&Application=Portals&commit=Log In"
-         request.httpBody = postString.data(using: .utf8)
-         var task = URLSession.shared.dataTask(with: request) { data, response, error in
-         guard let data = data, error == nil else {                                                 // check for fundamental networking error
-         print("error=\(error)")
-         return
-         }
-         
-         if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
-         print("statusCode should be 200, but is \(httpStatus.statusCode)")
-         print("response = \(response)")
-         }
-         
-         let responseString = String(data: data, encoding: .utf8)
-         print("responseString = \(responseString)")
-         }
-         task.resume()
-        */
 }

@@ -15,22 +15,27 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
     var courses: [Course] = []
     var data: [[ChartDataEntry]] = []
     let p: Parser = Parser.init()
-       override func viewDidLoad() {
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         self.lineChartView.delegate = self
         
-        self.lineChartView.descriptionText = "Tap nodes for more info"
+        self.lineChartView.descriptionText = ""
         
-        self.lineChartView.backgroundColor = UIColor.darkGray
+        self.lineChartView.backgroundColor = UIColor.white
+        self.lineChartView.rightAxis.drawLabelsEnabled = false
+        self.lineChartView.leftAxis.axisMinimum = 0
+        self.lineChartView.xAxis.drawLabelsEnabled = false
+        
         for i in courses{
             data.append(getNumbers(course: i))
         }
         //data.append(getNumbers(course: courses[0]))
         
         setChartData()
-                
     }
+    
     func getNumbers(course: Course) -> [ChartDataEntry]{
         var toReturn: [ChartDataEntry] = [ChartDataEntry]()
         for i in course.assignments{
@@ -38,33 +43,36 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         }
         return toReturn
     }
+    
     func setChartData(){
         var dataSets: [LineChartDataSet] = [LineChartDataSet]()
         var c = 0;
-        let colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.orange, UIColor.purple, UIColor.yellow, UIColor.magenta]
+        let colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.orange, UIColor.purple, UIColor.cyan, UIColor.magenta]
         for i in data{
             let set: LineChartDataSet = LineChartDataSet.init(values: i, label: courses[c].name)
             set.axisDependency = .left
+            
             set.setColor(colors[c].withAlphaComponent(0.5))
             set.setCircleColor(colors[c])
             set.lineWidth = 2.0
             set.circleRadius = 6.0
             set.fillAlpha = 65 / 255.0
-            set.highlightColor = UIColor.white
+            set.highlightColor = UIColor.black
             set.drawCircleHoleEnabled = true
             dataSets.append(set)
             c += 1
         }
         
         let chartData: LineChartData = LineChartData(dataSets: dataSets)
-        chartData.setValueTextColor(UIColor.white)
-        
+        chartData.setValueTextColor(UIColor.black)
+        //self.lineChartView.leftAxis.drawZeroLineEnabled = true
         
         
         self.lineChartView.data = chartData
         
     }
-        override func didReceiveMemoryWarning() {
+    
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
