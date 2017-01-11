@@ -42,11 +42,23 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                     keyQueue.sync {
                         keyGroup.enter()
                         i.key = (self.parser?.getKey(course: i))!
+                        //print("got key")
                         keyGroup.leave()
                     }
                     keyQueue.async {
                         keyGroup.enter()
                         i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
+                        print(i.name)
+                        for k in i.assignments{
+                            print(k.name)
+                            print(k.category)
+                            print(k.weight)
+                            print(k.numerator)
+                            print(k.denominator)
+                            
+                            
+                        }
+                        //print("got pdf")
                         i.assignments.sort()
                         self.progressOnAssignments += 1
                         if i.pdf == nil {

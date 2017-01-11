@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 class Assignment : Comparable{
+    let category: String;
     let dueDate: String;
     let name: String;
     let score: String;
@@ -24,6 +25,7 @@ class Assignment : Comparable{
         self.dueDate = dueDate
         self.name = name
         self.score = score
+        self.category = name
         let needle: Character = "/"
        
         if let idx = score.characters.index(of: needle){
@@ -46,6 +48,7 @@ class Assignment : Comparable{
         dueDate = p.getStringBetween(opener: "<Date:", closer: "EndDate>", target: stringRepresentation as NSString)
         name = p.getStringBetween(opener: "<Assignment:", closer: "EndAssignment", target: stringRepresentation as NSString)
         score = p.getStringBetween(opener: "<Score:", closer: "EndScore>", target: stringRepresentation as NSString)
+        category = p.getStringBetween(opener: "<Category:", closer: "EndCategory>", target: stringRepresentation as NSString)
         self.weight = weight / 100.0
         let needle: Character = "/"
         var pos: Int = 0

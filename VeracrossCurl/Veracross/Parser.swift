@@ -28,46 +28,50 @@ class Parser {
     
     func getGradeUpToAndIncluding(assignment: Assignment, array: [Assignment] ) -> Double{
         var finalGrade = 0.0
-        var weightings :[Double] = []
-        var willPrint = false
+        var weightings :[String : Double] = [:]
+        var categories : [String] = []
         for i in array{
-            if !weightings.contains(i.weight){
-                weightings.append(i.weight)
+            if !categories.contains(i.category){
+                weightings[i.category] = i.weight
+                categories.append(i.category)
             }
         }
-        if weightings.contains(0.25){
-            willPrint = true
-        }
+        
         var assignments = array
         for k in assignments{
             if k > assignment{
                 assignments.remove(at: assignments.index(of: k)!)
             }
         }
-        
-        for i in weightings{
+        var weCare = true
+        for i in categories{
+            if(!weCare){
+                break;
+            }
             var numer = 0.0
             var denom = 0.0
             
+            if(weightings[i] == 1.0){
+                weCare = false
+            }
             
             
             
             for k in assignments{
                 
-                if(k.weight == i){
+                if(k.category == i || !weCare){
                    
                     numer += k.numerator
                     denom += k.denominator
                 }
-            }
-            if willPrint{
                 
             }
-            if(numer == 0 && denom == 0){
-                finalGrade += i
+            
+            if(weCare && numer == 0 && denom == 0){
+                finalGrade += weightings[i]!
             }
             else{
-                finalGrade +=  numer / denom * i
+                finalGrade +=  numer / denom * weightings[i]!
             }
             
         }
@@ -180,7 +184,7 @@ class Parser {
             var strsBetween = getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString)
             var strsBetweenIndex = 0
             while strsBetweenIndex < strsBetween.count{
-                strsBetween[strsBetweenIndex] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: strsBetween[strsBetweenIndex] as NSString) + "EndScore>"
+                strsBetween[strsBetweenIndex] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: strsBetween[strsBetweenIndex] as NSString) + "EndScore><Category:" + categoryName[counter] + "EndCategory>"
                 //print(strsBetween[strsBetweenIndex])
                 
                 toReturn.append(Assignment.init(stringRepresentation: strsBetween[strsBetweenIndex], weight: wTable[categoryName[counter]]!))
