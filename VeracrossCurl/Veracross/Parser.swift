@@ -101,9 +101,14 @@ class Parser {
     }
     
     func getArrayOfAssignments(course: Course) -> [Assignment]{
+        
         var wTable: [String: Double] = [:]
         var toReturn: [Assignment] = [Assignment.init(dueDate:"", name:"",score:"")]
         toReturn.removeAll()
+        
+        if course.name == "Wrong username or password"{
+            return toReturn
+        }
         
         var html: NSString = ""
         //Get the html of the all assignments page of course i
@@ -126,6 +131,7 @@ class Parser {
         
         let tableURL = URL(string: tableURLString)
         var table: NSString = ""
+        
         do {
             let tableHTMLString = try String(contentsOf: tableURL!, encoding: .ascii)
             table = (tableHTMLString as NSString)

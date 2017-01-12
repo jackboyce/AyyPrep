@@ -10,7 +10,6 @@ import UIKit
 
 class GPAListViewController: UIViewController {
     @IBOutlet weak var firstLabel: UILabel!
-    @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var thirdLabel: UILabel!
     
     var courses: [(grade: String, level: String)] = []
@@ -28,7 +27,6 @@ class GPAListViewController: UIViewController {
     
     func setup() {
         unweighted()
-        //weighted()
         prep()
     }
     
@@ -42,23 +40,13 @@ class GPAListViewController: UIViewController {
         unweighted = 0
     }
     
-    func weighted() {
-        var weighted = 0.0
-        for i in courses {
-            weighted += stringToGPA(letter: i.grade)
-        }
-        weighted /= Double(courses.count)
-        secondLabel.text = "weighted : \(weighted)"
-        weighted = 0
-    }
-    
     func prep() {
         var prep = 0.0
         for i in courses {
-            prep += stringToGPA(letter: i.grade) + prepLeveltoGPA(letter: i.level)
+            prep += stringToPrepGPA(letter: i.grade) + prepLeveltoGPA(letter: i.level)
         }
         prep /= Double(courses.count)
-        thirdLabel.text = "prep gpa : \(prep)"
+        thirdLabel.text = "Prep Weighted : \(prep)"
         prep = 0
     }
     
@@ -116,23 +104,12 @@ class GPAListViewController: UIViewController {
     }
     
     func prepLeveltoGPA(letter: String) -> Double{
-        
         if letter == "AP" {
             return 0.75
         } else if letter == "H" {
             return 0.5
         } else if letter == "A" {
             return 0.25
-        }
-        return 0
-    }
-    
-    func normalLeveltoGPA(letter: String) -> Double{
-        
-        if letter == "AP" || letter == "H"{
-            return 0.5
-        } else if letter == "College" {
-            return 1.0
         }
         return 0
     }

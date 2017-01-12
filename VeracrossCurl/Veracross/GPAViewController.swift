@@ -20,6 +20,14 @@ class GPAViewController: UIViewController, UITableViewDataSource, UITableViewDel
         // Do any additional setup after loading the view, typically from a nib.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        let center = UIButton(type: UIButtonType.custom) as UIButton
+        center.frame = CGRect(x:0, y:0, width: 100, height: 40) as CGRect
+        center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
+        center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
+        center.setTitle("Calculate", for: UIControlState.normal)
+        center.addTarget(self, action: #selector(calculate), for: UIControlEvents.touchUpInside)
+        self.navigationItem.titleView = center
     }
     
     func dismissKeyboard() {

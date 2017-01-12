@@ -48,7 +48,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                     keyQueue.async {
                         keyGroup.enter()
                         i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
-                        print(i.name)
                         for k in i.assignments{
                             print(k.name)
                             print(k.category)
@@ -118,19 +117,18 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         right.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
         self.navigationItem.titleView = right*/
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Stats", style: .plain, target: self, action: #selector(statisticsPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "GPA Calc", style: .plain, target: self, action: #selector(statisticsPressed))
 
         
         loadAd()
     }
     
     func graphsPressed(){
-        if(progressOnAssignments == courses.count && progressOnAssignments != 0){
-        let graphsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Graphs") as! GraphsViewController
-        graphsViewController.courses = courses
-        self.navigationController?.pushViewController(graphsViewController, animated: true)
+        if(progressOnAssignments == courses.count && progressOnAssignments != 0 && courses.first?.name != "Wrong username or password"){
+            let graphsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Graphs") as! GraphsViewController
+            graphsViewController.courses = courses
+            self.navigationController?.pushViewController(graphsViewController, animated: true)
         }
-    
     }
     
     //Called when the statistics button is pressed in the navigation bar
@@ -175,6 +173,8 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
             pdfViewController.parser = self.parser!
             
             self.navigationController?.pushViewController(pdfViewController, animated: true)
+        } else {
+            courses[indexPath.row].key = (self.parser?.getKey(course: courses[indexPath.row]))!
         }
     }
 }
