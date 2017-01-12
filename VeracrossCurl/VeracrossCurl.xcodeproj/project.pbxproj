@@ -26,8 +26,8 @@
 		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
 		A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40056331E0F950C00278966 /* GraphsViewController.swift */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
-		A41EC5761E281E620003785A /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EC5751E281E620003785A /* Locksmith.framework */; };
-		A41EC5771E281E620003785A /* Locksmith.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A41EC5751E281E620003785A /* Locksmith.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A41EC5901E2821270003785A /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EC5831E2820550003785A /* Locksmith.framework */; };
+		A41EC5911E2821270003785A /* Locksmith.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A41EC5831E2820550003785A /* Locksmith.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F4421D1DD51D020007F1EE /* PDFViewController.swift */; };
 		A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F681C91E0F057500DAAF61 /* Assignment.swift */; };
 /* End PBXBuildFile section */
@@ -166,6 +166,13 @@
 			remoteGlobalIDString = E3DD3B341D84356500A59312;
 			remoteInfo = "Test Host";
 		};
+		A41EC5921E2821270003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EC25C581BA385AA004191AF;
+			remoteInfo = "Locksmith iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -175,7 +182,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A41EC5771E281E620003785A /* Locksmith.framework in Embed Frameworks */,
+				A41EC5911E2821270003785A /* Locksmith.framework in Embed Frameworks */,
 				1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */,
 				1A12BE901E2545320076AE46 /* Charts.framework in Embed Frameworks */,
 			);
@@ -223,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A12BE8F1E2545320076AE46 /* Charts.framework in Frameworks */,
-				A41EC5761E281E620003785A /* Locksmith.framework in Frameworks */,
+				A41EC5901E2821270003785A /* Locksmith.framework in Frameworks */,
 				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
 				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);
@@ -374,6 +381,7 @@
 			dependencies = (
 				1AF5EEA71DAA211400670ABD /* PBXTargetDependency */,
 				1A12BE921E2545320076AE46 /* PBXTargetDependency */,
+				A41EC5931E2821270003785A /* PBXTargetDependency */,
 			);
 			name = Veracross;
 			productName = Veracross;
@@ -649,6 +657,11 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
 			targetProxy = 1AF5EEA61DAA211400670ABD /* PBXContainerItemProxy */;
+		};
+		A41EC5931E2821270003785A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Locksmith iOS";
+			targetProxy = A41EC5921E2821270003785A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
