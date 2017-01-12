@@ -311,7 +311,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W2k-lp-cct">
-                                <rect key="frame" x="0.0" y="71" width="375" height="566"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="GLN-Fw-QCY" customClass="TableViewCell" customModule="Veracross" customModuleProvider="target">
@@ -383,23 +383,15 @@
                                     <outlet property="delegate" destination="dSn-90-ar0" id="6Zh-s8-X7L"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-fU-XUi">
-                                <rect key="frame" x="16" y="637" width="343" height="30"/>
-                                <state key="normal" title="Calculate"/>
-                                <connections>
-                                    <action selector="calculate:" destination="dSn-90-ar0" eventType="touchUpInside" id="D4V-wz-t4m"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="W2k-lp-cct" firstAttribute="leading" secondItem="UwH-nC-Xcd" secondAttribute="leading" id="43w-4f-c2d"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iFD-fU-XUi" secondAttribute="trailing" id="5BH-ZG-bNh"/>
-                            <constraint firstItem="W2k-lp-cct" firstAttribute="centerY" secondItem="UwH-nC-Xcd" secondAttribute="centerY" constant="20.5" id="lKq-AR-7bE"/>
+                            <constraint firstItem="4hv-JC-f5v" firstAttribute="top" secondItem="W2k-lp-cct" secondAttribute="bottom" id="Knb-8I-EEn"/>
+                            <constraint firstItem="W2k-lp-cct" firstAttribute="leading" secondItem="UwH-nC-Xcd" secondAttribute="leadingMargin" constant="-16" id="XVN-dp-mWo"/>
+                            <constraint firstItem="W2k-lp-cct" firstAttribute="top" secondItem="JEN-lA-gL8" secondAttribute="bottom" id="d0c-iR-WP2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W2k-lp-cct" secondAttribute="trailing" constant="-16" id="r2Y-xr-11z"/>
                             <constraint firstAttribute="trailing" secondItem="W2k-lp-cct" secondAttribute="trailing" id="rWo-WW-5ef"/>
-                            <constraint firstItem="iFD-fU-XUi" firstAttribute="leading" secondItem="UwH-nC-Xcd" secondAttribute="leadingMargin" id="w1V-PV-5Wu"/>
-                            <constraint firstItem="iFD-fU-XUi" firstAttribute="top" secondItem="W2k-lp-cct" secondAttribute="bottom" id="w8E-le-wrg"/>
-                            <constraint firstItem="4hv-JC-f5v" firstAttribute="top" secondItem="iFD-fU-XUi" secondAttribute="bottom" id="z0z-3b-Ugd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -409,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="le0-yu-6nz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3057" y="265"/>
+            <point key="canvasLocation" x="3056.8000000000002" y="264.91754122938534"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="TcA-Ni-v0V">

@@ -51,26 +51,26 @@ class GPAListViewController: UIViewController {
     }
     
     func stringToGPA(letter: String) -> Double{
-        
-        if letter == "A+" {
+        let input = letter.uppercased()
+        if input == "A+" {
             return 4.0
-        } else if letter == "A" {
+        } else if input == "A" {
             return 4.0
-        } else if letter == "A-" {
+        } else if input == "A-" {
             return 3.7
-        } else if letter == "B+" {
+        } else if input == "B+" {
             return 3.3
-        } else if letter == "B" {
+        } else if input == "B" {
             return 3.0
-        } else if letter == "B-" {
+        } else if input == "B-" {
             return 2.7
-        } else if letter == "C+" {
+        } else if input == "C+" {
             return 2.3
-        } else if letter == "C" {
+        } else if input == "C" {
             return 2.0
-        } else if letter == "C-" {
+        } else if input == "C-" {
             return 1.7
-        } else if letter == "D" {
+        } else if input == "D" {
             return 1.0
         } else {
             return 0
@@ -78,25 +78,26 @@ class GPAListViewController: UIViewController {
     }
     
     func stringToPrepGPA(letter: String) -> Double{
-        if letter == "A+" {
+        let input = letter.uppercased()
+        if input == "A+" {
             return 4.25
-        } else if letter == "A" {
+        } else if input == "A" {
             return 4.0
-        } else if letter == "A-" {
+        } else if input == "A-" {
             return 3.75
-        } else if letter == "B+" {
+        } else if input == "B+" {
             return 3.5
-        } else if letter == "B" {
+        } else if input == "B" {
             return 3.25
-        } else if letter == "B-" {
+        } else if input == "B-" {
             return 3.0
-        } else if letter == "C+" {
+        } else if input == "C+" {
             return 2.75
-        } else if letter == "C" {
+        } else if input == "C" {
             return 2.5
-        } else if letter == "C-" {
+        } else if input == "C-" {
             return 2.25
-        } else if letter == "D" {
+        } else if input == "D" {
             return 1.25
         } else {
             return 0
@@ -104,11 +105,12 @@ class GPAListViewController: UIViewController {
     }
     
     func prepLeveltoGPA(letter: String) -> Double{
-        if letter == "AP" {
+        let input = letter.uppercased()
+        if input == "AP" {
             return 0.75
-        } else if letter == "H" {
+        } else if input == "H" {
             return 0.5
-        } else if letter == "A" {
+        } else if input == "A" {
             return 0.25
         }
         return 0

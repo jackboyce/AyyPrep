@@ -46,7 +46,7 @@ class GPAViewController: UIViewController, UITableViewDataSource, UITableViewDel
         self.tableView.reloadData()
     }
     
-    @IBAction func calculate(_ sender: Any) {
+    func calculate() {
         var courses: [(grade: String, level: String)] = []
         for cell in tableView.visibleCells as! [TableViewCell] {
             courses.append((grade: cell.gradeField.text!, level: cell.levelField.text!))
