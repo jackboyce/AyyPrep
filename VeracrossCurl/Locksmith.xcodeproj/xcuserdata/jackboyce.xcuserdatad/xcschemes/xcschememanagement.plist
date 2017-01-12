@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Locksmith OS X.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>Locksmith iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Locksmith tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>Locksmith watchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>Test Host.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0EC25C581BA385AA004191AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0EC25C611BA385AB004191AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0EC25C741BA385F6004191AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0EC25C7D1BA385F6004191AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0EC25CA61BA39C9F004191AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3DD3B331D84356500A59312</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD0C9481C1866BE00291F2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -399,7 +399,7 @@
 				TargetAttributes = {
 					1A8C5F2B1DA9F54800D072EF = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2Y2HAC89Y3;
+						DevelopmentTeam = WK367DXNJ2;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -763,7 +763,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 2Y2HAC89Y3;
+				DEVELOPMENT_TEAM = WK367DXNJ2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -821,7 +821,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 2Y2HAC89Y3;
+				DEVELOPMENT_TEAM = WK367DXNJ2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
