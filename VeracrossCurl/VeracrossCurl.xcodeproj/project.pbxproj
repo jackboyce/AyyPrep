@@ -117,6 +117,55 @@
 			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
 			remoteInfo = "Alamofire iOS";
 		};
+		A41EC5821E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EC25C591BA385AA004191AF;
+			remoteInfo = "Locksmith iOS";
+		};
+		A41EC5841E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EC25C621BA385AB004191AF;
+			remoteInfo = "Locksmith iOS Tests";
+		};
+		A41EC5861E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EC25C751BA385F6004191AF;
+			remoteInfo = "Locksmith OS X";
+		};
+		A41EC5881E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EC25C7E1BA385F6004191AF;
+			remoteInfo = "Locksmith OS X Tests";
+		};
+		A41EC58A1E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0EC25CA71BA39C9F004191AF;
+			remoteInfo = "Locksmith watchOS";
+		};
+		A41EC58C1E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBD0C9491C1866BE00291F2A;
+			remoteInfo = "Locksmith tvOS";
+		};
+		A41EC58E1E2820550003785A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E3DD3B341D84356500A59312;
+			remoteInfo = "Test Host";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -159,6 +208,7 @@
 		A40056331E0F950C00278966 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 		A40192691DD51098008573E8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		A41EC5751E281E620003785A /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41EC5781E2820550003785A /* Locksmith.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Locksmith.xcodeproj; sourceTree = "<group>"; };
 		A4AC504F1E281A5E00834444 /* Veracross.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Veracross.entitlements; sourceTree = "<group>"; };
 		A4F4421D1DD51D020007F1EE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		A4F681C91E0F057500DAAF61 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
@@ -195,6 +245,7 @@
 		1A6735441DA45BF000F5D3F3 = {
 			isa = PBXGroup;
 			children = (
+				A41EC5781E2820550003785A /* Locksmith.xcodeproj */,
 				A41EC5751E281E620003785A /* Locksmith.framework */,
 				1A12BE771E2544CA0076AE46 /* Charts.xcodeproj */,
 				1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */,
@@ -289,6 +340,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A41EC5791E2820550003785A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A41EC5831E2820550003785A /* Locksmith.framework */,
+				A41EC5851E2820550003785A /* Locksmith iOS Tests.xctest */,
+				A41EC5871E2820550003785A /* Locksmith.framework */,
+				A41EC5891E2820550003785A /* Locksmith OS X Tests.xctest */,
+				A41EC58B1E2820550003785A /* Locksmith.framework */,
+				A41EC58D1E2820550003785A /* Locksmith.framework */,
+				A41EC58F1E2820550003785A /* Test Host.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,6 +420,10 @@
 				{
 					ProductGroup = 1A12BE781E2544CA0076AE46 /* Products */;
 					ProjectRef = 1A12BE771E2544CA0076AE46 /* Charts.xcodeproj */;
+				},
+				{
+					ProductGroup = A41EC5791E2820550003785A /* Products */;
+					ProjectRef = A41EC5781E2820550003785A /* Locksmith.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -433,6 +502,55 @@
 			fileType = wrapper.framework;
 			path = Alamofire.framework;
 			remoteRef = 1AF5EEA21DAA20F400670ABD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC5831E2820550003785A /* Locksmith.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Locksmith.framework;
+			remoteRef = A41EC5821E2820550003785A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC5851E2820550003785A /* Locksmith iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Locksmith iOS Tests.xctest";
+			remoteRef = A41EC5841E2820550003785A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC5871E2820550003785A /* Locksmith.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Locksmith.framework;
+			remoteRef = A41EC5861E2820550003785A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC5891E2820550003785A /* Locksmith OS X Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Locksmith OS X Tests.xctest";
+			remoteRef = A41EC5881E2820550003785A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC58B1E2820550003785A /* Locksmith.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Locksmith.framework;
+			remoteRef = A41EC58A1E2820550003785A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC58D1E2820550003785A /* Locksmith.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Locksmith.framework;
+			remoteRef = A41EC58C1E2820550003785A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41EC58F1E2820550003785A /* Test Host.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Test Host.app";
+			remoteRef = A41EC58E1E2820550003785A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
