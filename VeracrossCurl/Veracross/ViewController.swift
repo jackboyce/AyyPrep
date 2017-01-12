@@ -11,6 +11,7 @@ import Alamofire
 import Darwin
 import Foundation
 import GoogleMobileAds
+import Locksmith
 
 class ViewController: UIViewController {
     
@@ -24,15 +25,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("1")
         
+        if let dictionary = Locksmith.loadDataForUserAccount(userAccount: "Veracross")
+        {
+               print("2")
+            username.text = dictionary["username"] as! String?
+            password.text = dictionary["password"] as! String?
+
+        }
+        else{
+            print("3")
+            do{
+                try  Locksmith.saveData(data:["username": "", "password": ""], forUserAccount: "Veracross")
+            }
+            catch{
+                print("error")
+
+                
+            }
+        }
         //Load the remember me data into the text boxes
-        if let uname = UserDefaults.standard.string(forKey: "username") {
-            username.text = uname
-        }
-        if let pword = UserDefaults.standard.string(forKey: "password") {
-            password.text = pword
-        }
-        rememberSwitch.setOn(UserDefaults.standard.bool(forKey: "Switch"), animated: false)
+                rememberSwitch.setOn(UserDefaults.standard.bool(forKey: "Switch"), animated: false)
         
         //Let the keyboard be dismissed by tapping anywhere not on the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
@@ -72,11 +86,20 @@ class ViewController: UIViewController {
     //Called to save the data from the username and password field
     func save() {
         if rememberSwitch.isOn {
-            UserDefaults.standard.set(username.text!, forKey: "username")
-            UserDefaults.standard.set(password.text!, forKey: "password")
+            do{
+                try Locksmith.updateData(data: ["username": username.text!, "password": password.text!], forUserAccount: "Veracross")
+            }
+            catch{
+               print("error")
+            }
         } else {
-            UserDefaults.standard.set("", forKey: "username")
-            UserDefaults.standard.set("", forKey: "password")
+            do{
+                try Locksmith.deleteDataForUserAccount(userAccount: "Veracross")
+            }
+            catch{
+                print("error")
+ 
+            }
         }
         UserDefaults.standard.set(rememberSwitch.isOn, forKey: "Switch")
     }

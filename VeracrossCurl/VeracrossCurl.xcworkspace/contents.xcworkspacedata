@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Locksmith.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:VeracrossCurl.xcodeproj">
    </FileRef>
    <FileRef
