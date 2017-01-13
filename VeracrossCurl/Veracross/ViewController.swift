@@ -43,7 +43,6 @@ class ViewController: UIViewController {
         //Let the keyboard be dismissed by tapping anywhere not on the keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
         //Load an add on the page
         loadAd()
     }

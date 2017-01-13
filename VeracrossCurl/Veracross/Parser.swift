@@ -117,7 +117,7 @@ class Parser {
             print("Error: \(error)")
         }
         
-        
+        //print(html)
         
         //Get the html table to use for grophs
         let tableOpener = "<iframe id=\"grade-detail-document\" src=\""
@@ -137,7 +137,7 @@ class Parser {
         } catch let error {
             print("Error: \(error)")
         }
-
+        //print(table)
         //var tableOfGroups = getArrayOfStringsBetween(opener: "<tbody class=", closer:"</tbody>", target: table)
         // print(tableOfGroups[0...3])
         var tableOfGroups = getArrayOfStringsBetween(opener: "<td class='description text' ><strong>", closer: "</strong>", target: table)
@@ -184,7 +184,7 @@ class Parser {
             var strsBetween = getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString)
             var strsBetweenIndex = 0
             while strsBetweenIndex < strsBetween.count {
-                strsBetween[strsBetweenIndex] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: strsBetween[strsBetweenIndex] as NSString) + "EndScore><Category:" + categoryName[counter] + "EndCategory>"
+                strsBetween[strsBetweenIndex] = "<Date:" + getStringBetween(opener: "due_date text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndDate><Assignment:" + getStringBetween(opener: "assignment text\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndAssignment><Score:" + getStringBetween(opener: "\"score-number\">", closer: "</span>", target: strsBetween[strsBetweenIndex] as NSString) + "EndScore><Numerator" + getStringBetween(opener: "points_earned number\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndNumerator><Denominator" + getStringBetween(opener: "points_possible number\' >", closer: "</td>", target: strsBetween[strsBetweenIndex] as NSString) + "EndDenominator><Category:" + categoryName[counter] + "EndCategory>"
                 
                 toReturn.append(Assignment.init(stringRepresentation: strsBetween[strsBetweenIndex], weight: wTable[categoryName[counter]]!))
                 
