@@ -27,6 +27,7 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         self.lineChartView.rightAxis.drawLabelsEnabled = false
         self.lineChartView.leftAxis.axisMinimum = 0
         self.lineChartView.xAxis.drawLabelsEnabled = false
+        self.lineChartView.pinchZoomEnabled = false //normal zoom (true) or axis zoom (false)
         
         for i in courses{
             data.append(getNumbers(course: i))
@@ -34,6 +35,7 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         //data.append(getNumbers(course: courses[0]))
         
         setChartData()
+        
     }
     
     func getNumbers(course: Course) -> [ChartDataEntry]{

@@ -41,13 +41,16 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                 for i in self.courses {
                     keyQueue.sync {
                         keyGroup.enter()
-                        i.key = (self.parser?.getKey(course: i))!
-                        //print("got key")
+                        if i.key == "" {
+                            i.key = (self.parser?.getKey(course: i))!
+                            print("got key \(i.name)")
+                        }
                         keyGroup.leave()
                     }
                     keyQueue.async {
                         keyGroup.enter()
                         i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
+                        /*
                         for k in i.assignments{
                             print(k.name)
                             print(k.category)
@@ -56,14 +59,12 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                             print(k.denominator)
                             
                             
-                        }
-                        //print("got pdf")
+                        }*/
                         i.assignments.sort()
                         self.progressOnAssignments += 1
                         if i.pdf == nil {
                             self.parser?.getPDF(course: i)
-                            
-                            
+                            print("got pdf \(i.name)")
                         }
                         keyGroup.leave()
                     }
@@ -80,6 +81,8 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.viewDidLoad), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+        
         //Starts loasing circle
         loadingCircle.startAnimating()
         
@@ -89,17 +92,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         courseTable.delegate = self
         courseTable.dataSource = self
         
-        //UNCOMMENT FOR STATISTICS VIEW
-//        //Adds a button to the center of the navigation bar
-//        let center =  UIButton(type: UIButtonType.custom) as UIButton
-//        center.frame = CGRect(x: 0,y: 0,width: 100,height: 40) as CGRect
-//        //button.backgroundColor = UIColor.red
-     //   center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
-//        center.setTitleColor(UIColor.white, for: UIControlState.highlighted)
-//        center.setTitle("Statistics", for: UIControlState.normal)
-//        center.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
-//        self.navigationItem.titleView = center
-        //Adds a button to navigationBar
         let center = UIButton(type: UIButtonType.custom) as UIButton
         center.frame = CGRect(x:0, y:0, width: 100, height: 40) as CGRect
         center.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
@@ -108,17 +100,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         center.addTarget(self, action: #selector(graphsPressed), for: UIControlEvents.touchUpInside)
         self.navigationItem.titleView = center
         
-        /*
-        let right = UIButton(type: UIButtonType.custom) as UIButton
-        right.frame = CGRect(x:0, y:0, width: 100, height: 40) as CGRect
-        right.setTitleColor(UIColor.init(colorLiteralRed: 14.0/255, green: 122.0/255, blue: 254.0/255, alpha: 1.0), for: UIControlState.normal)
-        right.setTitleColor(UIColor.white, for: UIControlState.highlighted)
-        right.setTitle("Statistics", for: UIControlState.normal)
-        right.addTarget(self, action: #selector(statisticsPressed), for: UIControlEvents.touchUpInside)
-        self.navigationItem.titleView = right*/
-        
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "GPA Calc", style: .plain, target: self, action: #selector(statisticsPressed))
-
         
         loadAd()
     }
@@ -167,14 +149,12 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if courses[indexPath.row].key != "" {
-            let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDF") as! PDFViewController
-            pdfViewController.course = courses[indexPath.row]
-            pdfViewController.parser = self.parser!
-            
-            self.navigationController?.pushViewController(pdfViewController, animated: true)
-        } else {
+        if courses[indexPath.row].key == "" {
             courses[indexPath.row].key = (self.parser?.getKey(course: courses[indexPath.row]))!
         }
+        let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDF") as! PDFViewController
+        pdfViewController.course = courses[indexPath.row]
+        pdfViewController.parser = self.parser!
+        self.navigationController?.pushViewController(pdfViewController, animated: true)
     }
 }

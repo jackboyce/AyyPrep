@@ -79,5 +79,4 @@ class GPAViewController: UIViewController, UITableViewDataSource, UITableViewDel
         cell.myLabel.text = classes[indexPath.row]
         return cell
     }
-    
 }
