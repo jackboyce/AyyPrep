@@ -143,7 +143,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CourseCell")
         cell?.textLabel?.text = courses[indexPath.row].name
-        cell?.detailTextLabel?.text =  (courses[indexPath.row].grade == "" ? "" : parser?.stringToGrade(grade: courses[indexPath.row].grade))! + " " + courses[indexPath.row].grade
+        cell?.detailTextLabel?.text =  (courses[indexPath.row].grade == "" ? "" : GPACalc.stringToGrade(grade: courses[indexPath.row].grade)) + " " + courses[indexPath.row].grade
         return cell!
     }
     

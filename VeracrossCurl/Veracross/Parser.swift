@@ -169,7 +169,6 @@ class Parser {
             
             if strs.isEmpty {
                 wTable[i] = 100
-            
             } else {
                 wTable[i] = Double(self.getStringBetween(opener: "label\">", closer: "%", target: strs[tableOfGroups.index(of: i)!] as NSString))
             }
@@ -208,34 +207,7 @@ class Parser {
         }
     }
     
-    //Takes in a string with a double inside it and outputs a letter grade as a string
-    func stringToGrade(grade: String) -> String {
-        let doubGrade = (grade as NSString).doubleValue
-        
-        if doubGrade >= 96.5 {
-            return "A+"
-        } else if doubGrade >= 92.5 {
-            return "A"
-        } else if doubGrade >= 89.5 {
-            return "A-"
-        } else if doubGrade >= 86.5 {
-            return "B+"
-        } else if doubGrade >= 82.5 {
-            return "B"
-        } else if doubGrade >= 79.5 {
-            return "B-"
-        } else if doubGrade >= 76.5 {
-            return "C+"
-        } else if doubGrade >= 72.5 {
-            return "C"
-        } else if doubGrade >= 70.5 {
-            return "C-"
-        } else if doubGrade >= 69.5 {
-            return "D"
-        } else {
-            return "F"
-        }
-    }
+    
     
     //Takes in html of the webpage and outputs an array of courses
     func generateCourses(html: NSString) -> [Course] {

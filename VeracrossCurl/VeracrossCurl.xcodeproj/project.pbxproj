@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A12BE8F1E2545320076AE46 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A12BE7E1E2544CA0076AE46 /* Charts.framework */; };
 		1A12BE901E2545320076AE46 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A12BE7E1E2544CA0076AE46 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A54E9BA1E293E20003BB7A9 /* GPACalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54E9B91E293E20003BB7A9 /* GPACalc.swift */; };
 		1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6BEF381E2527740037BF61 /* TableViewCell.swift */; };
 		1A6BEF3B1E2527D40037BF61 /* GPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */; };
 		1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */; };
@@ -193,6 +194,7 @@
 
 /* Begin PBXFileReference section */
 		1A12BE771E2544CA0076AE46 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-3.0.1/Charts.xcodeproj"; sourceTree = "<group>"; };
+		1A54E9B91E293E20003BB7A9 /* GPACalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPACalc.swift; sourceTree = "<group>"; };
 		1A6BEF381E2527740037BF61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAViewController.swift; sourceTree = "<group>"; };
 		1A8C5F2C1DA9F54800D072EF /* Veracross.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veracross.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +284,7 @@
 				1A8C5F301DA9F54800D072EF /* ViewController.swift */,
 				1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */,
 				1A9DC94A1E25BFA500433545 /* GPAListViewController.swift */,
+				1A54E9B91E293E20003BB7A9 /* GPACalc.swift */,
 				1A8EA9741DB292E70019351A /* CourseViewController.swift */,
 				A4F4421D1DD51D020007F1EE /* PDFViewController.swift */,
 				A40056331E0F950C00278966 /* GraphsViewController.swift */,
@@ -638,6 +641,7 @@
 				1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
 				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,
+				1A54E9BA1E293E20003BB7A9 /* GPACalc.swift in Sources */,
 				A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */,
 				1A9DC94B1E25BFA500433545 /* GPAListViewController.swift in Sources */,
 				1A8EA9751DB292E70019351A /* CourseViewController.swift in Sources */,

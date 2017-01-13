@@ -21,7 +21,7 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         
         self.lineChartView.delegate = self
         
-        self.lineChartView.descriptionText = ""
+        self.lineChartView.descriptionText = "Current Quarter GPA: \(GPACalc.coursesToUnweightedGPA(courses: courses))"
         
         self.lineChartView.backgroundColor = UIColor.white
         self.lineChartView.rightAxis.drawLabelsEnabled = false
