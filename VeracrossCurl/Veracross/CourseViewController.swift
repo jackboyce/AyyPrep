@@ -57,8 +57,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                             print(k.weight)
                             print(k.numerator)
                             print(k.denominator)
-                            
-                            
                         }*/
                         i.assignments.sort()
                         self.progressOnAssignments += 1
@@ -69,9 +67,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                         keyGroup.leave()
                     }
                     keyGroup.wait()
-                    
                 }
-                
                 group.leave()
             }
             loadingCircle.stopAnimating()

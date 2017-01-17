@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-class Assignment: Comparable{
+class Assignment: Comparable {
     let category: String
     let dueDate: String
     let name: String
@@ -23,14 +23,14 @@ class Assignment: Comparable{
     var num: Double
     var denom: Double
     
-    init(dueDate: String, name: String, score: String){
+    init(dueDate: String, name: String, score: String) {
         self.dueDate = dueDate
         self.name = name
         self.score = score
         self.category = name
         let needle: Character = "/"
        
-        if let idx = score.characters.index(of: needle){
+        if let idx = score.characters.index(of: needle) {
             //pos = score.characters.distance(from: score.startIndex, to: idx)
             numerator = Double(score.substring(to: idx))!
             denominator = Double(score.substring(from: idx))!
@@ -49,7 +49,7 @@ class Assignment: Comparable{
         weightedScore = String(weightedNumerator) + " / " + String(weightedDenominator)
     }
     
-    init(stringRepresentation: String, weight: Double){
+    init(stringRepresentation: String, weight: Double) {
         print(stringRepresentation)
         let p: Parser = Parser.init(username: "", password: "")
         dueDate = p.getStringBetween(opener: "<Date:", closer: "EndDate>", target: stringRepresentation as NSString)
@@ -64,22 +64,21 @@ class Assignment: Comparable{
         
         let needle: Character = "/"
         var pos: Int = 0
-        if let idx = score.characters.index(of: needle){
+        if let idx = score.characters.index(of: needle) {
             pos = score.characters.distance(from: score.startIndex, to: idx)
         }
         
         var numerStr = ""
         var denomStr = ""
         var onNumer = true
-        for l in score.characters{
-            if l != "/" && onNumer && l != " "{
+        for l in score.characters {
+            if l != "/" && onNumer && l != " " {
                 numerStr.append(l)
-                
             }
             if l == "/"{
                 onNumer = false
             }
-            if l != "/" && !onNumer && l != " "{
+            if l != "/" && !onNumer && l != " " {
                 denomStr.append(l)
             }
         }
@@ -99,55 +98,51 @@ class Assignment: Comparable{
         
         var foundSpace = false
         var strl = ""
-        for p in dueDate.characters{
-            if p != " " && foundSpace{
+        for p in dueDate.characters {
+            if p != " " && foundSpace {
                 strl.append(p)
             }
-            if(p == " "){
+            if(p == " ") {
                 foundSpace = true
             }
         }
-        if dueDate.contains("Jul"){
+        if dueDate.contains("Jul") {
             intDueDate = Int(strl)!
         }
-        else if(dueDate.contains("Aug")){
+        else if dueDate.contains("Aug") {
             intDueDate = 31 + Int(strl)!
         }
-        else if(dueDate.contains("Sep")){
+        else if dueDate.contains("Sep") {
             intDueDate = 61 + Int(strl)!
         }
-        else if(dueDate.contains("Oct")){
+        else if dueDate.contains("Oct") {
             intDueDate = 92 + Int(strl)!
         }
-        else if(dueDate.contains("Nov")){
+        else if dueDate.contains("Nov") {
             intDueDate = 122 + Int(strl)!
         }
-        else if(dueDate.contains("Dec")){
+        else if dueDate.contains("Dec") {
             intDueDate = 153 + Int(strl)!
         }
-        else if(dueDate.contains("Jan")){
+        else if dueDate.contains("Jan") {
             intDueDate = 184 + Int(strl)!
         }
-        else if(dueDate.contains("Feb")){
+        else if dueDate.contains("Feb") {
             intDueDate =  213 + Int(strl)!
         }
-        else if(dueDate.contains("Mar")){
+        else if dueDate.contains("Mar") {
             intDueDate = 244 + Int(strl)!
         }
-        else if(dueDate.contains("Apr")){
+        else if dueDate.contains("Apr") {
             intDueDate = 274 + Int(strl)!
         }
-        else if(dueDate.contains("May")){
+        else if dueDate.contains("May") {
             intDueDate = 305 + Int(strl)!
         }
-        else if(dueDate.contains("Jun")){
+        else if dueDate.contains("Jun") {
             intDueDate = 335 + Int(strl)!
         }
-        
-        
-}
-    
-
+    }
 }
 
 func < (lhs: Assignment, rhs: Assignment) -> Bool {

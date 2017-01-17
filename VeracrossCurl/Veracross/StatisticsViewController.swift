@@ -27,7 +27,7 @@ class StatisticsViewController: UIViewController {
         text.text = "Unweighted: \(total)"
     }
     
-    func stringToGPA(letter: String) -> Double{
+    func stringToGPA(letter: String) -> Double {
         
         if letter == "A+" {
             return 4

@@ -8,13 +8,11 @@
 
 import Foundation
 import Alamofire
-//import Kanna
 
 class Parser {
     var username: String = ""
     var password: String = ""
     var courses: [Course] = []
-   // var table: [NSString] = [""]
     
     init(username: String, password: String) {
         self.username = username
@@ -28,8 +26,8 @@ class Parser {
     
     func getGradeUpToAndIncluding(assignment: Assignment, array: [Assignment] ) -> Double {
         var finalGrade = 0.0
-        var weightings :[String : Double] = [:]
-        var categories : [String] = []
+        var weightings: [String : Double] = [:]
+        var categories: [String] = []
         for i in array {
             if !categories.contains(i.category) {
                 weightings[i.category] = i.weight
@@ -46,7 +44,7 @@ class Parser {
         var weCare = true
         for i in categories {
             if(!weCare) {
-                break;
+                break
             }
             var numer = 0.0
             var denom = 0.0
@@ -55,7 +53,7 @@ class Parser {
                 weCare = false
             }
             
-            for k in assignments{
+            for k in assignments {
                 
                 if k.category == i || !weCare {
                    
@@ -96,9 +94,8 @@ class Parser {
     }
     
     func getArrayOfAssignments(course: Course) -> [Assignment] {
-        
-        var wTable: [String: Double] = [:]
-        var toReturn: [Assignment] = [Assignment.init(dueDate:"", name:"",score:"")]
+        var wTable: [String : Double] = [:]
+        var toReturn: [Assignment] = [Assignment.init(dueDate: "", name: "", score: "")]
         toReturn.removeAll()
         
         if course.name == "Wrong username or password" {
@@ -161,11 +158,10 @@ class Parser {
         }
         
         var strs = getArrayOfStringsBetween(opener: "weight number", closer: "graph", target: table)
-        var categoryName: [String] = [""];
+        var categoryName: [String] = [""]
         categoryName.remove(at: 0)
         for i in tableOfGroups {
             categoryName.append(i)
-            
             
             if strs.isEmpty {
                 wTable[i] = 100
@@ -178,7 +174,6 @@ class Parser {
         assignments.removeAll()
         var counter = 0
         
-        
         while counter < categoryName.count {
             assignments.append(getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString))
             var strsBetween = getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString)
@@ -188,14 +183,13 @@ class Parser {
                 
                 toReturn.append(Assignment.init(stringRepresentation: strsBetween[strsBetweenIndex], weight: wTable[categoryName[counter]]!))
                 
-                strsBetweenIndex+=1
+                strsBetweenIndex += 1
             }
             assignments[counter].insert(categoryName[counter], at: 0)
             counter += 1
         }
        return toReturn
     }
-    
     
     func getPDF(course: Course) {
         let yourURL = NSURL(string: "https://documents.veracross.com/sjp/grade_detail/\(course.number).pdf?\(course.key)")
@@ -207,12 +201,10 @@ class Parser {
         }
     }
     
-    
-    
     //Takes in html of the webpage and outputs an array of courses
     func generateCourses(html: NSString) -> [Course] {
         
-        let activeRanges:[(start:Int, end:Int)] = getActiveRanges(html: html)
+        let activeRanges:[(start: Int, end: Int)] = getActiveRanges(html: html)
         
         var courseArray = [Course]()
         
@@ -276,7 +268,7 @@ class Parser {
     }
     
     //Used to get the ranges between the active html tags
-    func getActiveRanges(html: NSString) -> [(start:Int, end:Int)]{
+    func getActiveRanges(html: NSString) -> [(start:Int, end:Int)] {
         let activeOpener = "<li data-status=\"active\">"
         let activeCloser = "</li>"
         var activeRanges:[(start:Int, end:Int)] = []

@@ -22,7 +22,7 @@ class PDFViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let pdf = course.pdf {
+        if course.pdf != nil {
             htmlViewer.load(course.pdf as! Data, mimeType: "application/pdf", textEncodingName: "utf-8", baseURL: URL(string: "https://google.com")!)
         } else {
             parser?.getPDF(course: course)

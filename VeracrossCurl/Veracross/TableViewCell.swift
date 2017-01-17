@@ -9,32 +9,13 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
     
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var levelField: UITextField!
     @IBOutlet weak var gradeField: UITextField!
     
-    /*public func configure(nameText: String?, namePlaceholder: String,
-                                    levelText: String?, levelPlaceholder: String,
-                                    gradeText: String?, gradePlaceholder: String) {
-        nameField.text = nameText
-        nameField.placeholder = namePlaceholder
-        nameField.accessibilityValue = nameText
-        nameField.accessibilityLabel = namePlaceholder
-        levelField.text = levelText
-        levelField.placeholder = levelPlaceholder
-        levelField.accessibilityValue = levelText
-        levelField.accessibilityLabel = levelPlaceholder
-        gradeField.text = gradeText
-        gradeField.placeholder = gradePlaceholder
-        gradeField.accessibilityValue = gradeText
-        gradeField.accessibilityLabel = gradePlaceholder
-    }
-    */
-    public func configure(namePlaceholder: String, levelPlaceholder: String,
-                          gradePlaceholder: String) {
+    public func configure(namePlaceholder: String, levelPlaceholder: String, gradePlaceholder: String) {
         nameField.placeholder = namePlaceholder
         nameField.accessibilityLabel = namePlaceholder
         levelField.placeholder = levelPlaceholder
@@ -42,7 +23,6 @@ class TableViewCell: UITableViewCell {
         gradeField.placeholder = gradePlaceholder
         gradeField.accessibilityLabel = gradePlaceholder
     }
-
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -54,5 +34,4 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }

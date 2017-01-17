@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-class GraphsViewController: UIViewController, ChartViewDelegate{
+class GraphsViewController: UIViewController, ChartViewDelegate {
    
     @IBOutlet weak var lineChartView: LineChartView!
     var courses: [Course] = []
@@ -35,10 +35,9 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         //data.append(getNumbers(course: courses[0]))
         
         setChartData()
-        
     }
     
-    func getNumbers(course: Course) -> [ChartDataEntry]{
+    func getNumbers(course: Course) -> [ChartDataEntry] {
         var toReturn: [ChartDataEntry] = [ChartDataEntry]()
         for i in course.assignments{
             toReturn.append(ChartDataEntry(x: Double(i.intDueDate), y: 100 * p.getGradeUpToAndIncluding(assignment: i, array: course.assignments)))
@@ -46,11 +45,11 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         return toReturn
     }
     
-    func setChartData(){
+    func setChartData() {
         var dataSets: [LineChartDataSet] = [LineChartDataSet]()
-        var c = 0;
+        var c = 0
         let colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.orange, UIColor.purple, UIColor.cyan, UIColor.magenta]
-        for i in data{
+        for i in data {
             let set: LineChartDataSet = LineChartDataSet.init(values: i, label: courses[c].name)
             set.axisDependency = .left
             
@@ -67,8 +66,6 @@ class GraphsViewController: UIViewController, ChartViewDelegate{
         
         let chartData: LineChartData = LineChartData(dataSets: dataSets)
         chartData.setValueTextColor(UIColor.black)
-        //self.lineChartView.leftAxis.drawZeroLineEnabled = true
-        
         
         self.lineChartView.data = chartData
         
