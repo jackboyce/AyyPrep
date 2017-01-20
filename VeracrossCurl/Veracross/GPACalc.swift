@@ -19,7 +19,7 @@ class GPACalc {
         return ret
     }
     
-    static func courseToPrepGPA(courses: [(grade: String, level: String)]) -> Double{
+    static func courseToPrepGPA(courses: [(grade: String, level: String)]) -> Double {
         var ret = 0.0
         for i in courses {
             ret += GPACalc.stringToPrepGPA(letter: i.grade) + GPACalc.prepLeveltoGPA(letter: i.level)
@@ -37,7 +37,7 @@ class GPACalc {
         return ret
     }
     
-    static func stringToGPA(letter: String) -> Double{
+    static func stringToGPA(letter: String) -> Double {
         let input = letter.uppercased()
         if input == "A+" {
             return 4.0
@@ -64,7 +64,7 @@ class GPACalc {
         }
     }
     
-    static func stringToPrepGPA(letter: String) -> Double{
+    static func stringToPrepGPA(letter: String) -> Double {
         let input = letter.uppercased()
         if input == "A+" {
             return 4.25
@@ -120,7 +120,7 @@ class GPACalc {
         }
     }
     
-    static func prepLeveltoGPA(letter: String) -> Double{
+    static func prepLeveltoGPA(letter: String) -> Double {
         let input = letter.uppercased()
         if input == "AP" {
             return 0.75

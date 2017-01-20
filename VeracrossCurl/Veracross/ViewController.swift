@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         if let dictionary = Locksmith.loadDataForUserAccount(userAccount: "Veracross") {
             username.text = dictionary["username"] as! String?
             password.text = dictionary["password"] as! String?
-
         } else {
             do{
                 try Locksmith.saveData(data:["username": "", "password": ""], forUserAccount: "Veracross")

@@ -25,7 +25,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var htmlViewer: UIWebView!
     @IBOutlet weak var bannerView: GADBannerView!
     
-    func completeParser(html: String?) -> (){
+    func completeParser(html: String?) -> () {
         if(html != nil){
             courses = (parser?.generateCourses(html: html! as NSString))!
             courseTable.reloadData()
@@ -50,14 +50,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                     keyQueue.async {
                         keyGroup.enter()
                         i.assignments = (self.parser?.getArrayOfAssignments(course: i))!
-                        /*
-                        for k in i.assignments{
-                            print(k.name)
-                            print(k.category)
-                            print(k.weight)
-                            print(k.numerator)
-                            print(k.denominator)
-                        }*/
                         i.assignments.sort()
                         self.progressOnAssignments += 1
                         if i.pdf == nil {
@@ -124,7 +116,6 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         request.testDevices = ["kGADSimulatorID"]
         bannerView.adSize = kGADAdSizeBanner
         bannerView.load(request)
-        
     }
 
     override func didReceiveMemoryWarning() {

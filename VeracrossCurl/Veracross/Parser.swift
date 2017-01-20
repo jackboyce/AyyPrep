@@ -41,21 +41,21 @@ class Parser {
                 assignments.remove(at: assignments.index(of: k)!)
             }
         }
-        var weCare = true
+        var isWeighted = true
         for i in categories {
-            if(!weCare) {
+            if(!isWeighted) {
                 break
             }
             var numer = 0.0
             var denom = 0.0
             
             if weightings[i] == 1.0 {
-                weCare = false
+                isWeighted = false
             }
             
             for k in assignments {
                 
-                if k.category == i || !weCare {
+                if k.category == i || !isWeighted {
                    
                     numer += k.numerator
                     denom += k.denominator
@@ -63,7 +63,7 @@ class Parser {
                 
             }
             
-            if weCare && numer == 0 && denom == 0 {
+            if isWeighted && numer == 0 && denom == 0 {
                 finalGrade += weightings[i]!
             } else {
                 finalGrade +=  numer / denom * weightings[i]!
@@ -72,6 +72,7 @@ class Parser {
         return finalGrade
     }
     
+    //Used to get link to pdf
     func getKey(course: Course) -> String {
         var html: NSString = ""
         //Get the html of the all assignments page of course i
@@ -134,9 +135,7 @@ class Parser {
         } catch let error {
             print("Error: \(error)")
         }
-        //print(table)
-        //var tableOfGroups = getArrayOfStringsBetween(opener: "<tbody class=", closer:"</tbody>", target: table)
-        // print(tableOfGroups[0...3])
+        
         var tableOfGroups = getArrayOfStringsBetween(opener: "<td class='description text' ><strong>", closer: "</strong>", target: table)
         var m = 0
         while m < tableOfGroups.count {
@@ -169,7 +168,7 @@ class Parser {
                 wTable[i] = Double(self.getStringBetween(opener: "label\">", closer: "%", target: strs[tableOfGroups.index(of: i)!] as NSString))
             }
         }
-        //print(tableOfGroups)
+        
         var assignments: [[String]] = [[""]]
         assignments.removeAll()
         var counter = 0
@@ -292,6 +291,7 @@ class Parser {
         return activeRanges
     }
     
+    //Gets all strings between an opener and close tag
     func getArrayOfStringsBetween(opener: String, closer: String, target: NSString) -> [String] {
         var ret: [String] = []
         var begin = 0
@@ -309,7 +309,6 @@ class Parser {
     }
     
     func getStringAndIndexBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0, rightOffset: Int = 0) -> (str: String, index: Int) {
-        //Need this because swift is dumb and wont let me do it in the parameters
         var end = end
         if end == 0 {
             end = target.length
@@ -338,7 +337,6 @@ class Parser {
     }
     
     func getStringBetween(opener: String, closer: String, target: NSString, begin: Int = 0, end: Int = 0, leftOffset: Int = 0, rightOffset: Int = 0) -> String {
-        //Need this because swift is dumb and wont let me do it in the parameters
         var end = end
         if end == 0 {
             end = target.length
@@ -353,7 +351,6 @@ class Parser {
                 var closeIndex = openIndex
                 while !found {
                     if target.substring(with: NSRange(location: closeIndex, length: closer.characters.count)) == closer {
-                        //print("\(openIndex) \(closeIndex)")
                         ret = target.substring(with: NSRange(location: openIndex + opener.characters.count + leftOffset, length: closeIndex - openIndex - opener.characters.count - leftOffset - rightOffset))
                         found = true
                     }

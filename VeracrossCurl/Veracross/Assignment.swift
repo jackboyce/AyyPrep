@@ -75,7 +75,7 @@ class Assignment: Comparable {
             if l != "/" && onNumer && l != " " {
                 numerStr.append(l)
             }
-            if l == "/"{
+            if l == "/" {
                 onNumer = false
             }
             if l != "/" && !onNumer && l != " " {
