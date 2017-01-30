@@ -96,23 +96,23 @@
                         <constraints>
                             <constraint firstItem="gYS-AL-a8k" firstAttribute="leading" secondItem="QxB-Cx-7Xr" secondAttribute="trailing" constant="3" id="BjQ-mz-YmG"/>
                             <constraint firstItem="rEP-ET-Ch1" firstAttribute="width" secondItem="yIt-iT-J6g" secondAttribute="width" id="GDI-bw-0DK"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kid-ri-tfw" secondAttribute="bottom" id="H50-Lh-FHz"/>
                             <constraint firstItem="PFU-eV-DfS" firstAttribute="top" secondItem="gYS-AL-a8k" secondAttribute="bottom" constant="11" id="Jou-XG-qUh"/>
                             <constraint firstItem="PFU-eV-DfS" firstAttribute="leading" secondItem="yIt-iT-J6g" secondAttribute="trailing" constant="3" id="JpH-I8-OgH"/>
                             <constraint firstItem="gYS-AL-a8k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R2m-f9-igd"/>
                             <constraint firstItem="yIt-iT-J6g" firstAttribute="top" secondItem="gYS-AL-a8k" secondAttribute="bottom" constant="11" id="ShN-A2-xBg"/>
+                            <constraint firstItem="rEP-ET-Ch1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TSv-Qg-lLi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kid-ri-tfw" secondAttribute="bottom" id="VbU-3C-RVs"/>
                             <constraint firstItem="QxB-Cx-7Xr" firstAttribute="top" secondItem="PFU-eV-DfS" secondAttribute="bottom" constant="15" id="apG-y3-PxN"/>
-                            <constraint firstItem="rEP-ET-Ch1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="byN-jA-K0y"/>
                             <constraint firstItem="QxB-Cx-7Xr" firstAttribute="top" secondItem="yIt-iT-J6g" secondAttribute="bottom" constant="15" id="d7x-o4-rxR"/>
                             <constraint firstItem="UrZ-Mb-OW3" firstAttribute="leading" secondItem="QxB-Cx-7Xr" secondAttribute="trailing" constant="-1" id="fV2-aq-Xop"/>
                             <constraint firstItem="yIt-iT-J6g" firstAttribute="top" secondItem="rEP-ET-Ch1" secondAttribute="bottom" constant="11" id="fXM-ym-vtS"/>
                             <constraint firstItem="QxB-Cx-7Xr" firstAttribute="top" secondItem="gYS-AL-a8k" secondAttribute="bottom" constant="56" id="hux-5N-lvn"/>
                             <constraint firstItem="gYS-AL-a8k" firstAttribute="leading" secondItem="yIt-iT-J6g" secondAttribute="trailing" constant="3" id="lTX-vv-JL5"/>
                             <constraint firstItem="kgP-Tl-kv4" firstAttribute="leading" secondItem="QxB-Cx-7Xr" secondAttribute="trailing" constant="12" id="mZ6-Ix-xF0"/>
-                            <constraint firstItem="gYS-AL-a8k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="om4-fj-cZM"/>
                             <constraint firstItem="gYS-AL-a8k" firstAttribute="width" secondItem="PFU-eV-DfS" secondAttribute="width" id="p36-zp-ewn"/>
                             <constraint firstItem="gYS-AL-a8k" firstAttribute="leading" secondItem="rEP-ET-Ch1" secondAttribute="trailing" constant="3" id="rqn-ZY-e58"/>
                             <constraint firstItem="PFU-eV-DfS" firstAttribute="leading" secondItem="QxB-Cx-7Xr" secondAttribute="trailing" constant="3" id="sZQ-AZ-IoD"/>
+                            <constraint firstItem="gYS-AL-a8k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="vUB-QL-4md"/>
                             <constraint firstItem="UrZ-Mb-OW3" firstAttribute="top" secondItem="kgP-Tl-kv4" secondAttribute="bottom" constant="7" id="wfh-Rp-oKF"/>
                             <constraint firstItem="Kid-ri-tfw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xcI-Jz-ZCe"/>
                             <constraint firstItem="yIt-iT-J6g" firstAttribute="width" secondItem="QxB-Cx-7Xr" secondAttribute="width" id="yAc-el-VYS"/>
@@ -160,18 +160,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PXS-lz-dm9" id="g5A-P3-bRE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s3V-rn-iiS">
-                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="11" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sDA-cE-KcD">
-                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <rect key="frame" x="316" y="11" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -318,7 +318,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GLN-Fw-QCY" id="7Fx-M4-ixY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQZ-ow-xBE">

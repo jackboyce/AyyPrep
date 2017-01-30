@@ -12,6 +12,15 @@
 		1A54E9BA1E293E20003BB7A9 /* GPACalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54E9B91E293E20003BB7A9 /* GPACalc.swift */; };
 		1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6BEF381E2527740037BF61 /* TableViewCell.swift */; };
 		1A6BEF3B1E2527D40037BF61 /* GPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */; };
+		1A8A11E41E3901560037226A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A11C51E3901560037226A /* README.md */; };
+		1A8A11E51E3901560037226A /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11C91E3901560037226A /* FirebaseAnalytics.framework */; };
+		1A8A11E61E3901560037226A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11CD1E3901560037226A /* FirebaseCore.framework */; };
+		1A8A11E71E3901560037226A /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11D11E3901560037226A /* FirebaseInstanceID.framework */; };
+		1A8A11E81E3901560037226A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11D61E3901560037226A /* GoogleMobileAds.framework */; };
+		1A8A11E91E3901560037226A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A11D71E3901560037226A /* README.txt */; };
+		1A8A11EA1E3901560037226A /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11DB1E3901560037226A /* GoogleInterchangeUtilities.framework */; };
+		1A8A11EB1E3901560037226A /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11DF1E3901560037226A /* GoogleSymbolUtilities.framework */; };
+		1A8A11EC1E3901560037226A /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8A11E31E3901560037226A /* GoogleUtilities.framework */; };
 		1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */; };
 		1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C5F301DA9F54800D072EF /* ViewController.swift */; };
 		1A8C5F341DA9F54800D072EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C5F321DA9F54800D072EF /* Main.storyboard */; };
@@ -23,7 +32,6 @@
 		1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
 		1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF5EEAF1DAD8BA900670ABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5EEAE1DAD8BA900670ABD /* Course.swift */; };
-		360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */; };
 		A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40056331E0F950C00278966 /* GraphsViewController.swift */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
 		A41EC5901E2821270003785A /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EC5831E2820550003785A /* Locksmith.framework */; };
@@ -196,6 +204,18 @@
 		1A54E9B91E293E20003BB7A9 /* GPACalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPACalc.swift; sourceTree = "<group>"; };
 		1A6BEF381E2527740037BF61 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		1A6BEF3A1E2527D40037BF61 /* GPAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAViewController.swift; sourceTree = "<group>"; };
+		1A8A11C31E3901560037226A /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		1A8A11C41E3901560037226A /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		1A8A11C51E3901560037226A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A8A11C91E3901560037226A /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		1A8A11CD1E3901560037226A /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		1A8A11D11E3901560037226A /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		1A8A11D31E3901560037226A /* FIRInstanceID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIRInstanceID.h; sourceTree = "<group>"; };
+		1A8A11D61E3901560037226A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		1A8A11D71E3901560037226A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1A8A11DB1E3901560037226A /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		1A8A11DF1E3901560037226A /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		1A8A11E31E3901560037226A /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
 		1A8C5F2C1DA9F54800D072EF /* Veracross.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Veracross.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8C5F2E1DA9F54800D072EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A8C5F301DA9F54800D072EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,9 +239,6 @@
 		A4AC504F1E281A5E00834444 /* Veracross.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Veracross.entitlements; sourceTree = "<group>"; };
 		A4F4421D1DD51D020007F1EE /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		A4F681C91E0F057500DAAF61 /* Assignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
-		C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veracross.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E72A2D6B68EEB79CD6B32636 /* Pods-Veracross.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veracross.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Veracross/Pods-Veracross.debug.xcconfig"; sourceTree = "<group>"; };
-		F8A5F04E8FC885F466942323 /* Pods-Veracross.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veracross.release.xcconfig"; path = "Pods/Target Support Files/Pods-Veracross/Pods-Veracross.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,10 +246,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8A11EB1E3901560037226A /* GoogleSymbolUtilities.framework in Frameworks */,
+				1A8A11E51E3901560037226A /* FirebaseAnalytics.framework in Frameworks */,
+				1A8A11EA1E3901560037226A /* GoogleInterchangeUtilities.framework in Frameworks */,
+				1A8A11E71E3901560037226A /* FirebaseInstanceID.framework in Frameworks */,
+				1A8A11E61E3901560037226A /* FirebaseCore.framework in Frameworks */,
 				1A12BE8F1E2545320076AE46 /* Charts.framework in Frameworks */,
 				A41EC5901E2821270003785A /* Locksmith.framework in Frameworks */,
+				1A8A11E81E3901560037226A /* GoogleMobileAds.framework in Frameworks */,
+				1A8A11EC1E3901560037226A /* GoogleUtilities.framework in Frameworks */,
 				1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */,
-				360E96FA4C675D125E65BE37 /* Pods_Veracross.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +275,14 @@
 		1A6735441DA45BF000F5D3F3 = {
 			isa = PBXGroup;
 			children = (
+				1A8A11C01E3901560037226A /* Firebase */,
+				1A8A11C61E3901560037226A /* FirebaseAnalytics */,
+				1A8A11CA1E3901560037226A /* FirebaseCore */,
+				1A8A11CE1E3901560037226A /* FirebaseInstanceID */,
+				1A8A11D41E3901560037226A /* Google-Mobile-Ads-SDK */,
+				1A8A11D81E3901560037226A /* GoogleInterchangeUtilities */,
+				1A8A11DC1E3901560037226A /* GoogleSymbolUtilities */,
+				1A8A11E01E3901560037226A /* GoogleUtilities */,
 				A41EC5781E2820550003785A /* Locksmith.xcodeproj */,
 				A41EC5751E281E620003785A /* Locksmith.framework */,
 				1A12BE771E2544CA0076AE46 /* Charts.xcodeproj */,
@@ -260,8 +291,6 @@
 				1A8C5F421DA9F54800D072EF /* VeracrossTests */,
 				1A8C5F4D1DA9F54800D072EF /* VeracrossUITests */,
 				1A6735511DA45C2200F5D3F3 /* Products */,
-				625869E137785155518FA902 /* Pods */,
-				2F54DE7487392EC0872F40E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +300,210 @@
 				1A8C5F2C1DA9F54800D072EF /* Veracross.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A8A11C01E3901560037226A /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11C11E3901560037226A /* Core */,
+				1A8A11C51E3901560037226A /* README.md */,
+			);
+			name = Firebase;
+			path = Pods/Firebase;
+			sourceTree = "<group>";
+		};
+		1A8A11C11E3901560037226A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11C21E3901560037226A /* Sources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1A8A11C21E3901560037226A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11C31E3901560037226A /* Firebase.h */,
+				1A8A11C41E3901560037226A /* module.modulemap */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1A8A11C61E3901560037226A /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11C71E3901560037226A /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = Pods/FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		1A8A11C71E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11C81E3901560037226A /* frameworks */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11C81E3901560037226A /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11C91E3901560037226A /* FirebaseAnalytics.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11CA1E3901560037226A /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11CB1E3901560037226A /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = Pods/FirebaseCore;
+			sourceTree = "<group>";
+		};
+		1A8A11CB1E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11CC1E3901560037226A /* frameworks */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11CC1E3901560037226A /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11CD1E3901560037226A /* FirebaseCore.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11CE1E3901560037226A /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11CF1E3901560037226A /* Frameworks */,
+				1A8A11D21E3901560037226A /* Sources */,
+			);
+			name = FirebaseInstanceID;
+			path = Pods/FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		1A8A11CF1E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11D01E3901560037226A /* frameworks */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11D01E3901560037226A /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11D11E3901560037226A /* FirebaseInstanceID.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11D21E3901560037226A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11D31E3901560037226A /* FIRInstanceID.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1A8A11D41E3901560037226A /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11D51E3901560037226A /* Frameworks */,
+				1A8A11D71E3901560037226A /* README.txt */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Pods/Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		1A8A11D51E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11D61E3901560037226A /* GoogleMobileAds.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11D81E3901560037226A /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11D91E3901560037226A /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = Pods/GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		1A8A11D91E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11DA1E3901560037226A /* frameworks */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11DA1E3901560037226A /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11DB1E3901560037226A /* GoogleInterchangeUtilities.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11DC1E3901560037226A /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11DD1E3901560037226A /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = Pods/GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		1A8A11DD1E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11DE1E3901560037226A /* frameworks */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11DE1E3901560037226A /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11DF1E3901560037226A /* GoogleSymbolUtilities.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11E01E3901560037226A /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11E11E3901560037226A /* Frameworks */,
+			);
+			name = GoogleUtilities;
+			path = Pods/GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		1A8A11E11E3901560037226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11E21E3901560037226A /* frameworks */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8A11E21E3901560037226A /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A8A11E31E3901560037226A /* GoogleUtilities.framework */,
+			);
+			path = frameworks;
 			sourceTree = "<group>";
 		};
 		1A8C5F2D1DA9F54800D072EF /* Veracross */ = {
@@ -330,23 +563,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F54DE7487392EC0872F40E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C3B8AB65D1DF94BCE2936BDE /* Pods_Veracross.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		625869E137785155518FA902 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E72A2D6B68EEB79CD6B32636 /* Pods-Veracross.debug.xcconfig */,
-				F8A5F04E8FC885F466942323 /* Pods-Veracross.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A41EC5791E2820550003785A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,13 +584,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A8C5F571DA9F54800D072EF /* Build configuration list for PBXNativeTarget "Veracross" */;
 			buildPhases = (
-				AFA9674DC44EAAE273AC2F4B /* [CP] Check Pods Manifest.lock */,
 				1A8C5F281DA9F54800D072EF /* Sources */,
 				1A8C5F291DA9F54800D072EF /* Frameworks */,
 				1A8C5F2A1DA9F54800D072EF /* Resources */,
 				1A8C60141DAA001800D072EF /* Embed Frameworks */,
-				6005FF94BF2EAF6CBCF95176 /* [CP] Embed Pods Frameworks */,
-				45C480D05BCC7579C59A18FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -572,58 +785,11 @@
 				1ADB67BE1DBE9AE800EF551F /* GoogleService-Info.plist in Resources */,
 				1A8C5F361DA9F54800D072EF /* Assets.xcassets in Resources */,
 				1A8C5F341DA9F54800D072EF /* Main.storyboard in Resources */,
+				1A8A11E91E3901560037226A /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		45C480D05BCC7579C59A18FB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Veracross/Pods-Veracross-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6005FF94BF2EAF6CBCF95176 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Veracross/Pods-Veracross-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFA9674DC44EAAE273AC2F4B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A8C5F281DA9F54800D072EF /* Sources */ = {
@@ -634,6 +800,7 @@
 				A401926A1DD51098008573E8 /* Parser.swift in Sources */,
 				1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */,
 				A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */,
+				1A8A11E41E3901560037226A /* README.md in Sources */,
 				1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
 				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,
@@ -740,7 +907,6 @@
 		};
 		1A8C5F511DA9F54800D072EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E72A2D6B68EEB79CD6B32636 /* Pods-Veracross.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -766,6 +932,16 @@
 				DEVELOPMENT_TEAM = WK367DXNJ2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseCore/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseInstanceID/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks/frameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
@@ -798,7 +974,6 @@
 		};
 		1A8C5F521DA9F54800D072EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8A5F04E8FC885F466942323 /* Pods-Veracross.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -824,6 +999,16 @@
 				DEVELOPMENT_TEAM = WK367DXNJ2;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseCore/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseInstanceID/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleSymbolUtilities/Frameworks/frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks/frameworks",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
