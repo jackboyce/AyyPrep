@@ -76,7 +76,7 @@ class Parser {
     func getKey(course: Course) -> String {
         var html: NSString = ""
         //Get the html of the all assignments page of course i
-        let myURLString = "https://portals.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
+        let myURLString = "https://portals-app.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
         let myURL = URL(string: myURLString)
         
         do {
@@ -105,7 +105,7 @@ class Parser {
         
         var html: NSString = ""
         //Get the html of the all assignments page of course i
-        let myURLString = "https://portals.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
+        let myURLString = "https://portals-app.veracross.com/sjp/student/classes/\(course.number)/grade_detail/"
         let myURL = URL(string: myURLString)
         
         do {
@@ -172,7 +172,7 @@ class Parser {
         var assignments: [[String]] = [[""]]
         assignments.removeAll()
         var counter = 0
-        
+        //print(tableOfGroupsOld[0])
         while counter < categoryName.count {
             assignments.append(getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString))
             var strsBetween = getArrayOfStringsBetween(opener: "<tr class=\'row_", closer: "</tr>", target: tableOfGroupsOld[counter] as NSString)

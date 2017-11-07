@@ -97,6 +97,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         if(progressOnAssignments == courses.count && progressOnAssignments != 0 && courses.first?.name != "Wrong username or password"){
             let graphsViewController = self.storyboard?.instantiateViewController(withIdentifier: "Graphs") as! GraphsViewController
             graphsViewController.courses = courses
+            print(courses[0].assignments)
             self.navigationController?.pushViewController(graphsViewController, animated: true)
         }
     }

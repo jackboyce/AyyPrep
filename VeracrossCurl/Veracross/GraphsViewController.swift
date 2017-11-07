@@ -42,6 +42,9 @@ class GraphsViewController: UIViewController, ChartViewDelegate {
         for i in course.assignments{
             toReturn.append(ChartDataEntry(x: Double(i.intDueDate), y: 100 * p.getGradeUpToAndIncluding(assignment: i, array: course.assignments)))
         }
+        if(toReturn.count == 0){
+            print("isEmpty")
+        }
         return toReturn
     }
     

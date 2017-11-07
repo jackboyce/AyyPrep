@@ -96,52 +96,7 @@ class Assignment: Comparable {
 
         weightedScore = String(weightedNumerator) + " / " + String(weightedDenominator)
         
-        var foundSpace = false
-        var strl = ""
-        for p in dueDate.characters {
-            if p != " " && foundSpace {
-                strl.append(p)
-            }
-            if(p == " ") {
-                foundSpace = true
-            }
-        }
-        if dueDate.contains("Jul") {
-            intDueDate = Int(strl)!
-        }
-        else if dueDate.contains("Aug") {
-            intDueDate = 31 + Int(strl)!
-        }
-        else if dueDate.contains("Sep") {
-            intDueDate = 61 + Int(strl)!
-        }
-        else if dueDate.contains("Oct") {
-            intDueDate = 92 + Int(strl)!
-        }
-        else if dueDate.contains("Nov") {
-            intDueDate = 122 + Int(strl)!
-        }
-        else if dueDate.contains("Dec") {
-            intDueDate = 153 + Int(strl)!
-        }
-        else if dueDate.contains("Jan") {
-            intDueDate = 184 + Int(strl)!
-        }
-        else if dueDate.contains("Feb") {
-            intDueDate =  213 + Int(strl)!
-        }
-        else if dueDate.contains("Mar") {
-            intDueDate = 244 + Int(strl)!
-        }
-        else if dueDate.contains("Apr") {
-            intDueDate = 274 + Int(strl)!
-        }
-        else if dueDate.contains("May") {
-            intDueDate = 305 + Int(strl)!
-        }
-        else if dueDate.contains("Jun") {
-            intDueDate = 335 + Int(strl)!
-        }
+        intDueDate = dueDateToInt(dueDate: dueDate)
     }
 }
 
@@ -152,4 +107,57 @@ func < (lhs: Assignment, rhs: Assignment) -> Bool {
 func == (lhs: Assignment, rhs: Assignment) -> Bool {
     return lhs.intDueDate == rhs.intDueDate
 }
+
+public func dueDateToInt(dueDate: String) -> Int{
+    var foundSpace = false
+    var strl = ""
+    var intDueDate = 0;
+    for p in dueDate.characters {
+        if p != " " && foundSpace {
+            strl.append(p)
+        }
+        if(p == " ") {
+            foundSpace = true
+        }
+    }
+    if dueDate.contains("Jul") {
+        intDueDate = Int(strl)!
+    }
+    else if dueDate.contains("Aug") {
+        intDueDate = 31 + Int(strl)!
+    }
+    else if dueDate.contains("Sep") {
+        intDueDate = 61 + Int(strl)!
+    }
+    else if dueDate.contains("Oct") {
+        intDueDate = 92 + Int(strl)!
+    }
+    else if dueDate.contains("Nov") {
+        intDueDate = 122 + Int(strl)!
+    }
+    else if dueDate.contains("Dec") {
+        intDueDate = 153 + Int(strl)!
+    }
+    else if dueDate.contains("Jan") {
+        intDueDate = 184 + Int(strl)!
+    }
+    else if dueDate.contains("Feb") {
+        intDueDate =  213 + Int(strl)!
+    }
+    else if dueDate.contains("Mar") {
+        intDueDate = 244 + Int(strl)!
+    }
+    else if dueDate.contains("Apr") {
+        intDueDate = 274 + Int(strl)!
+    }
+    else if dueDate.contains("May") {
+        intDueDate = 305 + Int(strl)!
+    }
+    else if dueDate.contains("Jun") {
+        intDueDate = 335 + Int(strl)!
+    }
+    return intDueDate
+}
+
+
 
