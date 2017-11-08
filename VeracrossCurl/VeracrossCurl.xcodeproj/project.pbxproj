@@ -32,6 +32,7 @@
 		1AF5EEA41DAA211400670ABD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; };
 		1AF5EEA51DAA211400670ABD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF5EE971DAA20F400670ABD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AF5EEAF1DAD8BA900670ABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5EEAE1DAD8BA900670ABD /* Course.swift */; };
+		1B9E52BE1FB3A4F90083670E /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9E52BD1FB3A4F90083670E /* AssignmentViewController.swift */; };
 		A40056341E0F950C00278966 /* GraphsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40056331E0F950C00278966 /* GraphsViewController.swift */; };
 		A401926A1DD51098008573E8 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40192691DD51098008573E8 /* Parser.swift */; };
 		A41EC5901E2821270003785A /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41EC5831E2820550003785A /* Locksmith.framework */; };
@@ -232,6 +233,7 @@
 		1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1AF5EE8B1DAA20F400670ABD /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		1AF5EEAE1DAD8BA900670ABD /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		1B9E52BD1FB3A4F90083670E /* AssignmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
 		A40056331E0F950C00278966 /* GraphsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsViewController.swift; sourceTree = "<group>"; };
 		A40192691DD51098008573E8 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		A41EC5751E281E620003785A /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -527,6 +529,7 @@
 				1ADB67BD1DBE9AE800EF551F /* GoogleService-Info.plist */,
 				1A8C5F371DA9F54800D072EF /* LaunchScreen.storyboard */,
 				1A8C5F3A1DA9F54800D072EF /* Info.plist */,
+				1B9E52BD1FB3A4F90083670E /* AssignmentViewController.swift */,
 			);
 			path = Veracross;
 			sourceTree = "<group>";
@@ -800,6 +803,7 @@
 				1A8C5F311DA9F54800D072EF /* ViewController.swift in Sources */,
 				A4F681CA1E0F057500DAAF61 /* Assignment.swift in Sources */,
 				1A8A11E41E3901560037226A /* README.md in Sources */,
+				1B9E52BE1FB3A4F90083670E /* AssignmentViewController.swift in Sources */,
 				1A6BEF391E2527740037BF61 /* TableViewCell.swift in Sources */,
 				1A8C5F2F1DA9F54800D072EF /* AppDelegate.swift in Sources */,
 				A4F4421E1DD51D020007F1EE /* PDFViewController.swift in Sources */,

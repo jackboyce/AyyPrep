@@ -140,9 +140,9 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         if courses[indexPath.row].key == "" {
             courses[indexPath.row].key = (self.parser?.getKey(course: courses[indexPath.row]))!
         }
-        let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PDF") as! PDFViewController
-        pdfViewController.course = courses[indexPath.row]
-        pdfViewController.parser = self.parser!
-        self.navigationController?.pushViewController(pdfViewController, animated: true)
+        let assignmentViewController = self.storyboard?.instantiateViewController(withIdentifier: "AssignmenController") as! AssignmentViewController
+        assignmentViewController.assignments = courses[indexPath.row].assignments
+        //pdfViewController.parser = self.parser!
+        self.navigationController?.pushViewController(assignmentViewController, animated: true)
     }
 }

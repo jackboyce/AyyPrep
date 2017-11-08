@@ -51,7 +51,7 @@ class GraphsViewController: UIViewController, ChartViewDelegate {
     func setChartData() {
         var dataSets: [LineChartDataSet] = [LineChartDataSet]()
         var c = 0
-        let colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.orange, UIColor.purple, UIColor.cyan, UIColor.magenta]
+        let colors = [UIColor.init(red: 68, green: 169, blue: 132, alpha: 100), UIColor.blue, UIColor.green, UIColor.orange, UIColor.purple, UIColor.cyan, UIColor.magenta, UIColor.red]
         for i in data {
             let set: LineChartDataSet = LineChartDataSet.init(values: i, label: courses[c].name)
             set.axisDependency = .left
